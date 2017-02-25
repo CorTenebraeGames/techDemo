@@ -7,6 +7,13 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_tileset01</sprite>
+    <sprite>sprites\spr_attack</sprite>
+    <sprite>sprites\spr_collide</sprite>
+    <sprite>sprites\spr_duck</sprite>
+    <sprite>sprites\spr_fall</sprite>
+    <sprite>sprites\spr_idle</sprite>
+    <sprite>sprites\spr_jump</sprite>
+    <sprite>sprites\spr_run</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
