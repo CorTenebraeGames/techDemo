@@ -24,10 +24,13 @@ ____________________
     - Has an autotile script that picks which tiles in the tileset to place depening on what tiles are next to it.
         - Essentially, all you have to worry about is where the blocks are placed. The tileset will pick which type to use.
 
+----
 
 2/24/2017 (07:18):
 - Uploaded scr_auto_tile [CHA]
   - Completely forgot to add the corresponding script for auto tile to work. Quickly fixed, sorry if anyone saw that and was awake.
+
+----
 
 2/24/2017 (06:00):
 - Uploaded spr_tileset01 [CHA]
@@ -37,6 +40,8 @@ ____________________
 - Uploaded obj_tileset01 [CHA]
 
 - Uploaded room_testOnly
+
+----
 
 2/23/2017 (23:30):
 - Created folders for compiling sample document [CHA]
