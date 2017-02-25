@@ -4,7 +4,19 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\dark_chill</sound>
+    <sound>sound\dev_song</sound>
+    <sound>sound\enter_sound_</sound>
+    <sound>sound\jump_sound</sound>
+    <sound>sound\level_song</sound>
+    <sound>sound\level_xploration</sound>
+    <sound>sound\menu_song</sound>
+    <sound>sound\rip_sound</sound>
+    <sound>sound\selection_sound</sound>
+    <sound>sound\sound1</sound>
+    <sound>sound\start_sound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_tileset01</sprite>
     <sprite>sprites\spr_attack</sprite>
@@ -12,19 +24,28 @@
     <sprite>sprites\spr_duck</sprite>
     <sprite>sprites\spr_fall</sprite>
     <sprite>sprites\spr_idle</sprite>
+    <sprite>sprites\spr_MinionPH</sprite>
     <sprite>sprites\spr_jump</sprite>
     <sprite>sprites\spr_run</sprite>
+    <sprite>sprites\spr_door</sprite>
+    <sprite>sprites\spr_shrinePH</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background_castle</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_auto_tile.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_tileset01</object>
+    <object>objects\obj_playerPlaceHolder</object>
+    <object>objects\obj_minionPlaceHolder</object>
+    <object>objects\obj_doorPlaceHolder</object>
+    <object>objects\obj_shrinePlaceholder</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_testOnly</room>
+    <room>rooms\room_Tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
