@@ -44,9 +44,7 @@
     <object>objects\obj_doorPlaceHolder</object>
     <object>objects\obj_shrinePlaceholder</object>
   </objects>
-  <rooms name="rooms">
-    <room>rooms\room_Tutorial</room>
-  </rooms>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
