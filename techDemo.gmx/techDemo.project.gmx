@@ -30,6 +30,7 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_shrinePH</sprite>
     <sprite>sprites\spr_ladder</sprite>
+    <sprite>sprites\spr_gun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_castle</background>
