@@ -29,6 +29,7 @@
     <sprite>sprites\spr_run</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_shrinePH</sprite>
+    <sprite>sprites\spr_ladder</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_castle</background>
@@ -43,8 +44,13 @@
     <object>objects\obj_minionPlaceHolder</object>
     <object>objects\obj_doorPlaceHolder</object>
     <object>objects\obj_shrinePlaceholder</object>
+    <object>objects\obj_ladder</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\room_Tutorial</room>
+    <room>rooms\room_level01_main</room>
+    <room>rooms\room_level01_sub01</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
