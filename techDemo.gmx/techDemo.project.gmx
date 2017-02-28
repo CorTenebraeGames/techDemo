@@ -30,14 +30,26 @@
     <sprite>sprites\spr_shrinePH</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_ladderParent</sprite>
+    <sprite>sprites\spr_sword</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_castle</background>
+    <background>background\Brimestone</background>
+    <background>background\background3</background>
+    <background>background\gamedev</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_auto_tile.gml</script>
+    <script>scripts\scr_Loadfile.gml</script>
+    <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_submenu.gml</script>
+    <script>scripts\scr_txt.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_txt</font>
+    <font>fonts\fnt_text</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_tileset01</object>
     <object>objects\obj_playerPlaceHolder</object>
@@ -47,13 +59,25 @@
     <object>objects\obj_ladder</object>
     <object>objects\par_ladder</object>
     <object>objects\par_tilesets</object>
+    <object>objects\object_icon_menu</object>
+    <object>objects\object_particle</object>
+    <object>objects\object_pause</object>
+    <object>objects\object_screen_fade</object>
+    <object>objects\object_screenshake</object>
+    <object>objects\object_screenfade2</object>
+    <object>objects\object_screefade2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_Tutorial</room>
-    <room>rooms\room_level01_main</room>
-    <room>rooms\room_level01_sub01</room>
-    <room>rooms\room_level01_sub02</room>
-    <room>rooms\room_level01_sub03</room>
+    <room>rooms\init</room>
+    <room>rooms\Gamedev_room</room>
+    <room>rooms\start_menu_room</room>
+    <rooms name="Tech Demo Levels">
+      <room>rooms\room_Tutorial</room>
+      <room>rooms\room_level01_main</room>
+      <room>rooms\room_level01_sub01</room>
+      <room>rooms\room_level01_sub02</room>
+      <room>rooms\room_level01_sub03</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
