@@ -4,9 +4,9 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>1</depth>
-  <persistent>-1</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
-  <maskName>spr_run</maskName>
+  <persistent>0</persistent>
+  <parentName>par_enemy</parentName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -25,49 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//setting variables
-grav = 0.2;
+            <string>image_index = 0;
+image_speed = 0;
+
+dir = -1
+movespeed = 3;
+grav = 0.2
 hsp = 0;
 vsp = 0;
-jumpspeed = 5;
-movespeed = 5;
-jumps = 0;
-
-mymaxjumps = 2;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>vsp = 0;
-vsp_f = .0;
-grv = 0.2;
-frc = 0.4;
-acc = 0.5;
-jmp = -5
-hsp_max = 2.6;
-vsp_max = 5;
-jbuff = 0;
-image_speed = 0.2;
-
-stepcount = 0;
-steppitch = 0.8;
+hit = 0;
+hp = 4;
 </string>
           </argument>
         </arguments>
@@ -90,29 +57,50 @@ steppitch = 0.8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(global.pause) exit;
-// Ra you might wanna change this ^^ when pause is implemented fully
+            <string>if(global.pause) exit;
 
-if (vsp &lt; 10) vsp += grav;
+// Horizontal Movement
+hsp = dir * movespeed;
+image_xscale = dir;
 
+// Gravity
+vsp += grav;
 
-
- 
 //Horizontal Collision
-if (place_meeting(x+hsp,y,obj_tileset01))
+if (place_meeting(x+hsp,y,par_tilesets))
 {
-    while(!place_meeting(x+sign(hsp),y,obj_tileset01))
+    while(!place_meeting(x+sign(hsp),y,par_tilesets))
     {
         x += sign(hsp);
     }
     hsp = 0;
+    
+    dir *= -1;
 }
 x += hsp;
+
+// Enemy Collision
+if (place_meeting(x,y,obj_playerPlaceHolder))
+{
+    dir *= -1;
+}
+
+// Avoiding Ladders
+if (place_meeting(x,y,par_ladder))
+{
+    dir *= -1;
+}
+
+// Avoiding Ledges
+if (place_meeting(x,y,obj_ledge_hitbox))
+{
+    dir *= -1;
+}
  
 //Vertical Collision
-if (place_meeting(x,y+vsp,obj_tileset01))
+if (place_meeting(x,y+vsp,par_tilesets))
 {
-    while(!place_meeting(x,y+sign(vsp),obj_tileset01))
+    while(!place_meeting(x,y+sign(vsp),par_tilesets))
     {
         y += sign(vsp);
     }
@@ -120,12 +108,24 @@ if (place_meeting(x,y+vsp,obj_tileset01))
 }
 y += vsp;
 
+///Main Logic
+
+//====Tick
+if (hit != 0)
+{
+    sprite_index = spr_MinionPH;
+    image_index = 1;
+    hp = (hp - 1);
+}
+
+else image_index = 0;
 
 
-
-
-
-
+if (hp == 0)
+{
+    instance_destroy();
+    global.points = global.points + 5;
+}
 
 </string>
           </argument>

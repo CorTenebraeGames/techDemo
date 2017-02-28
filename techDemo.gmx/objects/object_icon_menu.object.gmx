@@ -32,7 +32,7 @@
 
 menu[0] = "Start";
 menu[1] = "Continue";
-menu[2] = "level select";
+menu[2] = "Mute Menu Music";
 menu[3] = "quit";
 
 space = 64;

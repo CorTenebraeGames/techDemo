@@ -33,8 +33,11 @@ vsp = 0;
 jumpspeed = 5;
 movespeed = 5;
 jumps = 0;
-
+global.playerHp = 18;
+global.holyWater = 1;
 mymaxjumps = 2;
+counter = 0;
+recently_hit=false;
 </string>
           </argument>
         </arguments>
@@ -72,27 +75,26 @@ steppitch = 0.8;
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>level_song</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>recently_hit = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -119,18 +121,19 @@ steppitch = 0.8;
 
 
 //Get the player's input
-key_down = keyboard_check(vk_down);
+key_down = keyboard_check_direct(vk_down);
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
 key_up = keyboard_check_direct (vk_up)
 key_jump = keyboard_check_pressed(vk_space);
+key_attack = keyboard_check_direct(ord('A'));
+key_heal = keyboard_check_direct(ord('F'));
 
 
 
 
 //React to inputs
-
-move = key_left + key_right;
+if (!key_attack &amp;&amp; !key_down) move = key_left + key_right;
 hsp = move * movespeed;
 
 
@@ -158,12 +161,29 @@ if (place_meeting(x+hsp,y,par_tilesets))
     }
     hsp = 0;
 }
+if (place_meeting(x+hsp,y,obj_minionTutorial))
+{
+    while(!place_meeting(x+sign(hsp),y,obj_minionTutorial))
+    {
+        x += sign(hsp);
+    }
+    hsp = 0;
+}
 x += hsp;
+
  
 //Vertical Collision
 if (place_meeting(x,y+vsp,par_tilesets))
 {
     while(!place_meeting(x,y+sign(vsp),par_tilesets))
+    {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
+if (place_meeting(x,y+vsp,obj_minionTutorial))
+{
+    while(!place_meeting(x,y+sign(vsp),obj_minionTutorial))
     {
         y += sign(vsp);
     }
@@ -175,24 +195,24 @@ y += vsp;
 if(move!=0)image_xscale = move;
 if(place_meeting(x,y+1,par_tilesets))
 {
-  if(move!= 0) sprite_index = spr_run; else sprite_index = spr_idle;
+  if(move!= 0) sprite_index = spr_run;
+  if ((!key_attack) &amp;&amp; (move=0)) sprite_index = spr_idle;
  }
   else
  {
    if(vsp &lt; 0) sprite_index = spr_jump; else sprite_index = spr_fall;
 }
 
-if(key_down &gt; 0)
+if(key_down)
 {
+    movespeed=0;
+    hsp = 0;
     sprite_index = spr_duck;
-    
 }
-if keyboard_check(ord('A'))
-   {
-   sprite_index = spr_attack;
-   }
-
-
+else
+{
+    movespeed=5;
+}
 
 // Ladder
 if (key_up || key_down)
@@ -210,15 +230,72 @@ if (ladder)
     if (key_jump) ladder = false;
 }
 
+//Attacking
+if (key_attack)
+{
+    move=0;
+    image_speed=0.17;
+    hsp = 0;
+    // Animate
+    sprite_index = spr_attack;
+    //SFX
+    if (image_index &gt; 2) &amp;&amp; (image_index &lt;2.2)
+    {
+        audio_play_sound(snd_swordswing, 1, false);
+    }
+    //Hitbox
+    if (image_index &gt;=2) &amp;&amp; (image_index &lt;=3)
+    {
+        with(instance_create(x,y,obj_hitbox))
+        {
+            image_xscale = other.image_xscale;
+            with(instance_place(x,y,par_enemy))
+            {
+                if (hit == 0)
+                {
+                    hit =1;
+                    vsp= -3;
+                    hsp = sign(x - other.x)*4;
+                    image_xscale = sign (hsp);
+                }
+            }
+        }
+    }
+}
 
+//Healing
+if (global.holyWater &gt;= 1)
+{
+    if (key_heal)
+    {
+        global.playerHp = 18;
+        global.holyWater --;
+    }
+}
+    
 
+//Enemy Damage
+if (place_meeting(x,y,par_enemy))
+{
+    if !recently_hit
+    {
+        global.playerHp = global.playerHp - 1;
+        recently_hit = true;
+        alarm[0] = 1 * room_speed;
+        vsp=-5;
+        hsp =-5;
+    }
+}
 
+//Health
+if (global.playerHp &lt;= 0)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="5" enumb="65">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -235,7 +312,9 @@ if (ladder)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>//Temp Invincibility Tracker
+counter++;
+</string>
           </argument>
         </arguments>
       </action>
@@ -266,6 +345,43 @@ file_text_write_real(Savefile,savedroom);
 file_text_close(Savefile);
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if recently_hit
+{
+    if counter mod 5 = 0
+    {
+        draw_self();
+    }
+    else
+    {
+        draw_sprite_ext(spr_idle,0,x,y,1,1,0,c_white,0.25);
+    }
+}
+else
+{
+    draw_self();
+}
 </string>
           </argument>
         </arguments>

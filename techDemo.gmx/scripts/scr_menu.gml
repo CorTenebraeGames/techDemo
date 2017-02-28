@@ -8,11 +8,12 @@ case 0:
         }
 case 1:
         {
-        scr_Loadfile();
+        scr_noLoadFound();
         break;
         }
 case 2:
         {
+        audio_stop_all();
         break;
         }
 case 3: game_end(); break;
