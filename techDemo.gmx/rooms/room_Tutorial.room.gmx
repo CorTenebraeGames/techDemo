@@ -7,7 +7,7 @@
   <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -51,6 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_doorPlaceHolder" x="4000" y="672" name="inst_79648E79" locked="0" code="target_x = 192;&#xA;target_y = 96;&#xA;target_r = room_level01_main;&#xA;" scaleX="1" scaleY="1.10112357139587" colour="4278190080" rotation="0"/>
     <instance objName="obj_tileset01" x="32" y="736" name="inst_2C798229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="96" y="736" name="inst_66008E79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="160" y="736" name="inst_404A654D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -485,7 +486,6 @@
     <instance objName="obj_tileset01" x="3808" y="608" name="inst_644D1637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3808" y="672" name="inst_7308A9A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3552" y="288" name="inst_667181D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="4000" y="672" name="inst_79648E79" locked="0" code="" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_minionPlaceHolder" x="3104" y="480" name="inst_A34C3DC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1632" y="576" name="inst_23B21219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shrinePlaceholder" x="576" y="640" name="inst_C1636EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

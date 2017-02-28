@@ -89,7 +89,7 @@
     <instance objName="obj_tileset01" x="992" y="160" name="inst_B2624F29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="992" y="96" name="inst_E002A98E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="992" y="32" name="inst_33780500" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="512" y="672" name="inst_8BAFBB9B" locked="0" code="target_x = 2144;&#xA;target_y = 160;&#xA;target_r = room_level01_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="512" y="672" name="inst_FC5A3033" locked="0" code="target_x = 3872;&#xA;target_y = 160;&#xA;target_r = room_level01_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -12,7 +12,6 @@
     <sound>sound\level_song</sound>
     <sound>sound\level_xploration</sound>
     <sound>sound\menu_song</sound>
-    <sound>sound\rip_sound</sound>
     <sound>sound\selection_sound</sound>
     <sound>sound\sound1</sound>
     <sound>sound\start_sound</sound>
@@ -30,7 +29,7 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_shrinePH</sprite>
     <sprite>sprites\spr_ladder</sprite>
-    <sprite>sprites\spr_gun</sprite>
+    <sprite>sprites\spr_ladderParent</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_castle</background>
@@ -46,11 +45,15 @@
     <object>objects\obj_doorPlaceHolder</object>
     <object>objects\obj_shrinePlaceholder</object>
     <object>objects\obj_ladder</object>
+    <object>objects\par_ladder</object>
+    <object>objects\par_tilesets</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_level01_main</room>
     <room>rooms\room_level01_sub01</room>
+    <room>rooms\room_level01_sub02</room>
+    <room>rooms\room_level01_sub03</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

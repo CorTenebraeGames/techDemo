@@ -65,7 +65,7 @@ hsp_max = 2.6;
 vsp_max = 5;
 jbuff = 0;
 image_speed = 0.2;
-
+ladder = false;
 stepcount = 0;
 steppitch = 0.8;
 </string>
@@ -96,10 +96,10 @@ steppitch = 0.8;
 
 //Get the player's input
 key_down = keyboard_check(vk_down);
-key_space = keyboard_check(vk_space);
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_up);
+key_up = keyboard_check_direct (vk_up)
+key_jump = keyboard_check_pressed(vk_space);
 
 
 
@@ -113,7 +113,7 @@ hsp = move * movespeed;
 if (vsp &lt; 10) vsp += grav;
 
 
-if (place_meeting(x,y+1,obj_tileset01))
+if (place_meeting(x,y+1,par_tilesets))
 {
     jumps = mymaxjumps;
 }//tripple jumping code
@@ -126,9 +126,9 @@ vsp = key_jump * -jumpspeed
 
  
 //Horizontal Collision
-if (place_meeting(x+hsp,y,obj_tileset01))
+if (place_meeting(x+hsp,y,par_tilesets))
 {
-    while(!place_meeting(x+sign(hsp),y,obj_tileset01))
+    while(!place_meeting(x+sign(hsp),y,par_tilesets))
     {
         x += sign(hsp);
     }
@@ -137,9 +137,9 @@ if (place_meeting(x+hsp,y,obj_tileset01))
 x += hsp;
  
 //Vertical Collision
-if (place_meeting(x,y+vsp,obj_tileset01))
+if (place_meeting(x,y+vsp,par_tilesets))
 {
-    while(!place_meeting(x,y+sign(vsp),obj_tileset01))
+    while(!place_meeting(x,y+sign(vsp),par_tilesets))
     {
         y += sign(vsp);
     }
@@ -149,7 +149,7 @@ y += vsp;
 
 //animation
 if(move!=0)image_xscale = move;
-if(place_meeting(x,y+1,obj_tileset01))
+if(place_meeting(x,y+1,par_tilesets))
 {
   if(move!= 0) sprite_index = spr_run; else sprite_index = spr_idle;
  }
@@ -158,10 +158,26 @@ if(place_meeting(x,y+1,obj_tileset01))
    if(vsp &lt; 0) sprite_index = spr_jump; else sprite_index = spr_fall;
 }
 
-if(key_down &gt; 0) sprite_index = spr_duck;
+if(key_down &gt; 0)
+{
+    sprite_index = spr_duck;
+}
 
+// Ladder
+if (key_up || key_down)
+{
+    if place_meeting(x,y,par_ladder) ladder = true;
+}
 
-
+if (ladder)
+{
+    vsp=0;
+    //hsp=0;
+    if (key_up) vsp = -2
+    if (key_down) vsp = 2
+    if !place_meeting(x,y,par_ladder) ladder = false;
+    if (key_jump) ladder = false;
+}
 
 
 
@@ -218,7 +234,7 @@ file_text_close(Savefile);
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="38">
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
         <id>211</id>
