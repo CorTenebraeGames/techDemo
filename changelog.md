@@ -1,6 +1,24 @@
 # Changelog
 ____________________
 
+2/27/2017 (19:04):
+- CHANGED jump to space bar
+  - This is so that up can function as going up a ladder
+  
+- Implemented ladder system
+  - Up arrow climbs
+  - Down arrow traverses downwards
+  
+- Implemented door/room-to-room play
+  - Walking into a door way takes you into the room linked to it
+    - This will be expanded on by FFP with transitions and text saying where you are
+    
+- Created parent objects for the following:
+  - Ladder
+  - tilesets (64x64)
+
+- Sleep deprivation increases.
+
 2/25/2017 (03:23):
 - Uploaded updated techDemo.gmx project
 
