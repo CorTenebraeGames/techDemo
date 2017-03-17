@@ -2,7 +2,7 @@
 
 if file_exists("Save.sav")
 {
-
+    
     var Loadfile = file_text_open_read("Save.sav");
     var Loadedroom = file_text_read_real(Loadfile);
     file_text_close(Loadfile);
@@ -10,5 +10,5 @@ if file_exists("Save.sav")
 }
 else
 {
-//do nothing
+scr_noLoadFound()
 }

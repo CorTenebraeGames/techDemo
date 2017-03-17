@@ -3,7 +3,7 @@
   <spriteName>spr_idle</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>spr_run</maskName>
@@ -35,9 +35,8 @@ movespeed = 5;
 jumps = 0;
 global.playerHp = 18;
 global.holyWater = 1;
-global.keyObtained = 0;
-global.playerBlocking = 0;
-global.playerIsAlive = 1;
+
+
 mymaxjumps = 2;
 counter = 0;
 recently_hit=false;
@@ -74,6 +73,59 @@ image_speed = 0.2;
 ladder = false;
 stepcount = 0;
 steppitch = 0.8;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.checkpointR == room)
+{
+    x = global.checkpointX;
+    y = global.checkpointY;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>menu[0] = "Start";
+menu[1] = "Load Game";
+menu[2] = "Mute Menu Music";
+menu[3] = "quit";
+
+space = 64;
+mpos = 0;
+
 </string>
           </argument>
         </arguments>
@@ -119,19 +171,41 @@ steppitch = 0.8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause) exit;
+            <string>//Temp Invincibility Tracker
+counter++;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.pause)exit;
 // Ra you might wanna change this ^^ when pause is implemented fully
 
 
 //Get the player's input
+//Made some changes due to ease of controlls/ can be changed back if its favored
+key_up = keyboard_check(vk_shift);
 key_down = keyboard_check_direct(vk_down);
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_up = keyboard_check_direct (vk_up)
-key_jump = keyboard_check_pressed(vk_space);
-key_attack = keyboard_check_direct(ord('A'));
+key_jump = keyboard_check_pressed(vk_up)
+key_attack = keyboard_check_direct(vk_space);
 key_heal = keyboard_check_direct(ord('F'));
-key_block = keyboard_check_direct(ord('S'));
 
 
 
@@ -231,17 +305,19 @@ if (ladder)
     if (key_up) vsp = -2
     if (key_down) vsp = 2
     if !place_meeting(x,y,par_ladder) ladder = false;
-    if (key_jump) ladder = false;
+    if (key_up) ladder = false;
 }
 
 //Attacking
 if (key_attack)
 {
     move=0;
-    image_speed=0.17;
+    image_speed=0.20;
     hsp = 0;
     // Animate
     sprite_index = spr_attack;
+    // Screenshake effect for hitting so the game can feel more fluid
+    // code was moved and implemnted in the camera object    
     //SFX
     if (image_index &gt; 2) &amp;&amp; (image_index &lt;2.2)
     {
@@ -252,25 +328,7 @@ if (key_attack)
     {
         with(instance_create(x,y,obj_hitbox))
         {
-            image_xscale=other.image_xscale
-        }
-        /*with(instance_create(x,y,obj_hitbox))
-        {
             image_xscale = other.image_xscale;
-            with(instance_place(x,y,par_enemy2))
-            {
-                if (hit == 0)
-                {
-                    hit = 1;
-                    vsp= -3;
-                    hsp = sign(x - other.x)*4;
-                    image_xscale = sign (hsp);
-                }
-                if (hit == 1)
-                {
-                    alarm[0] = 1 * room_speed;
-                }
-            }
             with(instance_place(x,y,par_enemy))
             {
                 if (hit == 0)
@@ -280,28 +338,9 @@ if (key_attack)
                     hsp = sign(x - other.x)*4;
                     image_xscale = sign (hsp);
                 }
-                if (hit == 1)
-                {
-
-                    alarm[0] = 1 * room_speed;
-                }
             }
-        }*/
+        }
     }
-}
-
-//Blocking
-
-if(key_block)
-{
-    global.playerBlocking = 1;
-    movespeed=0;
-    hsp = 0;
-    sprite_index = spr_duck;
-}
-else
-{
-    global.playerBlocking = 0;
 }
 
 //Healing
@@ -315,84 +354,28 @@ if (global.holyWater &gt;= 1)
 }
     
 
-//Enemy Damage (Weak)
+//Enemy Damage
 if (place_meeting(x,y,par_enemy))
-{
-    if global.playerBlocking = 1 //Blocking Handler
-    { 
-        if !recently_hit
-        {
-            global.playerHp = global.playerHp - 1;
-            recently_hit = true;
-            alarm[0] = 1 * room_speed;
-            hsp =-5;
-        }
-    }
-    if global.playerBlocking = 0
+{   
+    if !recently_hit
     {
-        if !recently_hit
-        {
-            global.playerHp = global.playerHp - 2;
-            recently_hit = true;
-            alarm[0] = 1 * room_speed;
-            vsp=-5;
-            hsp =-5;
-        }
+        global.playerHp = global.playerHp - 1;
+        recently_hit = true;
+        alarm[0] = 1 * room_speed;
+        vsp=-5;
+        hsp =-5;
     }
 }
-// Enemy Damage (Medium)
-if (place_meeting(x,y,par_enemy2))
-{
-    if global.playerBlocking = 1
-    { 
-        if !recently_hit
-        {
-            global.playerHp = global.playerHp - 2; // Blocking Handler
-            recently_hit = true;
-            alarm[0] = 1 * room_speed;
-            hsp =-5;
-        }
-    }
-    if global.playerBlocking = 0
-    {
-        if !recently_hit
-        {
-            global.playerHp = global.playerHp - 4;
-            recently_hit = true;
-            alarm[0] = 1 * room_speed;
-            vsp=-5;
-            hsp =-5;
-        }
-    }
-}
+
 //Health
 if (global.playerHp &lt;= 0)
-{
-    global.playerIsAlive = 0;
-    instance_destroy();
+{   
+    instance_destroy()
+    instance_create(x,y,obj_playerPlaceHolder)
+    audio_play_sound(death_yell,5,false);
+    instance_activate_object(obj_playerPlaceHolder)
+    scr_death();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Temp Invincibility Tracker
-counter++;
 </string>
           </argument>
         </arguments>
@@ -415,12 +398,12 @@ counter++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//save and load 
+            <string>//save
 
 if( file_exists("Save.sav")) file_delete("Save.sav");
 var Savefile = file_text_open_write("Save.sav");
-var savedroom = room;
-file_text_write_real(Savefile,savedroom);
+var Savedroom = room;
+file_text_write_real(Savefile,Savedroom);
 file_text_close(Savefile);
 
 
@@ -482,28 +465,26 @@ else
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="38">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>jump_sound</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if(global.pause)exit;
+audio_play_sound(jump_sound,5,false)
+</string>
           </argument>
         </arguments>
       </action>
