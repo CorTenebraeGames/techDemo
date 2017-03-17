@@ -36,6 +36,10 @@ menu[3] = "quit";
 space = 64;
 mpos = 0;
 
+//Score Tracking
+global.points = 0;
+
+
 
 
 
@@ -46,7 +50,7 @@ mpos = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -69,12 +73,12 @@ mpos = 0;
     draw_set_color(c_white)
     draw_set_alpha(0.05)
     draw_rectangle(0,0 ,room_width, room_height,0)
-    draw_set_halign(fa_center)
+    //draw_set_halign(fa_center)
     draw_set_font(fnt_text)
     draw_set_color(c_white)
     draw_set_alpha(1)
-    draw_text(room_width[0]/2,room_height[0]/2,"Game paused" );
-    draw_text(room_width[0]/2,room_height[0]/2 + 30, "press P to continue");
+    draw_text((view_wview[0]/2),view_hview[0]/2,"Game paused" );
+    draw_text((view_wview[0]/2),(view_hview[0]/2 + 30), "press P to continue");
     draw_set_color(c_black);
 }
 

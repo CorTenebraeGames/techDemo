@@ -30,10 +30,10 @@
 
 // setting up what your menu functions will be
 
-menu[0] = "Start";
-menu[1] = "Continue";
-menu[2] = "level select";
-menu[3] = "quit";
+menu[0] = "New Game";
+menu[1] = "Load Game";
+menu[2] = "Credits";
+menu[3] = "Quit";
 
 space = 64;
 mpos = 0;
