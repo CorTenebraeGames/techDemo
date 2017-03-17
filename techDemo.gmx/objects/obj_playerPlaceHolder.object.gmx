@@ -35,6 +35,9 @@ movespeed = 5;
 jumps = 0;
 global.playerHp = 18;
 global.holyWater = 1;
+global.keyObtained = 0;
+global.playerBlocking = 0;
+global.playerIsAlive = 1;
 mymaxjumps = 2;
 counter = 0;
 recently_hit=false;
@@ -128,6 +131,7 @@ key_up = keyboard_check_direct (vk_up)
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = keyboard_check_direct(ord('A'));
 key_heal = keyboard_check_direct(ord('F'));
+key_block = keyboard_check_direct(ord('S'));
 
 
 
@@ -248,7 +252,25 @@ if (key_attack)
     {
         with(instance_create(x,y,obj_hitbox))
         {
+            image_xscale=other.image_xscale
+        }
+        /*with(instance_create(x,y,obj_hitbox))
+        {
             image_xscale = other.image_xscale;
+            with(instance_place(x,y,par_enemy2))
+            {
+                if (hit == 0)
+                {
+                    hit = 1;
+                    vsp= -3;
+                    hsp = sign(x - other.x)*4;
+                    image_xscale = sign (hsp);
+                }
+                if (hit == 1)
+                {
+                    alarm[0] = 1 * room_speed;
+                }
+            }
             with(instance_place(x,y,par_enemy))
             {
                 if (hit == 0)
@@ -258,9 +280,28 @@ if (key_attack)
                     hsp = sign(x - other.x)*4;
                     image_xscale = sign (hsp);
                 }
+                if (hit == 1)
+                {
+
+                    alarm[0] = 1 * room_speed;
+                }
             }
-        }
+        }*/
     }
+}
+
+//Blocking
+
+if(key_block)
+{
+    global.playerBlocking = 1;
+    movespeed=0;
+    hsp = 0;
+    sprite_index = spr_duck;
+}
+else
+{
+    global.playerBlocking = 0;
 }
 
 //Healing
@@ -274,22 +315,60 @@ if (global.holyWater &gt;= 1)
 }
     
 
-//Enemy Damage
+//Enemy Damage (Weak)
 if (place_meeting(x,y,par_enemy))
 {
-    if !recently_hit
+    if global.playerBlocking = 1 //Blocking Handler
+    { 
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 1;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+        }
+    }
+    if global.playerBlocking = 0
     {
-        global.playerHp = global.playerHp - 1;
-        recently_hit = true;
-        alarm[0] = 1 * room_speed;
-        vsp=-5;
-        hsp =-5;
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 2;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            vsp=-5;
+            hsp =-5;
+        }
     }
 }
-
+// Enemy Damage (Medium)
+if (place_meeting(x,y,par_enemy2))
+{
+    if global.playerBlocking = 1
+    { 
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 2; // Blocking Handler
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+        }
+    }
+    if global.playerBlocking = 0
+    {
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 4;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            vsp=-5;
+            hsp =-5;
+        }
+    }
+}
 //Health
 if (global.playerHp &lt;= 0)
 {
+    global.playerIsAlive = 0;
     instance_destroy();
 }
 </string>

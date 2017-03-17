@@ -206,6 +206,39 @@ draw_text((view_wview[0]-700),view_hview[0] - 500,("Water x" + string(global.hol
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// If key is obtained THIS will display on HUD
+if (global.keyObtained = 1)
+{
+    draw_sprite_ext(spr_key, 0,(view_wview[0]-300),(view_hview[0] - 535), 2, 2, 0, c_white, 1)
+}
+
+//If key is used or not obtained, THIS WILL TURN INVISIBLE
+if (global.keyObtained = 0)
+{
+    draw_sprite_ext(spr_key, 0,(view_wview[0]-300),(view_hview[0] - 535), 2, 2, 0, c_white, 0)
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

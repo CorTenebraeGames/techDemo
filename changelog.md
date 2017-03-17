@@ -1,6 +1,25 @@
 # Changelog
 ____________________
 
+3/16/2017 (22:26):
+- CHANGED combat system damage handlers for enemies.
+  - I've forgotten all of the details. If you've got questions, ask me and I'll answer. I didn't use a tutorial for this re-write, I started doing my own thing. :P
+- CHANGED door entering system. Now player must press up to interact with door
+
+- ADDED Gluttony Save room
+
+- ADDED Gluttony boss fight room
+
+- ADDED Key Object and functionality
+
+- ADDED Blocking function (S key)
+
+- ADDED additional enemy placeholder type
+
+- FIXED small tileset issue at the beginning of tutorial and main room
+
+- UPDATED HUD to now include key indicator
+
 2/27/2017 (19:04):
 - CHANGED jump to space bar
   - This is so that up can function as going up a ladder

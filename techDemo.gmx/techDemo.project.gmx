@@ -41,11 +41,19 @@
       <sprite>sprites\spr_ladder</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_shrinePH</sprite>
+      <sprites name="Items">
+        <sprite>sprites\spr_key</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_tileset01</sprite>
-    <sprites name="Minion#1">
-      <sprite>sprites\spr_MinionPH</sprite>
-      <sprite>sprites\spr_minion_runPH</sprite>
+    <sprites name="Minion Placeholders">
+      <sprites name=" Red">
+        <sprite>sprites\spr_minion_runPH</sprite>
+        <sprite>sprites\spr_MinionPH</sprite>
+      </sprites>
+      <sprites name=" Orange">
+        <sprite>sprites\spr_MinionPH_org</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_sword</sprite>
     <sprites name="UI/HUD">
@@ -57,6 +65,7 @@
     <background>background\Brimestone</background>
     <background>background\background3</background>
     <background>background\gamedev</background>
+    <background>background\bg_credits</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -74,25 +83,38 @@
     <font>fonts\fnt_text</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_tileset01</object>
+    <objects name="Environment">
+      <object>objects\obj_doorPlaceHolder</object>
+      <object>objects\obj_shrinePlaceholder</object>
+      <object>objects\obj_bossDoor</object>
+      <object>objects\obj_ladder</object>
+    </objects>
+    <objects name="Tilesets">
+      <object>objects\obj_tileset01</object>
+    </objects>
+    <objects name="Minions">
+      <object>objects\obj_minionTemplate</object>
+      <objects name=" Gluttony">
+        <object>objects\obj_minionPlaceHolder</object>
+        <object>objects\obj_minionPlaceholder_Org</object>
+      </objects>
+      <object>objects\obj_minionTutorial</object>
+    </objects>
     <object>objects\obj_playerPlaceHolder</object>
-    <object>objects\obj_minionPlaceHolder</object>
-    <object>objects\obj_minionTutorial</object>
-    <object>objects\obj_doorPlaceHolder</object>
-    <object>objects\obj_shrinePlaceholder</object>
-    <object>objects\obj_ladder</object>
-    <object>objects\object_icon_menu</object>
-    <object>objects\object_screefade2</object>
     <object>objects\obj_hitbox</object>
     <objects name="Controllers">
       <object>objects\cont_main</object>
+      <object>objects\object_screefade2</object>
+      <object>objects\cont_credits</object>
     </objects>
     <objects name="Parents">
       <object>objects\par_tilesets</object>
       <object>objects\par_ladder</object>
       <object>objects\obj_ledge_hitbox</object>
       <object>objects\par_enemy</object>
+      <object>objects\par_enemy2</object>
     </objects>
+    <object>objects\object_icon_menu</object>
     <objects name="Effects">
       <object>objects\object_screen_fade</object>
       <object>objects\object_screenfade2</object>
@@ -108,17 +130,27 @@
       <object>objects\obj_health_obsolete</object>
     </objects>
     <object>objects\obj_player</object>
+    <objects name="Items">
+      <object>objects\obj_key</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\init</room>
-    <room>rooms\Gamedev_room</room>
-    <room>rooms\start_menu_room</room>
-    <rooms name="Tech Demo Levels">
-      <room>rooms\room_Tutorial</room>
+    <rooms name="Init Rooms">
+      <room>rooms\init</room>
+      <room>rooms\Gamedev_room</room>
+    </rooms>
+    <rooms name="Menus">
+      <room>rooms\start_menu_room</room>
+      <room>rooms\room_credits</room>
+    </rooms>
+    <room>rooms\room_Tutorial</room>
+    <rooms name=" Gluttony ">
       <room>rooms\room_level01_main</room>
       <room>rooms\room_level01_sub01</room>
       <room>rooms\room_level01_sub02</room>
       <room>rooms\room_level01_sub03</room>
+      <room>rooms\room_level01_saveBoss</room>
+      <room>rooms\room_level01_boss</room>
     </rooms>
   </rooms>
   <help>

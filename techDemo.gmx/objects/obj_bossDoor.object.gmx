@@ -29,9 +29,13 @@
 key_up = keyboard_check_direct (vk_up)
 if (key_up)
 {
-obj_playerPlaceHolder.x = target_x;
-obj_playerPlaceHolder.y = target_y;
-room_goto(target_r);
+    if (global.keyObtained = 1)
+    {
+        obj_playerPlaceHolder.x = target_x;
+        obj_playerPlaceHolder.y = target_y;
+        room_goto(target_r);
+        global.keyObtained = 0;
+    }
 }
 
 </string>

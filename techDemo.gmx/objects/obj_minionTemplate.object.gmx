@@ -34,30 +34,7 @@ grav = 0.2
 hsp = 0;
 vsp = 0;
 hit = 0;
-hp = 10;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hit = 0;
+hp = 4;
 </string>
           </argument>
         </arguments>
@@ -83,7 +60,7 @@ hp = 10;
             <string>if(global.pause) exit;
 
 // Horizontal Movement
-
+hsp = dir * movespeed;
 image_xscale = dir;
 
 // Gravity
@@ -141,11 +118,10 @@ if (hit != 0)
     hp = (hp - 1);
 }
 
-if (hit == 0)
+else
 {
-    sprite_index = spr_MinionPH;
     image_index = 0;
-    hsp = dir * movespeed;
+    hit = 0;
 }
 
 if (hp == 0)
@@ -153,35 +129,6 @@ if (hp == 0)
     instance_destroy();
     global.points = global.points + 5;
 }
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_hitbox">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//What happens when enemy is hit
-hit = 1;
-vsp= -3;
-hsp = sign(x - obj_playerPlaceHolder.x)*4;
-image_xscale = sign (hsp);
-alarm[0] = 15
 
 </string>
           </argument>

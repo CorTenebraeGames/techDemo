@@ -3,7 +3,7 @@ switch mpos
 {
 case 0:
         {
-        room_goto_next();
+        room_goto(room_Tutorial);
         break;
         }
 case 1:
@@ -13,7 +13,7 @@ case 1:
         }
 case 2:
         {
-        audio_stop_all();
+        room_goto(room_credits);
         break;
         }
 case 3: game_end(); break;
