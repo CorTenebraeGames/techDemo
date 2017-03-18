@@ -37,8 +37,7 @@ space = 64;
 mpos = 0;
 
 //Score Tracking
-global.points = 0;
-
+global.points = 0
 
 
 
@@ -77,8 +76,7 @@ global.points = 0;
     draw_set_font(fnt_text)
     draw_set_color(c_white)
     draw_set_alpha(1)
-    draw_text(512,384,"Game paused" );
-    draw_text((512),(384 + 30), "press P to continue");
+    draw_text_transformed(512,384,"Game paused",2,2,0);
     draw_set_color(c_black);
 }
 
@@ -105,16 +103,34 @@ global.points = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause == 0)
+            <string>// OBSOLETE MY DUDE!
+/*if(global.pause == 0)
 {
     global.pause = 1
     audio_pause_all();
+    instance_create(x,y,obj_pause_selection);
 }
 else
 {
-audio_resume_all();
-    global.pause = 0
 
+    audio_resume_all();
+    global.pause = 0
+    with(obj_pause_selection)
+    {
+        instance_destroy();
+    }
+}
+*/
+
+if(global.pause == 0)
+{
+    global.pause = 1
+    audio_pause_all();
+    instance_create(x,y,obj_pause_selection);
+}
+else
+{
+// NOTHING HAPPENS WEW LAD!
 }
 </string>
           </argument>

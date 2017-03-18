@@ -1,6 +1,25 @@
 # Changelog
 ____________________
 
+3/18/2017 (03:29):
+- CHANGED Gluttony minions from placeholders to proper
+
+- ADDED MANUAL SAVE system
+  - Please, for the love of christ. DO NOT TOUCH ANY OF THE SAVE SCRIPTS or SHRINES. This was a bitch to get working.
+
+- ADDED Pause menu system
+
+- ADDED credits
+
+- ADDED New sounds and music
+
+- ADDED New font for levels and saving
+
+
+- FIXED Music trigger bugs
+
+- FIXED Save system bugginess
+
 3/16/2017 (22:26):
 - CHANGED combat system damage handlers for enemies.
   - I've forgotten all of the details. If you've got questions, ask me and I'll answer. I didn't use a tutorial for this re-write, I started doing my own thing. :P

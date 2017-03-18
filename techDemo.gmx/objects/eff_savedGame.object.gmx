@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>alpha = 1;
+
+if !audio_is_playing(snd_save)
+{
+    audio_play_sound(snd_save, 0, false)
+}
 </string>
           </argument>
         </arguments>
