@@ -26,9 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>// Extreme placeholder code until parent is fixed. - CHA
+key_up = keyboard_check_direct (vk_up)
+if (key_up)
+{
 obj_playerPlaceHolder.x = target_x;
 obj_playerPlaceHolder.y = target_y;
 room_goto(target_r);
+}
+
 </string>
           </argument>
         </arguments>

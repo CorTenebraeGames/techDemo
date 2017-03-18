@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1410065407</depth>
+  <depth>-99999999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,6 +29,9 @@
 global.pause = 0
 
 
+menu[1] = "Continue";
+menu[2] = "level select";
+menu[3] = "quit";
 
 space = 64;
 mpos = 0;
@@ -47,7 +50,7 @@ global.points = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -67,19 +70,17 @@ global.points = 0;
             <string>if(global.pause)
 {
 
-    draw_set_color(c_black)
-    draw_set_alpha(0.08)
+    draw_set_color(c_white)
+    draw_set_alpha(0.05)
     draw_rectangle(0,0 ,room_width, room_height,0)
-    //draw_set_halign(fa_center)
+    draw_set_halign(fa_center)
     draw_set_font(fnt_text)
     draw_set_color(c_white)
     draw_set_alpha(1)
-    draw_text((view_xview[0]+325),view_yview[0] + 200,"Game paused" );
-    draw_text((view_xview[0]+280),view_yview[0] + 240, "Press Enter to continue");
+    draw_text(512,384,"Game paused" );
+    draw_text((512),(384 + 30), "press P to continue");
     draw_set_color(c_black);
-
 }
-
 
 
 </string>
@@ -106,20 +107,14 @@ global.points = 0;
             <kind>1</kind>
             <string>if(global.pause == 0)
 {
-   
     global.pause = 1
-    instance_create(view_xview[0]+325,view_yview[0]+340,obj_pausemenu)
-    audio_pause_sound(level_song);
+    audio_pause_all();
 }
 else
 {
-with (obj_pausemenu)
-    {
-     instance_destroy();
-    }
-audio_resume_sound(level_song)
+audio_resume_all();
     global.pause = 0
-   
+
 }
 </string>
           </argument>

@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="obj_playerPlaceHolder">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,25 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//This is the Checkpoint/save code feature of the game
-
-image_angle = 0
-
-if(place_meeting(x,y,obj_playerPlaceHolder))
+            <string>// Extreme placeholder code until parent is fixed. - CHA
+key_up = keyboard_check_released (vk_up)
+if (key_up)
 {
-
-    global.checkpoint = id
-    global.checkpointX = x
-    global.checkpointY = y
-    global.checkpointR = room;
-
-}
-
-if (global.checkpointR == room)
-{
-
-    if (global.checkpoint == id) image_index = 1 else image_index = 0
-
+    script_execute(scr_savegame);
+    audio_play_sound(snd_swordswing, 0, false);
+    instance_create(x,y,eff_savedGame);
+    global.playerHp= 18;
 }
 </string>
           </argument>

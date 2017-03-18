@@ -26,31 +26,83 @@
           <argument>
             <kind>1</kind>
             <string>audio_stop_sound(wakeUpToybox);
+alpha = 0;
+fading = 0;
+with (obj_tutorial_music)
+{
+    instance_destroy();
+}    
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>wakeUp</sound>
+            <kind>1</kind>
+            <string>fading = 1;
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>3</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>if fading = 0
+{
+    alpha += (0.1/15)
+}
+
+if fading = 1
+{
+    alpha -= (0.1/30)
+}
+
+if fading = 2
+{
+    alpha = 0;
+}
+
+
+if alpha &gt;= 1
+{
+    fading = 1
+}
+
+if alpha &lt; 0
+{
+    fading = 2;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -73,8 +125,36 @@
           <argument>
             <kind>1</kind>
             <string>audio_stop_sound(wakeUpToybox);
-audio_stop_sound(wakeUpToybox);
-audio_stop_sound(wakeUpToybox);
+if !audio_is_playing(wakeUp)
+{
+    audio_play_sound(wakeUp, 0, true);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_color(c_white);
+draw_set_font(fnt_Optimus);
+draw_set_halign(fa_center);
+draw_text_transformed_colour(512,384,("Level 01"),1,1,0,c_white,c_white,c_white,c_white,alpha);
 </string>
           </argument>
         </arguments>
