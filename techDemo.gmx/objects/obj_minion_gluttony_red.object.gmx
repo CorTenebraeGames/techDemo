@@ -134,6 +134,7 @@ y += vsp;
 ///Main Logic
 
 //====Tick
+
 if (hit == 1)
 {
     image_index = 1;
