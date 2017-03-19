@@ -34,7 +34,8 @@ grav = 0.2
 hsp = 0;
 vsp = 0;
 hit = 0;
-hp = 10;
+hp = 100;
+
 </string>
           </argument>
         </arguments>
@@ -134,11 +135,26 @@ y += vsp;
 ///Main Logic
 
 //====Tick
-if (hit != 0)
+
+if (hit == 1)
+
 {
     image_index = 1;
     hp = (hp - 1);
 }
+
+if (hit == 2)
+{
+    image_index = 1;
+    hp = (hp - 5);
+}
+
+if (hit == 3)
+{
+    image_index = 1;
+    hp = (hp - 3);
+}
+   
 
 if (hit == 0)
 {
@@ -146,7 +162,8 @@ if (hit == 0)
     hsp = dir * movespeed;
 }
 
-if (hp == 0)
+
+if (hp &lt;= 0)
 {
     instance_destroy();
     global.points = global.points + 5;

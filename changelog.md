@@ -1,6 +1,13 @@
 # Changelog
 ____________________
 
+3/19/2017 (02:13):
+- CHANGED Healing funciton from a "direct" key check to a "pressed" key chec
+
+- ADDED Grenade system
+
+- ADDED Vessel Pick ups
+
 3/18/2017 (03:29):
 - CHANGED Gluttony minions from placeholders to proper
 
