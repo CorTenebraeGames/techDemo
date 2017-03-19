@@ -10,8 +10,8 @@
       <sound>sound\jump_sound</sound>
       <sound>sound\selection_sound</sound>
       <sound>sound\snd_darkLaugh</sound>
+      <sound>sound\snd_save</sound>
     </sounds>
-    <sound>sound\dark_chill</sound>
     <sound>sound\dev_song</sound>
     <sound>sound\enter_sound_</sound>
     <sound>sound\level_song</sound>
@@ -19,8 +19,14 @@
     <sound>sound\menu_song</sound>
     <sound>sound\sound1</sound>
     <sound>sound\start_sound</sound>
-    <sound>sound\wakeUp</sound>
-    <sound>sound\wakeUpToybox</sound>
+    <sounds name="Music">
+      <sound>sound\dark_chill</sound>
+      <sounds name="Gluttony">
+        <sound>sound\wakeUpToybox</sound>
+        <sound>sound\wakeUp</sound>
+        <sound>sound\mus_Gluttony</sound>
+      </sounds>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Alphas">
@@ -28,6 +34,7 @@
       <sprite>sprites\spr_ladderParent</sprite>
       <sprite>sprites\spr_hitbox</sprite>
       <sprite>sprites\spr_ledge_hitbox</sprite>
+      <sprite>sprites\spr_gluttonyMusicTrig</sprite>
     </sprites>
     <sprites name="Player/Protag">
       <sprite>sprites\spr_attack</sprite>
@@ -54,6 +61,11 @@
       <sprites name=" Orange">
         <sprite>sprites\spr_MinionPH_org</sprite>
       </sprites>
+      <sprites name="Gluttony">
+        <sprite>sprites\spr_gluttony_red</sprite>
+        <sprite>sprites\spr_gluttony_yellow</sprite>
+        <sprite>sprites\spr_gluttony_blue</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_sword</sprite>
     <sprites name="UI/HUD">
@@ -72,6 +84,7 @@
   <scripts name="scripts">
     <script>scripts\scr_auto_tile.gml</script>
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_pause_menu.gml</script>
     <script>scripts\scr_submenu.gml</script>
     <script>scripts\scr_txt.gml</script>
     <script>scripts\Approach.gml</script>
@@ -98,8 +111,17 @@
       <objects name="Main Menu">
         <object>objects\object_icon_menu</object>
         <object>objects\cont_pressStart</object>
+        <objects name="Pause Menu">
+          <object>objects\obj_pause_selection</object>
+        </objects>
       </objects>
       <object>objects\cont_dead</object>
+      <objects name="Audio Controllers">
+        <objects name="Gluttony">
+          <object>objects\cont_gluttony_music</object>
+        </objects>
+        <object>objects\cont_mute_music</object>
+      </objects>
     </objects>
     <objects name="Effects">
       <object>objects\object_screen_fade</object>
@@ -110,6 +132,7 @@
       <object>objects\obj_tutorial_music</object>
       <object>objects\obj_noLoad</object>
       <object>objects\eff_savedGame</object>
+      <object>objects\eff_lockedDoor</object>
     </objects>
     <objects name="Environment">
       <object>objects\obj_doorPlaceHolder</object>
@@ -123,7 +146,9 @@
     <objects name="Minions">
       <objects name=" Gluttony">
         <object>objects\obj_minionPlaceHolder</object>
+        <object>objects\obj_gluttony</object>
         <object>objects\obj_minionPlaceholder_Org</object>
+        <object>objects\obj_minion_gluttony_red</object>
       </objects>
       <object>objects\obj_minionTutorial</object>
     </objects>
@@ -133,6 +158,7 @@
       <object>objects\obj_ledge_hitbox</object>
       <object>objects\par_enemy</object>
       <object>objects\par_enemy2</object>
+      <object>objects\par_enemy3</object>
     </objects>
     <objects name="Player Related">
       <object>objects\obj_playerPlaceHolder</object>

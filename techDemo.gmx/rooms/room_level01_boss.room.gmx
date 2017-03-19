@@ -330,6 +330,8 @@
     <instance objName="obj_tileset01" x="2400" y="288" name="inst_A5B1FAAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2400" y="224" name="inst_0EEB7656" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2400" y="160" name="inst_E7290FF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cont_gluttony_music" x="1216" y="672" name="inst_016015AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gluttony" x="1312" y="640" name="inst_0FE4990F" locked="0" code="" scaleX="13.3870964050293" scaleY="2.4761905670166" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

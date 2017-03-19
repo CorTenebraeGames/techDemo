@@ -27,12 +27,14 @@
             <kind>1</kind>
             <string>// Extreme placeholder code until parent is fixed. - CHA
 key_up = keyboard_check_released (vk_up)
-if (key_up)
+if (global.pause != 1)
 {
-    script_execute(scr_savegame);
-    audio_play_sound(snd_swordswing, 0, false);
-    instance_create(x,y,eff_savedGame);
-    global.playerHp= 18;
+    if (key_up)
+    {
+        script_execute(scr_savegame);
+        instance_create(x,y,eff_savedGame);
+        global.playerHp= 18;
+    }
 }
 </string>
           </argument>

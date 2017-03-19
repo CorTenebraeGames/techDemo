@@ -19,14 +19,13 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//setting variables
+            <string>//setting variables
 grav = 0.2;
 hsp = 0;
 vsp = 0;
@@ -134,9 +133,9 @@ key_left = -keyboard_check(vk_left);
 key_up = keyboard_check_direct (vk_up)
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = keyboard_check_direct(ord('A'));
-key_heal = keyboard_check_direct(ord('F'));
+key_heal = keyboard_check_pressed(ord('F'));
 key_block = keyboard_check_direct(ord('S'));
-
+key_grenade = keyboard_check_pressed(ord('G'));
 
 
 
@@ -157,6 +156,7 @@ if(key_jump) &amp;&amp; (jumps &gt; 0)
     jumps -= 1;
     vsp = -jumpspeed;
 vsp = key_jump * -jumpspeed
+audio_play_sound(jump_sound,1,false);
 } 
 
  
@@ -307,12 +307,19 @@ else
     global.playerBlocking = 0;
 }
 
-//Healing
+//Healing and Grenades
 if (global.holyWater &gt;= 1)
 {
     if (key_heal)
     {
         global.playerHp = 18;
+        global.holyWater --;
+    }
+    if (key_grenade)
+    {
+        instance_create(x,y-5,obj_grenade);
+        obj_grenade.vspeed = obj_grenade.vsp;
+        obj_grenade.hspeed = obj_grenade.hsp * image_xscale;
         global.holyWater --;
     }
 }
@@ -368,9 +375,35 @@ if (place_meeting(x,y,par_enemy2))
         }
     }
 }
-//Health
+// Enemy Damage (Strong AF boi)
+if (place_meeting(x,y,par_enemy3))
+{
+    if global.playerBlocking = 1
+    { 
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 3; // Blocking Handler
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+        }
+    }
+    if global.playerBlocking = 0
+    {
+        if !recently_hit
+        {
+            global.playerHp = global.playerHp - 6;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            vsp=-5;
+            hsp =-5;
+        }
+    }
+}
+//Dying
 if (global.playerHp &lt;= 0)
 {
+    instance_create(x,y,object_screefade2);
     global.playerIsAlive = 0;
     instance_destroy();
 }
@@ -488,32 +521,6 @@ else
             <kind>1</kind>
             <string>global.playerHp=0
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>jump_sound</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>

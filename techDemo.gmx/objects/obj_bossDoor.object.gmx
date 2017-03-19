@@ -36,6 +36,10 @@ if (key_up)
         room_goto(target_r);
         global.keyObtained = 0;
     }
+    else
+    {
+        instance_create(x,y,eff_lockedDoor);
+    }
 }
 
 </string>
