@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>//Picking up Extra Vessels
 global.holyWater ++;
+global.holyWaterMax ++;
 instance_destroy();
 </string>
           </argument>

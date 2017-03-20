@@ -9,5 +9,6 @@ ini_close();
 global.playerIsAlive = 1;
 global.playerHp = 18;
 global.keyObtained = 0;
-global.playerHolyWater = 1;
+global.holyWater = 1;
+global.holyWaterMax = 1;
 scr_loadgame();

@@ -121,12 +121,14 @@ else
     }
 }
 */
-
-if(global.pause == 0)
+if (room != room_pressStart &amp;&amp;  room != start_menu_room &amp;&amp; room != Gamedev_room &amp;&amp; room != init &amp;&amp; room != room_credits &amp;&amp; room != room_Dead)
 {
-    global.pause = 1
-    audio_pause_all();
-    instance_create(x,y,obj_pause_selection);
+    if(global.pause == 0)
+    {
+        global.pause = 1
+        audio_pause_all();
+        instance_create(x,y,obj_pause_selection);
+    }
 }
 else
 {

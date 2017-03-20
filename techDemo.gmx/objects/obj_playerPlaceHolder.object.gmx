@@ -33,7 +33,6 @@ jumpspeed = 5;
 movespeed = 5;
 jumps = 0;
 global.playerHp = 18;
-global.holyWater = global.holyWaterMax;
 global.keyObtained = 0;
 global.playerBlocking = 0;
 global.playerIsAlive = 1;
