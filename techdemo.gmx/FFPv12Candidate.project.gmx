@@ -11,6 +11,7 @@
       <sound>sound\selection_sound</sound>
       <sound>sound\snd_darkLaugh</sound>
       <sound>sound\snd_save</sound>
+      <sound>sound\snd_bossDefeated</sound>
     </sounds>
     <sound>sound\dev_song</sound>
     <sound>sound\enter_sound_</sound>
@@ -59,18 +60,28 @@
       <sprite>sprites\spr_openDoor</sprite>
     </sprites>
     <sprite>sprites\spr_tileset01</sprite>
-    <sprites name="Minion Placeholders">
-      <sprites name=" Red">
-        <sprite>sprites\spr_minion_runPH</sprite>
-        <sprite>sprites\spr_MinionPH</sprite>
+    <sprites name="Enemies">
+      <sprites name="Minion Placeholders">
+        <sprites name=" Red">
+          <sprite>sprites\spr_minion_runPH</sprite>
+          <sprite>sprites\spr_MinionPH</sprite>
+        </sprites>
+        <sprites name=" Orange">
+          <sprite>sprites\spr_MinionPH_org</sprite>
+        </sprites>
+        <sprites name="Gluttony">
+          <sprite>sprites\spr_gluttony_red</sprite>
+          <sprite>sprites\spr_gluttony_yellow</sprite>
+          <sprite>sprites\spr_gluttony_blue</sprite>
+        </sprites>
       </sprites>
-      <sprites name=" Orange">
-        <sprite>sprites\spr_MinionPH_org</sprite>
-      </sprites>
-      <sprites name="Gluttony">
-        <sprite>sprites\spr_gluttony_red</sprite>
-        <sprite>sprites\spr_gluttony_yellow</sprite>
-        <sprite>sprites\spr_gluttony_blue</sprite>
+      <sprites name="Bosses">
+        <sprites name="Gluttony">
+          <sprite>sprites\spr_gluttonyIdle</sprite>
+          <sprite>sprites\spr_gluttonyFall</sprite>
+          <sprite>sprites\spr_gluttonyFallenDamage</sprite>
+          <sprite>sprites\spr_gluttonyWalk</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprite>sprites\spr_sword</sprite>
@@ -130,6 +141,7 @@
         <object>objects\cont_mute_music</object>
         <object>objects\cont_safeRoom</object>
       </objects>
+      <object>objects\cont_bossInit</object>
     </objects>
     <objects name="Effects">
       <object>objects\object_screen_fade</object>
@@ -137,16 +149,21 @@
       <object>objects\object_particle</object>
       <object>objects\object_screenshake</object>
       <object>objects\obj_level01_music</object>
+      <object>objects\obj_level02_music</object>
       <object>objects\obj_tutorial_music</object>
       <object>objects\obj_noLoad</object>
       <object>objects\eff_savedGame</object>
       <object>objects\eff_lockedDoor</object>
+      <objects name="bossEffects">
+        <object>objects\eff_gluttonyDefeated</object>
+      </objects>
     </objects>
     <objects name="Environment">
       <object>objects\obj_doorPlaceHolder</object>
       <object>objects\obj_levelTransitionDoor</object>
       <object>objects\obj_shrinePlaceholder</object>
       <object>objects\obj_bossDoor</object>
+      <object>objects\obj_bossDefeatedDoor</object>
       <object>objects\obj_ladder</object>
     </objects>
     <objects name="Items">
@@ -155,12 +172,14 @@
       <object>objects\obj_vessel</object>
       <object>objects\obj_shrapnel</object>
     </objects>
-    <objects name="Minions">
+    <objects name="Enemies">
       <objects name=" Gluttony">
-        <object>objects\obj_minionPlaceHolder</object>
         <object>objects\obj_gluttony</object>
-        <object>objects\obj_minionPlaceholder_Org</object>
-        <object>objects\obj_minion_gluttony_red</object>
+        <objects name="Minions">
+          <object>objects\obj_minion_gluttony_red</object>
+          <object>objects\obj_minionPlaceholder_Org</object>
+          <object>objects\obj_minionPlaceHolder</object>
+        </objects>
       </objects>
       <object>objects\obj_minionTutorial</object>
     </objects>
@@ -207,6 +226,10 @@
       <rooms name="Misc.">
         <room>rooms\room_Dead</room>
       </rooms>
+    </rooms>
+    <rooms name="Sloth">
+      <room>rooms\room_level02_start</room>
+      <room>rooms\room_level02_main</room>
     </rooms>
   </rooms>
   <help>

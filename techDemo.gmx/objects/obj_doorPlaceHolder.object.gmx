@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Extreme placeholder code until parent is fixed. - CHA
-key_up = keyboard_check_direct (vk_up)
+            <string>// Code's fixed.
+// If you want to edit where the door goes, DO NOT touch anything here.
+// Instead use "creation code" of an instance by right clicking on an object in a room and clicking creation code.
+// - CHA
+key_up = keyboard_check_released (vk_up)
 if (key_up)
 {
 obj_playerPlaceHolder.x = target_x;
