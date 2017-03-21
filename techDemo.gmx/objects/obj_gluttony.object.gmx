@@ -243,6 +243,10 @@ if global.gluttonyTrigger = false // Damage handlers for if Gluttony has not fal
     {
         sprite_index = spr_gluttonyIdle;
         image_index = 0;
+        if !audio_is_playing(snd_gluttonyGloop)
+        {
+            audio_play_sound(snd_gluttonyGloop,0,false);
+        }
     }
 
     if (hit == 2)

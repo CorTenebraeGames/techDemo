@@ -392,6 +392,15 @@
     <instance objName="obj_tileset01" x="1440" y="160" name="inst_EEE09288" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1440" y="96" name="inst_C55712DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1440" y="32" name="inst_68F35F54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bowlAesthetic" x="1088" y="697" name="inst_A4818531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-45"/>
+    <instance objName="obj_bowlAesthetic" x="1254" y="698" name="inst_34F1745C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="33"/>
+    <instance objName="obj_eggplant" x="1121" y="702" name="inst_E6791AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eggplant" x="1237" y="702" name="inst_35AFA5C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967040" rotation="0"/>
+    <instance objName="obj_eggplant" x="1056" y="704" name="inst_C39254AC" locked="0" code="" scaleX="1" scaleY="1" colour="4286611456" rotation="180"/>
+    <instance objName="obj_bowlAesthetic" x="906" y="704" name="inst_38F4CF94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_bottle" x="911" y="697" name="inst_D8BAA2DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="25"/>
+    <instance objName="obj_bottle" x="1044" y="701" name="inst_A2873A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_bowlAesthetic" x="717" y="699" name="inst_29576371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

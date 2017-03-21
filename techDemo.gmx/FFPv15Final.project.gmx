@@ -12,6 +12,8 @@
       <sound>sound\snd_darkLaugh</sound>
       <sound>sound\snd_save</sound>
       <sound>sound\snd_bossDefeated</sound>
+      <sound>sound\snd_keyJingle</sound>
+      <sound>sound\snd_gluttonyGloop</sound>
     </sounds>
     <sound>sound\dev_song</sound>
     <sound>sound\enter_sound_</sound>
@@ -58,6 +60,11 @@
       <sprite>sprites\spr_shrapnel</sprite>
       <sprite>sprites\spr_lockedDoor</sprite>
       <sprite>sprites\spr_openDoor</sprite>
+      <sprites name="Gluttony Food">
+        <sprite>sprites\spr_bowls</sprite>
+        <sprite>sprites\spr_eggplant</sprite>
+        <sprite>sprites\spr_bottle</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_tileset01</sprite>
     <sprites name="Enemies">
@@ -165,6 +172,11 @@
       <object>objects\obj_bossDoor</object>
       <object>objects\obj_bossDefeatedDoor</object>
       <object>objects\obj_ladder</object>
+      <objects name="Gluttony Food">
+        <object>objects\obj_bowlAesthetic</object>
+        <object>objects\obj_bottle</object>
+        <object>objects\obj_eggplant</object>
+      </objects>
     </objects>
     <objects name="Items">
       <object>objects\obj_key</object>
