@@ -101,7 +101,7 @@ with(obj_HUD)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_pressStart);
+            <string>game_restart();
 </string>
           </argument>
         </arguments>

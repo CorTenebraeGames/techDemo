@@ -413,7 +413,7 @@
     <instance objName="obj_minionPlaceHolder" x="3200" y="288" name="inst_367C2E7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minionPlaceholder_Org" x="3264" y="672" name="inst_A6BABE83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vessel" x="3840" y="160" name="inst_06C68E0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="96" y="96" name="inst_86890F47" locked="0" code="target_x = 3904;&#xA;target_y = 672;&#xA;target_r = room_Tutorial;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
+    <instance objName="obj_levelTransitionDoor" x="96" y="96" name="inst_86890F47" locked="0" code="target_x = 864;&#xA;target_y = 672;&#xA;target_r = room_level02_start;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_level02_music" x="192" y="32" name="inst_8F901103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

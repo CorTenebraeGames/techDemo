@@ -489,8 +489,8 @@
     <instance objName="obj_ladder" x="1600" y="672" name="inst_070A0A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1600" y="608" name="inst_61CB9CE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1600" y="544" name="inst_CFFB8879" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vessel" x="1056" y="608" name="inst_1466A736" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelTransitionDoor" x="4000" y="672" name="inst_8BDC0BCC" locked="0" code="target_x = 192;&#xA;target_y = 96;&#xA;target_r = room_level01_main;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
+    <instance objName="obj_vessel_01" x="1056" y="608" name="inst_900AA3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

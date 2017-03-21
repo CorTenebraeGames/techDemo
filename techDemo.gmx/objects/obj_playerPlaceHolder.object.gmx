@@ -519,7 +519,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.playerHp=0
+            <string>// DEBUG PURPOSES. De-comment below line to press R to respawn
+// global.playerHp=0
 </string>
           </argument>
         </arguments>

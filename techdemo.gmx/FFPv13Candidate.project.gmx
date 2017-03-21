@@ -110,9 +110,9 @@
     <script>scripts\scr_noLoadFound.gml</script>
     <scripts name="Save/Load System">
       <script>scripts\scr_loadgame.gml</script>
-      <script>scripts\scr_loaddeath.gml</script>
       <script>scripts\scr_savegame.gml</script>
       <script>scripts\scr_newgame.gml</script>
+      <script>scripts\scr_loaddeath.gml</script>
     </scripts>
     <script>scripts\scr_Loadfile.gml</script>
   </scripts>
@@ -170,6 +170,10 @@
       <object>objects\obj_key</object>
       <object>objects\obj_grenade</object>
       <object>objects\obj_vessel</object>
+      <objects name="Persistent Vessels">
+        <object>objects\obj_vessel_01</object>
+        <object>objects\obj_vessel_02</object>
+      </objects>
       <object>objects\obj_shrapnel</object>
     </objects>
     <objects name="Enemies">
@@ -204,6 +208,7 @@
       <object>objects\object_pause</object>
     </objects>
     <object>objects\obj_player</object>
+    <object>objects\init_holyWater</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Init Rooms">
