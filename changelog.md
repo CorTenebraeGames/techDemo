@@ -1,8 +1,12 @@
 # Changelog
 ____________________
+3/22/2017 (23:39):
+- CHANGED several event handlers from "released" to "pressed", vice versa, and other things of the sort
+
+- ADDED Controller support (should work with any gamepad)
 
 3/19/2017 (02:13):
-- CHANGED Healing funciton from a "direct" key check to a "pressed" key chec
+- CHANGED Healing funciton from a "direct" key check to a "pressed" key check
 
 - ADDED Grenade system
 

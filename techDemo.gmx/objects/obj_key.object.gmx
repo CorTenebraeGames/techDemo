@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>global.keyObtained = 1;
+if !audio_is_playing(snd_keyJingle)
+{
+    audio_play_sound(snd_keyJingle,1,false);
+}
 instance_destroy();
 </string>
           </argument>
