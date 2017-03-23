@@ -29,7 +29,7 @@
 // If you want to edit where the door goes, DO NOT touch anything here.
 // Instead use "creation code" of an instance by right clicking on an object in a room and clicking creation code.
 // - CHA
-key_up = keyboard_check_released (vk_up)
+key_up = keyboard_check_released (vk_up) || (gamepad_button_check_pressed(0,gp_face4));
 if (key_up)
 {
 obj_playerPlaceHolder.x = target_x;

@@ -34,7 +34,7 @@ menu[2] = "Exit to Desktop";
 space = 64;
 mpos = 0;
 
-
+gamepad_set_axis_deadzone(0,0.6);
 </string>
           </argument>
         </arguments>
@@ -60,8 +60,8 @@ mpos = 0;
             <string>//getting the key inputs for the selection/movement process
 
 var move = 0;
-move =- max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("w")),0);
-move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("s")),0);
+move =- max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("w")),(gamepad_button_check_pressed(0,gp_padu)),0);
+move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("s")),(gamepad_button_check_pressed(0,gp_padd)),0);
 
 if (move != 0)
 {
@@ -76,7 +76,7 @@ if (move != 0)
 
 
 var push;
-push = max(keyboard_check_released(vk_enter),keyboard_check_released(vk_space));
+push = max(keyboard_check_released(vk_enter),keyboard_check_released(vk_space),(gamepad_button_check_released(0,gp_face1)));
 if (push ==1) scr_pause_menu();
 
 

@@ -76,6 +76,8 @@ image_speed = 0.2;
 ladder = false;
 stepcount = 0;
 steppitch = 0.8;
+
+gamepad_set_axis_deadzone(0,0.4);
 </string>
           </argument>
         </arguments>
@@ -126,15 +128,15 @@ steppitch = 0.8;
 
 
 //Get the player's input
-key_down = keyboard_check_direct(vk_down);
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
-key_up = keyboard_check_direct (vk_up)
-key_jump = keyboard_check_pressed(vk_space);
-key_attack = keyboard_check_direct(ord('A'));
-key_heal = keyboard_check_pressed(ord('F'));
-key_block = keyboard_check_direct(ord('S'));
-key_grenade = keyboard_check_pressed(ord('G'));
+key_down = keyboard_check_direct(vk_down) || (gamepad_axis_value(0,gp_axislv) &gt; 0);
+key_right = keyboard_check(vk_right) || (gamepad_axis_value(0,gp_axislh) &gt; 0);
+key_left = -(keyboard_check(vk_left) || (gamepad_axis_value(0,gp_axislh) &lt; 0 ));
+key_up = keyboard_check_direct(vk_up) || (gamepad_axis_value(0,gp_axislv) &lt; 0);
+key_jump = keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(0,gp_face1));
+key_attack = keyboard_check_direct(ord('A')) || (gamepad_button_check(0,gp_shoulderrb));
+key_heal = keyboard_check_pressed(ord('F')) || (gamepad_button_check_pressed(0,gp_shoulderl));
+key_block = keyboard_check_direct(ord('S')) || (gamepad_button_check(0,gp_shoulderr));
+key_grenade = keyboard_check_pressed(ord('G')) || (gamepad_button_check_pressed(0,gp_shoulderlb));
 
 
 

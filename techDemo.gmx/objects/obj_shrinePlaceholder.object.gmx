@@ -28,7 +28,7 @@
             <string>// Code's fixed.
 // Preferrably this shouldn't be touched whatsoever.
 // Saving is semi-fragile since it was more of an after thought and the game wasn't built from the ground up around it.
-key_up = keyboard_check_released (vk_up)
+key_up = keyboard_check_released (vk_up) || (gamepad_button_check_pressed(0,gp_face4));
 if (global.pause != 1)
 {
     if (key_up)
