@@ -1,5 +1,12 @@
 # Changelog
 ____________________
+3/28/2017 (01:49):
+- FIXED gluttony bug in which he would hover into the air after being hit
+
+- FIXED audio balance issues. (Workaround at the moment)
+
+- CHANGED Tileset textures
+
 3/22/2017 (23:39):
 - CHANGED several event handlers from "released" to "pressed", vice versa, and other things of the sort
 
