@@ -241,8 +241,12 @@
       </rooms>
     </rooms>
     <rooms name="Sloth">
-      <room>rooms\room_level02_start</room>
       <room>rooms\room_level02_main</room>
+      <room>rooms\room_level02_boss</room>
+      <room>rooms\room_level02_saveBoss</room>
+      <room>rooms\room_level02_sub01</room>
+      <room>rooms\room_level02_sub02</room>
+      <room>rooms\room_level02_sub03</room>
     </rooms>
     <rooms name="Greed">
       <room>rooms\room_level03_start</room>
@@ -252,6 +256,21 @@
     </rooms>
     <rooms name="Envy">
       <room>rooms\room_level04_start</room>
+      <room>rooms\room_level04_main</room>
+      <room>rooms\room_level04_sub02</room>
+      <room>rooms\room_level04_sub01</room>
+    </rooms>
+    <rooms name="Pride">
+      <room>rooms\room_level05_main</room>
+      <room>rooms\room_level05_sub01</room>
+      <room>rooms\room_level05_sub02</room>
+      <room>rooms\room_level05_sub03</room>
+      <room>rooms\room_level05_saveBoss</room>
+      <room>rooms\room_level05_boss</room>
+    </rooms>
+    <rooms name="Wrath">
+      <room>rooms\room_wrath_main1</room>
+      <room>rooms\room_wrath_sub</room>
     </rooms>
   </rooms>
   <help>
