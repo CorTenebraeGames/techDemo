@@ -1,5 +1,37 @@
 # Changelog
 ____________________
+4/5/2017 (01:40)
+- CHANGED Weapon attack sound
+
+- CHANGED Title Screen Art
+
+- CHANGED Save System
+  - Added save variable for if player has access to wall jump
+
+- CHANGED Credits screen
+
+- CHANGED Gluttony boss fight start
+  - Gluttony waits until player lands in pit, then he starts going after player
+
+- ADDED Wall Jumping
+
+- ADDED Debug Mode
+  - Press R to HEAL and enable Wall Jumping
+
+- ADDED new animations for the following
+  - Climbing
+  - Blocking
+  - Wall Jumping
+  - Wall Leaning
+  
+- ADDED new footsteps SFX
+
+- FIXED Gluttony reset (again)
+
+- FIXED Minions breaking after they attacked the player
+
+- FIXED Volume of attacking being way too loud
+
 3/28/2017 (01:49):
 - FIXED gluttony bug in which he would hover into the air after being hit
 
