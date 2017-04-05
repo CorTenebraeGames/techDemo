@@ -112,6 +112,7 @@
     <background>background\bg_credits</background>
     <background>background\background5</background>
     <background>background\bg_background01</background>
+    <background>background\bg_disclaimer</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -140,6 +141,7 @@
     <objects name="Controllers">
       <object>objects\cont_main</object>
       <object>objects\object_screefade2</object>
+      <object>objects\obj_screenfade3</object>
       <object>objects\cont_credits</object>
       <objects name="Main Menu">
         <object>objects\object_icon_menu</object>
@@ -226,6 +228,7 @@
       <object>objects\obj_HUD</object>
       <object>objects\obj_health_obsolete</object>
       <object>objects\object_pause</object>
+      <object>objects\obj_alphaBuild</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\init_holyWater</object>
@@ -233,6 +236,7 @@
   <rooms name="rooms">
     <rooms name="Init Rooms">
       <room>rooms\init</room>
+      <room>rooms\room_disclaimer</room>
       <room>rooms\Gamedev_room</room>
     </rooms>
     <rooms name="Menus">
