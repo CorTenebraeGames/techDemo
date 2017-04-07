@@ -1,5 +1,10 @@
 # Changelog
 ____________________
+4/7/2017 (14:13)
+- CHANGED Certain level layouts that were bugged (tilesets MUST work with the grid collisions, fixed a few scenarios where they weren't aligned)
+
+- FIXED Specific doors not working with controllers
+
 4/5/2017 (01:40)
 - CHANGED Weapon attack sound
 
