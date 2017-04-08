@@ -1,5 +1,23 @@
 # Changelog
 ____________________
+4/8/2017 (11:57)
+- ADDED global.moveLock variable so that other objects could handle if the player wasn't allowed to move. This is for textboxes, cutscenes or the like.
+
+- ADDED Textboxes of varying sorts
+  - Tutorial Textboxes (Currently the same from normal ones. Possibly to change into something visually different to distinguish from actual dialogue)
+  
+  - Normal Textboxes
+    - These textboxes lock the player in place until he/she presses 'Enter' or presses 'A'.
+    
+  - No-Lock Textboxes
+    - These textboxes will not lock thep player in one spot when they appear
+    - These textboxes run on a timer of 5 seconds. I'm going to change this when I get home from my appointment to be configurable.
+    
+  - To use any of the textboxes:
+    1. simply place a trigger object for the type of textbox you want.
+    2. In the creation code of that trigger define the following: creationText = "[Insert string here]"
+    3. Test it.
+
 4/7/2017 (14:13)
 - CHANGED Certain level layouts that were bugged (tilesets MUST work with the grid collisions, fixed a few scenarios where they weren't aligned)
 
