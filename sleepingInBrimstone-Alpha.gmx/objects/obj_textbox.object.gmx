@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
-  <persistent>-1</persistent>
+  <depth>0</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,15 +25,62 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if !object_exists(obj_playerPlaceHolder)
-{
-    instance_create(global.saveXLocation, global.saveYLocation, obj_playerPlaceHolder);
-}
-else
-{
-}
-*/
-// CREATION OF PERSISTENT HUD ELEMENTS SHOULD BE HANDLED BY A GLOBAL VARIABLE INITIALIZED WHEN GAME IS LOADED
+            <string>alpha = 0; // Starts invisible
+print = ""; // Text shows over time
+time = 0;
+text_delete = false;
+//
+//alarm[0] = 5 * room_speed;
+//Alarm timer replaced with key interaction;
+global.moveLock = true;
+depth = depth - instance_number(obj_textbox);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Release Player
+global.moveLock = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>text_delete = true;
 </string>
           </argument>
         </arguments>
@@ -56,10 +103,20 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.playerIsAlive = 0
+            <string>///Key Interaction
+if ((keyboard_check_pressed(vk_enter)) || (gamepad_button_check_pressed(0,gp_face1)))
 {
-    room_goto(room_Dead);
+    text_delete = true;   
 }
+
+
+// Artifact of alarm timer. Kept in to ENSURE that textbox deletes
+if (text_delete = true)
+{
+    instance_destroy();
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -82,104 +139,11 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// New Health
-switch(global.playerHp)
+            <string>///Add letters over time code
+if (time &lt; text_length)
 {
-    case 18:
-    {
-        draw_sprite(player_hp, 18,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }
-    case 17:
-    {
-        draw_sprite(player_hp, 17,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }
-    case 16:
-    {
-        draw_sprite(player_hp, 16,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }
-    case 15:
-    {
-        draw_sprite(player_hp, 15,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 14:
-    {
-        draw_sprite(player_hp, 14,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 13:
-    {
-        draw_sprite(player_hp, 13,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 12:
-    {
-        draw_sprite(player_hp, 12,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 11:
-    {
-        draw_sprite(player_hp, 11,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 10:
-    {
-        draw_sprite(player_hp, 10,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }
-    case 9:
-    {
-        draw_sprite(player_hp, 9,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 8:
-    {
-        draw_sprite(player_hp, 8,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 7:
-    {
-        draw_sprite(player_hp, 7,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 6:
-    {
-        draw_sprite(player_hp, 6,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 5:
-    {
-        draw_sprite(player_hp, 5,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 4:
-    {
-        draw_sprite(player_hp, 4,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 3:
-    {
-        draw_sprite(player_hp, 3,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 2:
-    {
-        draw_sprite(player_hp, 2,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 1:
-    {
-        draw_sprite(player_hp, 1,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }   
-    case 0:
-    {
-        draw_sprite(player_hp, 0,(view_wview[0]-560),view_hview[0] - 535);
-        break;
-    }      
+    time += spd;
+    print = string_copy(text,0,time);
 }
 </string>
           </argument>
@@ -201,71 +165,33 @@ switch(global.playerHp)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Score HUD
-draw_set_color(c_white);
-draw_set_font(fnt_text);
-draw_set_halign(fa_center);
-draw_set_valign(fa_top);
-draw_text((view_wview[0]+115),view_hview[0] - 535,("Score: " + string(global.points)) );
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Holy Water
-draw_set_color(c_white);
-draw_set_font(fnt_text);
-draw_set_halign(fa_center);
-draw_set_valign(fa_top);
-draw_text((view_wview[0]-670),view_hview[0] - 500,("Water x" + string(global.holyWater)) );
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Key Display HUD
-// If key is obtained THIS will display on HUD
-if (global.keyObtained = 1)
+            <string>///Render textbox &amp; text
+draw_set_alpha(alpha);
+if (text_delete = false)
 {
-    draw_sprite_ext(spr_key, 0,(view_wview[0]-300),(view_hview[0] - 535), 2, 2, 0, c_white, 1)
-}
+    if (alpha &lt; 1) alpha += spd/10;
+    else alpha = 1;
+} 
 
-//If key is used or not obtained, THIS WILL TURN INVISIBLE
-if (global.keyObtained = 0)
-{
-    draw_sprite_ext(spr_key, 0,(view_wview[0]-300),(view_hview[0] - 535), 2, 2, 0, c_white, 0)
-}
+draw_set_font(font);
+draw_set_color(c_black);
+draw_rectangle(x,y,x+boxwidth,y+boxheight,0);
+draw_set_color(c_gray);
+draw_rectangle(x,y,x+boxwidth,y+boxheight,1);
 
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_text_ext
+(
+    x + padding,
+    y + padding,
+    print,
+    font_size+(font_size/2),
+    maxlength
+);
+
+draw_set_alpha(1);
 
 </string>
           </argument>

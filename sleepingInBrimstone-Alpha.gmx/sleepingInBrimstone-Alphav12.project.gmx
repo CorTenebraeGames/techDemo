@@ -131,11 +131,14 @@
       <script>scripts\scr_loaddeath.gml</script>
     </scripts>
     <script>scripts\scr_Loadfile.gml</script>
+    <script>scripts\scr_textbox.gml</script>
+    <script>scripts\scr_textbox_noLock.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_txt</font>
     <font>fonts\fnt_text</font>
     <font>fonts\fnt_Optimus</font>
+    <font>fonts\fnt_codersCrux</font>
   </fonts>
   <objects name="objects">
     <objects name="Controllers">
@@ -161,6 +164,10 @@
       <object>objects\cont_bossInit</object>
     </objects>
     <objects name="Effects">
+      <objects name="Textboxes">
+        <object>objects\obj_textbox</object>
+        <object>objects\obj_textbox_noLock</object>
+      </objects>
       <object>objects\object_screen_fade</object>
       <object>objects\object_screenfade2</object>
       <object>objects\object_particle</object>
@@ -232,6 +239,15 @@
     </objects>
     <object>objects\obj_player</object>
     <object>objects\init_holyWater</object>
+    <objects name="Triggers">
+      <objects name="General Use">
+        <object>objects\trig_textBox</object>
+        <object>objects\trig_textBox_noLock</object>
+      </objects>
+      <objects name="Tutorial-Specific">
+        <object>objects\trig_textTutorial</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Init Rooms">

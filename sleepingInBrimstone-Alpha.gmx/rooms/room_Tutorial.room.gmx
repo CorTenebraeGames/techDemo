@@ -491,6 +491,13 @@
     <instance objName="obj_ladder" x="1600" y="544" name="inst_CFFB8879" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelTransitionDoor" x="4000" y="672" name="inst_8BDC0BCC" locked="0" code="target_x = 192;&#xA;target_y = 96;&#xA;target_r = room_level01_main;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_vessel_01" x="1056" y="608" name="inst_900AA3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="544" y="672" name="inst_9482F29E" locked="0" code="creationText = &quot;Press the 'Up' arrow key or 'Y' on your controller to interact with SHRINES and DOORS.&quot;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="352" y="672" name="inst_2BC784A9" locked="0" code="creationText = &quot;Press 'Enter' or 'A' on your controller to interact with text windows.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="864" y="672" name="inst_D89ADEE0" locked="0" code="creationText = &quot;Ahead is a vessel of holy water!##Shrines will refill the total amount of vessels you've collected when you save at them.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="1088" y="608" name="inst_64C31761" locked="0" code="creationText = &quot;Holy water has two functions:#1. Pressing 'F' or 'LB' will heal you.##2. Pressing 'G' or 'LT' will throw it as a form of grenade.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="672" y="672" name="inst_8A6CA54F" locked="0" code="creationText = &quot;Shrines are multi-purpose.##They save the game, heal you, and refill all the water vessels you've collected.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="1248" y="672" name="inst_7F7ACB52" locked="0" code="creationText = &quot;Press the 'Space' key or the 'A' button to jump.##You can press it again to double-jump.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textTutorial" x="2912" y="480" name="inst_754E44DF" locked="0" code="creationText = &quot;Press the 'A' key, or 'RT' to attack.##Press the 'S' key, or 'RB' to block.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
