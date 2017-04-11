@@ -1,5 +1,27 @@
 # Changelog
 ____________________
+4/11/2017 (06:38)
+- CHANGED Gluttony SFX when hit standing up
+
+- CHANGED Greed level layout slightly
+
+- ADDED SFX for the following
+  - Attacking Gluttony
+  - Attacking Gluttony Minions
+  - Attacking Sloth Minions
+  - Blocking Attacks
+  
+- ADDED God Mode
+  - For Controllers only (Morrison Purposes)
+    - Hold the Select/Back button and Block at the same time
+    - Release
+    - Listen for slight audio cue
+    - God mode will be enabled
+ 
+- ADDED Music for Sloth Level
+
+- REMOVED Obsolete/Unused Audio files
+
 4/8/2017 (11:57)
 - ADDED global.moveLock variable so that other objects could handle if the player wasn't allowed to move. This is for textboxes, cutscenes or the like.
 
