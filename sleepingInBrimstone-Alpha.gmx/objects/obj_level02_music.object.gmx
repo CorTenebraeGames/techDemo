@@ -25,13 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(wakeUpToybox);
-alpha = 0;
+            <string>alpha = 0;
 fading = 0;
-with (obj_tutorial_music)
-{
-    instance_destroy();
-}    
 </string>
           </argument>
         </arguments>
@@ -124,10 +119,9 @@ if alpha &lt; 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(wakeUpToybox);
-if !audio_is_playing(wakeUp)
+            <string>if !audio_is_playing(mus_SlothMain)
 {
-    audio_play_sound(wakeUp, 0, true);
+    audio_play_sound(mus_SlothMain, 0, true);
 }
 </string>
           </argument>
@@ -154,7 +148,7 @@ if !audio_is_playing(wakeUp)
             <string>draw_set_color(c_white);
 draw_set_font(fnt_Optimus);
 draw_set_halign(fa_center);
-draw_text_transformed_colour(512,384,("Level 02 WIP"),1,1,0,c_white,c_white,c_white,c_white,alpha);
+draw_text_transformed_colour(512,384,("Level 02"),1,1,0,c_white,c_white,c_white,c_white,alpha);
 </string>
           </argument>
         </arguments>

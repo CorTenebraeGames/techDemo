@@ -37,6 +37,7 @@ global.playerHp = 18;
 global.keyObtained = 0;
 global.playerBlocking = 0;
 global.playerIsAlive = 1;
+godModeEnabled = false;
 mymaxjumps = 2;
 counter = 0;
 recently_hit=false;
@@ -163,6 +164,23 @@ key_attack = keyboard_check_direct(ord('A')) || (gamepad_button_check(0,gp_shoul
 key_heal = keyboard_check_pressed(ord('F')) || (gamepad_button_check_pressed(0,gp_shoulderl));
 key_block = keyboard_check_direct(ord('S')) || (gamepad_button_check(0,gp_shoulderr));
 key_grenade = keyboard_check_pressed(ord('G')) || (gamepad_button_check_pressed(0,gp_shoulderlb));
+
+//-----------------------
+// God Mode (Comment all this shit out later)
+key_god = (gamepad_button_check(0,gp_select));
+if ((key_god) &amp;&amp; (key_block))
+{
+    godModeEnabled = true;
+    if !audio_is_playing(snd_bossDefeated)
+    {
+        audio_play_sound(snd_bossDefeated, 0, false);
+    }
+}
+if godModeEnabled = true
+{
+    global.playerHp = 18
+}
+// -----------------------
 
 // Global variable for others to interact easily with player and lock him
 if global.moveLock = true
@@ -472,6 +490,7 @@ if (place_meeting(x,y,par_enemy))
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
+            audio_play_sound(snd_shieldBlock, 0, false);
         }
     }
     if global.playerBlocking = 0
@@ -497,6 +516,7 @@ if (place_meeting(x,y,par_enemy2))
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
+            audio_play_sound(snd_shieldBlock, 0, false);
         }
     }
     if global.playerBlocking = 0
@@ -522,6 +542,7 @@ if (place_meeting(x,y,par_enemy3))
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
+            audio_play_sound(snd_shieldBlock, 0, false);
         }
     }
     if global.playerBlocking = 0
@@ -666,7 +687,7 @@ global.playerHp=18
 //--------------------------------
 
 // Decomment the line below if R enables WALL JUMP
-global.wallJumpAvailable = 1;
+//global.wallJumpAvailable = 1;
 </string>
           </argument>
         </arguments>

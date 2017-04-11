@@ -225,6 +225,10 @@ if global.gluttonyTrigger = true // Damage handlers for if Gluttony has fallen.
         sprite_index = spr_gluttonyFallenDamage;
         image_index = 0;
         hp = (hp - 1);
+        if !audio_is_playing(snd_gluttonyDmg)
+        {
+            audio_play_sound(snd_gluttonyDmg, 0, false)
+        }
     }
 
     if (hit == 2)

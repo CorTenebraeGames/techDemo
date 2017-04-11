@@ -193,6 +193,10 @@ vsp= -3;
 hsp = sign(x - obj_playerPlaceHolder.x)*4;
 image_xscale = sign (hsp);
 alarm[0] = 15
+if !audio_is_playing(snd_gluttonyDmg)
+{
+    audio_play_sound(snd_gluttonyDmg, 0, false)
+}
 
 </string>
           </argument>

@@ -74,7 +74,7 @@
     <instance objName="obj_tileset01" x="1696" y="736" name="inst_4830100C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="608" y="736" name="inst_50C78D16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="672" y="736" name="inst_80690007" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="96" y="672" name="inst_1C2865B0" locked="0" code="" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
+    <instance objName="obj_levelTransitionDoor" x="96" y="672" name="inst_1C2865B0" locked="0" code="target_x = 864;&#xA;target_y = 672;&#xA;target_r = room_level03_start;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_tileset01" x="736" y="736" name="inst_6FCFC983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="800" y="736" name="inst_82225196" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="864" y="736" name="inst_191DF3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -235,7 +235,7 @@
     <instance objName="obj_ladder" x="1824" y="480" name="inst_2E1C76CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1824" y="544" name="inst_65B595FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1824" y="608" name="inst_5908C05A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="960" y="608" name="inst_2849078D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="960" y="608" name="inst_2849078D" locked="0" code="target_x = 320;&#xA;target_y = 288;&#xA;target_r = room_level03_sub02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1888" y="736" name="inst_0906EF43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1888" y="672" name="inst_1B8518D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1888" y="608" name="inst_25A0F7F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -359,12 +359,29 @@
     <instance objName="obj_ladder" x="2272" y="160" name="inst_94C537CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="2272" y="96" name="inst_C1A31B7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2464" y="160" name="inst_A16875DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="4064" y="672" name="inst_9E52D32E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="4064" y="672" name="inst_9E52D32E" locked="0" code="target_x = 3840;&#xA;target_y = 288;&#xA;target_r = room_level03_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3488" y="448" name="inst_59B9F96C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3424" y="448" name="inst_3FD66D53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3232" y="448" name="inst_F569473F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3168" y="448" name="inst_549A232E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="trig_textBox" x="160" y="672" name="inst_031013FE" locked="0" code="creationText = &quot;Perhaps I can latch to the wall and jump from them.##(You can now wall jump)&quot;&#xA;&#xA;// Wall Jump Available&#xA;global.wallJumpAvailable = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textBox" x="160" y="672" name="inst_031013FE" locked="0" code="creationText = &quot;Perhaps I can latch to the wall and jump from them.##(You can now wall jump)&quot;&#xA;&#xA;// Wall Jump Available&#xA;global.wallJumpAvailable = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_key" x="2208" y="256" name="inst_5DE50A8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_textBox" x="288" y="352" name="inst_7C2CADAE" locked="0" code="creationText = &quot;You've reached the end of the playable Focus Testing build.##Proceeding further is possible, but there will be no enemies&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2336" y="544" name="inst_2F15044E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2336" y="608" name="inst_161DECFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2336" y="672" name="inst_5D40F47F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2336" y="736" name="inst_4F0CA3DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2400" y="736" name="inst_14F24872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="736" name="inst_A1F15F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="608" name="inst_9D1721FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2400" y="544" name="inst_A38FA5FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="544" name="inst_A03C930A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="480" name="inst_C267E593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2400" y="480" name="inst_884351CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2400" y="416" name="inst_FDA9D471" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="352" name="inst_56ECB8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2464" y="416" name="inst_37E23D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="2400" y="672" name="inst_4A80D5E7" locked="0" code="target_x = 3104;&#xA;target_y = 480;&#xA;target_r = room_level03_sub01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
