@@ -91,7 +91,13 @@
     <instance objName="obj_tileset01" x="544" y="736" name="inst_4F2D6314" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="480" y="736" name="inst_A5D6D6CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="416" y="736" name="inst_F4338289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vessel" x="320" y="672" name="inst_FE8D9CD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="96" y="672" name="inst_A5C213D9" locked="0" code="target_x = 2912;&#xA;target_y = 672;&#xA;target_r = room_level02_main&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="381" y="679" name="inst_5E125152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="290" y="682" name="inst_23092EA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="491" y="681" name="inst_3D6AD9FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="580" y="679" name="inst_E0DB2D71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="439" y="679" name="inst_02E8BCB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_sloth" x="335" y="679" name="inst_A74C4447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

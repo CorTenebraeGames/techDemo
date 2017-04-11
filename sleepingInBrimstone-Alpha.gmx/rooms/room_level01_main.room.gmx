@@ -329,7 +329,7 @@
     <instance objName="obj_tileset01" x="3936" y="224" name="inst_0B72447B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3872" y="224" name="inst_3D6106F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3808" y="224" name="inst_4D7B744F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="704" y="608" name="inst_0AFD2346" locked="0" code="target_x = 832;&#xA;target_y = 288;&#xA;target_r = room_level01_sub03;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="704" y="608" name="inst_0AFD2346" locked="0" code="target_x = 832;&#xA;target_y = 288;&#xA;target_r = room_level01_sub03;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="3968" y="160" name="inst_849F82E6" locked="0" code="target_x = 576;&#xA;target_y = 672;&#xA;target_r = room_level01_sub02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="2080" y="160" name="inst_6E7F93BB" locked="0" code="target_x = 576;&#xA;target_y = 672;&#xA;target_r = room_level01_sub01;" scaleX="1" scaleY="0.811111092567444" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1952" y="608" name="inst_75B6B33A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

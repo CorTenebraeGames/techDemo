@@ -25,6 +25,7 @@ if (file_exists("SaveNew.sav"))
     global.persistentHolyWater08 = ini_read_real("Save1","holyWaterPersistent08",1);
     ini_close();
     instance_create(global.saveXLocation, global.saveYLocation, obj_playerPlaceHolder);
+    scr_giveHealth();
 }
 else
 {

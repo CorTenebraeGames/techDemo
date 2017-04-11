@@ -168,14 +168,11 @@ key_grenade = keyboard_check_pressed(ord('G')) || (gamepad_button_check_pressed(
 if global.moveLock = true
 {
     move_lock = true
+    grav = 0;
     hsp = 0;
     vsp = 0;
     movespeed = 0;
     move = 0;
-}
-if global.moveLock = false
-{
-    move_lock = false
 }
 
 //React to inputs
@@ -194,7 +191,7 @@ if (place_meeting(x,y+1,par_tilesets))
     jumps = mymaxjumps;
 }
 //normal double jumping code
-if(key_jump) &amp;&amp; (jumps &gt; 0)
+if((key_jump) &amp;&amp; (jumps &gt; 0) &amp;&amp; (move_lock=false))
 {
     jumps -= 1;
     vsp = -jumpspeed;
@@ -232,6 +229,7 @@ if (global.wallJumpAvailable = 1)
     {
     vsp = -jumpspeed;
     move = 1;
+    jumps -= 1;
     move_lock = true
     alarm[1]= 30;
     }
@@ -368,6 +366,11 @@ if (ladder)
         ladder = false;
         grav = 0.2;
     }
+}
+
+if (ladder = false)
+{
+    grav = 0.2
 }
 
 //Attacking
