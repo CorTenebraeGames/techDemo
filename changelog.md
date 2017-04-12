@@ -1,5 +1,12 @@
 # Changelog
 ____________________
+4/12/2017 (15:52)
+- ADDED Pride minions, Boss, sound effects, and placeholder sprites for each
+
+- ADDED Ledge hitboxes to Pride's rooms
+
+- ADDED Key and Vessel to Pride's levels
+
 4/11/2017 (06:38)
 - CHANGED Gluttony SFX when hit standing up
 

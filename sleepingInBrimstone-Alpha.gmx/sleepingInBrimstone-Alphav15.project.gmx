@@ -23,6 +23,7 @@
       <sound>sound\snd_save</sound>
       <sound>sound\snd_bossDefeated</sound>
       <sound>sound\snd_keyJingle</sound>
+      <sound>sound\snd_pride_detected</sound>
       <sound>sound\snd_gluttonyGloop</sound>
       <sounds name="Enemy Damage">
         <sound>sound\snd_slothMinionDmg</sound>
@@ -103,6 +104,11 @@
           <sprite>sprites\spr_sloth_minion_attack</sprite>
           <sprite>sprites\spr_sloth_minion_damage</sprite>
         </sprites>
+        <sprites name="Pride">
+          <sprite>sprites\spr_pride_org</sprite>
+          <sprite>sprites\spr_pride_pur</sprite>
+          <sprite>sprites\spr_pride_red</sprite>
+        </sprites>
       </sprites>
       <sprites name="Bosses">
         <sprites name="Gluttony">
@@ -110,6 +116,11 @@
           <sprite>sprites\spr_gluttonyFall</sprite>
           <sprite>sprites\spr_gluttonyFallenDamage</sprite>
           <sprite>sprites\spr_gluttonyWalk</sprite>
+        </sprites>
+        <sprites name="Pride">
+          <sprite>sprites\spr_pride_idle</sprite>
+          <sprite>sprites\spr_pride_upper</sprite>
+          <sprite>sprites\spr_pride_lower</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -224,6 +235,7 @@
         <object>objects\obj_vessel_03</object>
         <object>objects\obj_vessel_04</object>
         <object>objects\obj_vessel_05</object>
+        <object>objects\obj_vessel_06</object>
       </objects>
       <object>objects\obj_shrapnel</object>
     </objects>
@@ -241,6 +253,14 @@
         <object>objects\obj_sloth</object>
         <objects name="Minions">
           <object>objects\obj_minion_sloth</object>
+        </objects>
+      </objects>
+      <objects name="Pride">
+        <object>objects\obj_Pride</object>
+        <objects name="Minions">
+          <object>objects\obj_minion_pride</object>
+          <object>objects\obj_minion_pride_Pur</object>
+          <object>objects\obj_minion_pride_Red</object>
         </objects>
       </objects>
     </objects>
