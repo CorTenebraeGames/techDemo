@@ -1,5 +1,9 @@
 # Changelog
 ____________________
+4/13/2017 (13:45)
+- ADDED Audio groups for testing
+	- aud_group_SFX for Effects
+	- aud_group_music for Music
 4/12/2017 (15:52)
 - ADDED Pride minions, Boss, sound effects, and placeholder sprites for each
 
