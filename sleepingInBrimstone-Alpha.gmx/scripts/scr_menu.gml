@@ -13,10 +13,15 @@ case 1:
         }
 case 2:
         {
+        room_goto(room_audio_options);
+        break;
+        }
+case 3:
+        {
         room_goto(room_credits);
         break;
         }
-case 3: game_end(); break;
+case 4: game_end(); break;
         default: break;
 }
 

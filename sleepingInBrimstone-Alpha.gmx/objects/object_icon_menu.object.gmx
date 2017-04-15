@@ -32,8 +32,9 @@
 
 menu[0] = "New Game";
 menu[1] = "Load Game";
-menu[2] = "Credits";
-menu[3] = "Quit";
+menu[2] = "Options";
+menu[3] = "Credits";
+menu[4] = "Quit";
 
 space = 64;
 mpos = 0;

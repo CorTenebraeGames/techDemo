@@ -13,10 +13,19 @@ case 0:
         }
 case 1:
         {
+        with(obj_pause_selection)
+        {
+            instance_destroy();
+        }
+        instance_create(0,0,obj_pause_audio_menu);
+        break;
+        }
+case 2:
+        {
         game_restart();
         break;
         }
-case 2: game_end(); break;
+case 3: game_end(); break;
         default: break;
 }
 

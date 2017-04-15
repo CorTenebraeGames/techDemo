@@ -92,8 +92,8 @@ if (room != room_pressStart &amp;&amp;  room != start_menu_room &amp;&amp; room 
     if(global.pause == 0)
     {
         global.pause = 1
-        audio_pause_all();
-        instance_create(x,y,obj_pause_selection);
+        //audio_pause_all();
+        instance_create(0,0,obj_pause_selection);
     }
 }
 else
@@ -133,7 +133,7 @@ else
     draw_set_font(fnt_text)
     draw_set_color(c_white)
     draw_set_alpha(1)
-    draw_text_transformed(512,384,"Game paused",2,2,0);
+    draw_text_transformed(512,204,"Game paused",2,2,0);
     draw_set_color(c_black);
 }
 </string>

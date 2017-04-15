@@ -28,8 +28,9 @@
             <string>// setting up what your menu functions will be
 
 menu[0] = "Continue";
-menu[1] = "Exit to Main Menu";
-menu[2] = "Exit to Desktop";
+menu[1] = "Options";
+menu[2] = "Exit to Main Menu";
+menu[3] = "Exit to Desktop";
 
 space = 64;
 mpos = 0;
@@ -114,11 +115,11 @@ draw_set_color(c_white);
 var m;
 for(m = 0; m &lt; array_length_1d(menu); m+=1)
 {
-draw_text( x + space, y + 90 + (m * space),string(menu[m]))
+draw_text( x + 450 + space, y + 250 + 90 + (m * space),string(menu[m]))
 
 }
 
-draw_sprite(sprite_index, 0 ,x - 80, 105 + y + (mpos * space));
+draw_sprite(sprite_index, 0 ,x + 450 - 80, 105 + 250 + y + (mpos * space));
 
 </string>
           </argument>
