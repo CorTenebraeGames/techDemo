@@ -145,11 +145,11 @@ draw_set_color(c_white);
 var m;
 for(m = 0; m &lt; array_length_1d(menu); m+=1)
 {
-draw_text(512, 500 + (m * space),string(menu[m]))
+draw_text(512, 500 - 20 + (m * space),string(menu[m]))
 
 }
 
-draw_sprite(sprite_index, 0 ,512 - 120, y + 277 + mpos * space);
+draw_sprite(sprite_index, 0 ,512 - 120, y + 277 - 20 + mpos * space);
 
 </string>
           </argument>

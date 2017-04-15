@@ -1,6 +1,11 @@
 var SFXVolume;
 switch(global.SFXVolumeSetting)
 {
+    case 11:
+    {
+        SFXVolume = 1;
+        break;
+    }
     case 10:
     {
         SFXVolume = 1;
