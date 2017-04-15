@@ -1,5 +1,19 @@
 # Changelog
 ____________________
+4/15/2017 (00:55)
+- REMOVED Audio Groups
+- ADDED Audio Options
+	- Main Menu
+	- Pause Menu
+	- Settings are saved to new save file.
+		(AudioSettings.sav)
+
+- CHANGED Text positioning on main menu
+
+- CHANGED Audio is not muted on pause
+
+- CHANGED Footsteps audio was bugged... I don't know why.
+
 4/13/2017 (13:45)
 - ADDED Audio groups for testing
 	- aud_group_SFX for Effects
