@@ -1,5 +1,21 @@
 # Changelog
 ____________________
+4/15/2017 (17:48)
+- ADDED Level 07 room bases
+	- New Backgrounds
+	- New Indoor tileset
+	- New Doors
+
+- ADDED Fall death trigger
+
+- CHANGED Level 03 and Level 04 door paths
+
+- CHANGED Pressing R also gives the player a key now for debug purposes
+
+- REMOVED Unused Assets
+
+- REMOVED (Temporarily) Loading Screen Init
+
 4/15/2017 (00:55)
 - REMOVED Audio Groups
 - ADDED Audio Options
