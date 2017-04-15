@@ -300,6 +300,7 @@
     <instance objName="obj_doorPlaceHolder" x="352" y="672" name="inst_D6148A25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="3776" y="672" name="inst_7164A89B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="2080" y="416" name="inst_3A2AB2F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelTransitionDoor" x="2176" y="160" name="inst_A60888BE" locked="0" code="target_x = 864;&#xA;target_y = 672;&#xA;target_r = room_level04_start;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

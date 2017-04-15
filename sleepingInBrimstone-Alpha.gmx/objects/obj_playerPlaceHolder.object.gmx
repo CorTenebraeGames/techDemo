@@ -214,7 +214,7 @@ if((key_jump) &amp;&amp; (jumps &gt; 0) &amp;&amp; (move_lock=false))
     jumps -= 1;
     vsp = -jumpspeed;
     vsp = key_jump * -jumpspeed
-    audio_play_sound(jump_sound,1,false);
+    audio_play_sound(jump_sound, 1, false);
 } 
 
 // Wall Jumping Code
@@ -683,6 +683,8 @@ else
 
 // Decomment the line below if R is for infinite heal
 global.playerHp=18
+// Decomment the line below if R gives you a key
+global.keyObtained = 1;
 
 //--------------------------------
 
