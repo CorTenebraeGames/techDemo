@@ -1,5 +1,13 @@
 # Changelog
 ____________________
+4/16/2017 (16:23)
+- ADDED Fake tileset (Player can walk through this tileset, but is aesthetically identical to normal one)
+- ADDED Persistent Water to Level 04 (Envy)
+- CHANGED Envy level layout
+- FIXED Level 02 (Gluttony) door returning to save room
+- FIXED Door glitch on Level 03 (Greed)
+
+
 4/15/2017 (17:48)
 - ADDED Level 07 room bases
 	- New Backgrounds
