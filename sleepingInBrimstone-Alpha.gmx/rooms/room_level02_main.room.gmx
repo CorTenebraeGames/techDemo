@@ -144,7 +144,7 @@
     <instance objName="obj_tileset01" x="4000" y="736" name="inst_89A2E2FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="4064" y="736" name="inst_1DA17C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bossDoor" x="672" y="672" name="inst_B9B23EBB" locked="0" code="target_x = 160;&#xA;target_y = 640;&#xA;target_r = room_level02_saveBoss;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="32" y="224" name="inst_C1CB3F8F" locked="0" code="" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
+    <instance objName="obj_levelTransitionDoor" x="32" y="224" name="inst_C1CB3F8F" locked="0" code="target_x = 864;&#xA;target_y = 672;&#xA;target_r = room_level02_start;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="1120" y="672" name="inst_E70E6B8B" locked="0" code="target_x = 160;&#xA;target_y = 672;&#xA;target_r = room_level02_sub01;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="1952" y="672" name="inst_34D29448" locked="0" code="target_x = 160;&#xA;target_y = 672;&#xA;target_r = room_level02_sub02;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="2880" y="672" name="inst_EB7DDEFC" locked="0" code="target_x = 160;&#xA;target_y = 672;&#xA;target_r = room_level02_sub03;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -319,6 +319,7 @@
     </objects>
     <objects name="Tilesets">
       <object>objects\obj_tileset01</object>
+      <object>objects\obj_fakeTileset</object>
       <object>objects\obj_tilesetIndoor</object>
     </objects>
     <objects name="UI/HUD">
