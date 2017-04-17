@@ -70,6 +70,7 @@
       <sprite>sprites\spr_duck</sprite>
       <sprite>sprites\spr_fall</sprite>
       <sprite>sprites\spr_idle</sprite>
+      <sprite>sprites\spr_gold</sprite>
       <sprite>sprites\spr_jump</sprite>
       <sprite>sprites\spr_run</sprite>
       <sprite>sprites\spr_block</sprite>
@@ -114,6 +115,15 @@
           <sprite>sprites\spr_sloth_minion</sprite>
           <sprite>sprites\spr_sloth_minion_attack</sprite>
           <sprite>sprites\spr_sloth_minion_damage</sprite>
+        </sprites>
+        <sprites name="Greed">
+          <sprite>sprites\spr_greed_minion</sprite>
+          <sprite>sprites\spr_greed_minion_damage</sprite>
+        </sprites>
+        <sprites name="Envy">
+          <sprite>sprites\spr_sloth_minionDark</sprite>
+          <sprite>sprites\spr_sloth_minionDark_attack</sprite>
+          <sprite>sprites\spr_gluttonyDark</sprite>
         </sprites>
         <sprites name="Pride">
           <sprite>sprites\spr_pride_org</sprite>
@@ -296,6 +306,15 @@
           <object>objects\obj_minion_sloth</object>
         </objects>
       </objects>
+      <objects name="Greed">
+        <objects name="Minions">
+          <object>objects\obj_minion_greed</object>
+        </objects>
+      </objects>
+      <objects name="Envy">
+        <object>objects\obj_minion_envy01</object>
+        <object>objects\obj_minion_envy02</object>
+      </objects>
       <objects name="Pride">
         <object>objects\obj_Pride</object>
         <objects name="Minions">
@@ -312,6 +331,7 @@
       <object>objects\par_enemy</object>
       <object>objects\par_enemy2</object>
       <object>objects\par_enemy3</object>
+      <object>objects\par_enemyGreed</object>
     </objects>
     <objects name="Player Related">
       <object>objects\obj_playerPlaceHolder</object>
@@ -398,6 +418,7 @@
       <room>rooms\room_level04_start</room>
       <room>rooms\room_level04_main</room>
       <room>rooms\room_level04_sub01</room>
+      <room>rooms\room_level04_boss</room>
     </rooms>
     <rooms name="Pride">
       <room>rooms\room_level05_main</room>

@@ -289,7 +289,7 @@
     <instance objName="obj_tileset01" x="3872" y="736" name="inst_19B5D192" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="3936" y="736" name="inst_8CB719AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bossDoor" x="2080" y="672" name="inst_C4E10875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="896" y="160" name="inst_DDE23102" locked="0" code="target_x = 832;&#xA;target_y = 160;&#xA;target_r = room_level04_sub01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="896" y="160" name="inst_DDE23102" locked="0" code="target_x = 832;&#xA;target_y = 160;&#xA;target_r = room_level04_sub01;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="3456" y="160" name="inst_3418EBD2" locked="0" code="target_x = 3488;&#xA;target_y = 160;&#xA;target_r = room_level04_sub01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1056" y="416" name="inst_DC14254B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1120" y="416" name="inst_07A275A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -303,6 +303,26 @@
     <instance objName="obj_levelTransitionDoor" x="2176" y="160" name="inst_A60888BE" locked="0" code="target_x = 864;&#xA;target_y = 672;&#xA;target_r = room_level04_start;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="352" y="416" name="inst_872AA875" locked="0" code="target_x = 3712;&#xA;target_y = 672;&#xA;target_r = room_level04_main&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="3776" y="416" name="inst_14776F77" locked="0" code="target_x = 384;&#xA;target_y = 672;&#xA;target_r = room_level04_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="1152" y="160" name="inst_6DE7BA10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="1600" y="160" name="inst_E18E5AAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="2656" y="160" name="inst_B6EC44D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="3136" y="160" name="inst_0FE7ECEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="1280" y="416" name="inst_134A99E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="2816" y="416" name="inst_35DF7DDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="2432" y="416" name="inst_50879F3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="896" y="416" name="inst_64240970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="1088" y="352" name="inst_D44FCDD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="1664" y="288" name="inst_46C87889" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="3104" y="288" name="inst_6B95447C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="576" y="672" name="inst_3B7F095D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="480" y="416" name="inst_431CBA3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="1216" y="672" name="inst_41E734F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="3456" y="672" name="inst_D37EC3EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="2496" y="672" name="inst_B850B8BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy02" x="1760" y="672" name="inst_411C995E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="1472" y="672" name="inst_A874B143" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="832" y="672" name="inst_7E7253AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_envy01" x="2880" y="672" name="inst_51FACB33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

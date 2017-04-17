@@ -41,6 +41,7 @@ godModeEnabled = false;
 mymaxjumps = 2;
 counter = 0;
 recently_hit=false;
+recently_hitGold=false;
 move_lock = false;
 wallJumping = false;
 grounded = false;
@@ -88,6 +89,30 @@ gamepad_set_axis_deadzone(0,0.4);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Un-goldenize
+move_lock = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -129,6 +154,7 @@ gamepad_set_axis_deadzone(0,0.4);
           <argument>
             <kind>1</kind>
             <string>recently_hit = false;
+recently_hitGold = false;
 </string>
           </argument>
         </arguments>
@@ -306,7 +332,7 @@ y += vsp;
 if(move!=0)image_xscale = move;
 if(place_meeting(x,y+1,par_tilesets))
 {
-    if((grounded = true) &amp;&amp; (move!= 0)) 
+    if((grounded = true) &amp;&amp; (move!= 0) &amp;&amp; (!recently_hitGold)) 
     {
         sprite_index = spr_run;
         if ((!audio_is_playing(snd_footsteps1)) &amp;&amp; !audio_is_playing(snd_footsteps2))
@@ -314,7 +340,7 @@ if(place_meeting(x,y+1,par_tilesets))
         audio_play_sound((choose(snd_footsteps1,snd_footsteps2)), 1, false);
         }
     }
-    if ((!key_attack) &amp;&amp; (move=0) &amp;&amp; (grounded = true))
+    if ((!key_attack) &amp;&amp; (move=0) &amp;&amp; (grounded = true) &amp;&amp; (!recently_hitGold))
     {
         sprite_index = spr_idle;
         audio_stop_sound(snd_footsteps1);
@@ -486,7 +512,7 @@ if (place_meeting(x,y,par_enemy))
     { 
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 1;
+            global.playerHp -= 0.5;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -497,7 +523,7 @@ if (place_meeting(x,y,par_enemy))
     {
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 2;
+            global.playerHp -= 1;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -512,7 +538,7 @@ if (place_meeting(x,y,par_enemy2))
     { 
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 2; // Blocking Handler
+            global.playerHp -= 0.5; // Blocking Handler
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -523,7 +549,7 @@ if (place_meeting(x,y,par_enemy2))
     {
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 4;
+            global.playerHp -= 2;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -538,7 +564,7 @@ if (place_meeting(x,y,par_enemy3))
     { 
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 3; // Blocking Handler
+            global.playerHp -= 0.5; // Blocking Handler
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -549,11 +575,39 @@ if (place_meeting(x,y,par_enemy3))
     {
         if !recently_hit
         {
-            global.playerHp = global.playerHp - 6;
+            global.playerHp -= 3;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
             hsp =-5;
+        }
+    }
+}
+// Enemy Damage (Greed Gold Effect)
+if (place_meeting(x,y,par_enemyGreed))
+{
+    if global.playerBlocking = 1
+    { 
+        if !recently_hit
+        {
+            global.playerHp -= 0.5; // Blocking Handler
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+            audio_play_sound(snd_shieldBlock, 0, false);
+        }
+    }
+    if global.playerBlocking = 0
+    {
+        if !recently_hit
+        {
+            global.playerHp -= 2;
+            recently_hit = true;
+            recently_hitGold = true;
+            sprite_index = spr_gold;
+            move_lock = true;
+            alarm[2] = 1 * room_speed;
+            alarm[0] = 1 * room_speed;
         }
     }
 }
@@ -640,7 +694,7 @@ file_text_close(Savefile);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if recently_hit
+            <string>if ((recently_hit) &amp;&amp; (!recently_hitGold))
 {
     if counter mod 5 = 0
     {
