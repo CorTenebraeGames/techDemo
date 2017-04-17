@@ -1,5 +1,18 @@
 # Changelog
 ____________________
+4/16/2017 (20:08)
+- ADDED Greed minion placeholder
+	- No actual art... just a white box
+	- However, it functions
+- ADDED Envy minions 
+	- Fully functional except no art for shadow greed minions
+- ADDED Sprite for player to turn to gold
+- CHANGED Player step event to include conditionals for becoming golden
+- FIXED Doors on Level 04 (Envy)
+- FIXED Enemy Damage values being absolutely fucking borked
+	- Starting to think that the damage counts for two frames
+	- In any case enemy parents 1-3 and greed enemy damage values have been edited!
+
 4/16/2017 (16:23)
 - ADDED Fake tileset (Player can walk through this tileset, but is aesthetically identical to normal one)
 - ADDED Persistent Water to Level 04 (Envy)
