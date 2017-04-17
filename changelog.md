@@ -1,5 +1,21 @@
 # Changelog
 ____________________
+4/17/2017 (13:00)
+- ADDED Intro text.
+	- Timed
+	- Pressing Enter, Esc, "A button" or "Start" will skip the intro!
+	- No pictures yet because I have to go into photoshop and separate all those storyboard drawings
+	- Took some creative liberties with intro text
+		- Some of the grammar was technically incorrect
+		- Some of the sentences were redundant
+		- Some words were overused. I either replaced or cut entire sentences primarily for this reason.
+		- I skipped the "buying me a drink" frame. It had no place in the intro... in fact it's placing was really awkward
+		- I rearranged the: "I don't know where you are, but I'm going to find you" to instead be the LAST slide/frame.
+
+- ADDED new text trigger for intro text.
+
+- FIXED Health/damage problem again.
+
 4/16/2017 (20:08)
 - ADDED Greed minion placeholder
 	- No actual art... just a white box
