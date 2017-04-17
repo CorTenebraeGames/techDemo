@@ -1,6 +1,10 @@
 # Changelog
 ____________________
-4/17/2017 (15:52)
+4/17/2017 (19:27) - v20c
+- FIXED Player within a player
+- FIXED Goldenize now works properly.
+
+4/17/2017 (15:52) - v20b
 - CHANGED Pride's mechanics
 	- Now has "seeing eye", similar to his minions
 
@@ -8,7 +12,7 @@ ____________________
 
 - FIXED Player being able to get out of "Gold Lock" by attacking, blocking, or throwing grenade
 
-4/17/2017 (13:00)
+4/17/2017 (13:00) - v20a
 - ADDED Intro text.
 	- Timed
 	- Pressing Enter, Esc, "A button" or "Start" will skip the intro!
