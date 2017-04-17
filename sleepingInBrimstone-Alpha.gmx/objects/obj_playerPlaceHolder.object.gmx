@@ -107,6 +107,7 @@ gamepad_set_axis_deadzone(0,0.4);
           <argument>
             <kind>1</kind>
             <string>///Un-goldenize
+global.moveLock = false;
 move_lock = false;
 </string>
           </argument>
@@ -225,7 +226,6 @@ if (!key_attack &amp;&amp; !key_down &amp;&amp; (move_lock=false))
     move = key_left + key_right;
 }
 hsp = move * movespeed;
-
 
 if (vsp &lt; 10) vsp += grav;
 
@@ -512,7 +512,7 @@ if (place_meeting(x,y,par_enemy))
     { 
         if !recently_hit
         {
-            global.playerHp -= 0.5;
+            global.playerHp -= 1;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -523,7 +523,7 @@ if (place_meeting(x,y,par_enemy))
     {
         if !recently_hit
         {
-            global.playerHp -= 1;
+            global.playerHp -= 2;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -538,7 +538,7 @@ if (place_meeting(x,y,par_enemy2))
     { 
         if !recently_hit
         {
-            global.playerHp -= 0.5; // Blocking Handler
+            global.playerHp -= 1; // Blocking Handler
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -549,7 +549,7 @@ if (place_meeting(x,y,par_enemy2))
     {
         if !recently_hit
         {
-            global.playerHp -= 2;
+            global.playerHp -= 4;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -575,7 +575,7 @@ if (place_meeting(x,y,par_enemy3))
     {
         if !recently_hit
         {
-            global.playerHp -= 3;
+            global.playerHp -= 6;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -601,11 +601,11 @@ if (place_meeting(x,y,par_enemyGreed))
     {
         if !recently_hit
         {
-            global.playerHp -= 2;
+            global.playerHp -= 4;
             recently_hit = true;
             recently_hitGold = true;
             sprite_index = spr_gold;
-            move_lock = true;
+            global.moveLock = true;
             alarm[2] = 1 * room_speed;
             alarm[0] = 1 * room_speed;
         }
@@ -703,6 +703,13 @@ file_text_close(Savefile);
     else
     {
         draw_sprite_ext(spr_idle,0,x,y,1,1,0,c_white,0.25);
+    }
+}
+if (recently_hitGold)
+{
+    if counter mod 5 = 0
+    {
+        draw_self();
     }
 }
 else
