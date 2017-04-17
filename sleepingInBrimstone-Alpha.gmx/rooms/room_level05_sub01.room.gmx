@@ -135,11 +135,6 @@
     <instance objName="obj_ledge_hitbox" x="288" y="672" name="inst_384B7D47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="640" y="672" name="inst_F2D3052F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="928" y="672" name="inst_D56FE3D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="576" y="352" name="inst_C81C99CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="768" y="352" name="inst_06D2D36E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="1120" y="672" name="inst_9405724B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="1056" y="352" name="inst_5A213BA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="480" y="672" name="inst_910FE94B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

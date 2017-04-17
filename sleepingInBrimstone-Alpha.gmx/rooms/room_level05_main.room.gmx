@@ -528,20 +528,6 @@
     <instance objName="obj_ledge_hitbox" x="1888" y="2080" name="inst_6FBC4805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="736" y="2208" name="inst_36D04D0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="1056" y="2208" name="inst_E8492CA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="832" y="2208" name="inst_E0B94D84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="960" y="2208" name="inst_A1987F57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="1568" y="2080" name="inst_46DEBBD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="256" y="480" name="inst_8586A5C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="192" y="1760" name="inst_E1C78E24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="1632" y="768" name="inst_B094127D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Red" x="832" y="160" name="inst_C25F3703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="1728" y="1568" name="inst_0A0881CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="1184" y="896" name="inst_5273E635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="1440" y="896" name="inst_39661929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="384" y="1504" name="inst_FB7CCDE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="832" y="480" name="inst_6A7CC20E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="512" y="480" name="inst_8FBF8368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="1760" y="2080" name="inst_1C9E3D45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

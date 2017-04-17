@@ -418,7 +418,7 @@ if (ladder = false)
 }
 
 //Attacking
-if (key_attack)
+if ((key_attack) &amp;&amp; (!recently_hitGold))
 {
     move=0;
     image_speed = 0.17;
@@ -475,7 +475,7 @@ if (key_attack)
 
 //Blocking
 
-if(key_block)
+if((key_block) &amp;&amp; (!recently_hitGold))
 {
     global.playerBlocking = 1;
     movespeed=0;
@@ -490,12 +490,12 @@ else
 //Healing and Grenades
 if (global.holyWater &gt;= 1)
 {
-    if (key_heal)
+    if ((key_heal) &amp;&amp; (!recently_hitGold))
     {
         global.playerHp = 18;
         global.holyWater --;
     }
-    if (key_grenade)
+    if ((key_grenade) &amp;&amp; (!recently_hitGold))
     {
         instance_create(x,y-5,obj_grenade);
         obj_grenade.vspeed = obj_grenade.vsp;

@@ -61,7 +61,7 @@ hit = 0;
 //Double checking that player is still in range
 if ((sight &gt; x - obj_playerPlaceHolder.x) &amp;&amp; (sign(obj_playerPlaceHolder.x - x) = sign(dir)) &amp;&amp; abs(y-obj_playerPlaceHolder.y) &lt; 32)
 {
-    if (obj_playerPlaceHolder.sprite_index != spr_duck)
+    if (obj_playerPlaceHolder.sprite_index != spr_block)
     {
         global.playerHp -= 1;
     }

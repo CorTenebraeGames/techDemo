@@ -162,14 +162,6 @@
     <instance objName="obj_ledge_hitbox" x="288" y="1056" name="inst_CFCC2584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="480" y="1056" name="inst_5B1D69D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="992" y="1184" name="inst_E0ECB15C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Red" x="96" y="256" name="inst_215095D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Red" x="288" y="256" name="inst_F093190E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="512" y="352" name="inst_DB022E0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Pur" x="736" y="480" name="inst_6AC0B412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride_Red" x="832" y="1184" name="inst_FE3BF18E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="1024" y="704" name="inst_B5D2D398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="672" y="928" name="inst_C280FF15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_pride" x="352" y="1056" name="inst_78FBFA08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key" x="128" y="224" name="inst_5F54C063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

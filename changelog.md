@@ -1,5 +1,13 @@
 # Changelog
 ____________________
+4/17/2017 (15:52)
+- CHANGED Pride's mechanics
+	- Now has "seeing eye", similar to his minions
+
+- ADDED "A" button support on Main Audio Settings menu
+
+- FIXED Player being able to get out of "Gold Lock" by attacking, blocking, or throwing grenade
+
 4/17/2017 (13:00)
 - ADDED Intro text.
 	- Timed
