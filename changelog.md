@@ -1,5 +1,11 @@
 # Changelog
 ____________________
+4/18/2017 (17:05) - v30
+- FIXED Door transition for pride levels
+
+- FIXED Footsteps playing when running then crouching.
+
+- CHANGED Ladder animation for climbing down
 4/18/2017 (16:30) - v29e
 - FIXED Pride room to make it playable
 
