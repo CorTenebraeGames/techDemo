@@ -135,6 +135,11 @@
           <sprite>sprites\spr_pride_pur</sprite>
           <sprite>sprites\spr_pride_red</sprite>
         </sprites>
+        <sprites name="Wrath">
+          <sprite>sprites\MinionIdle_easy</sprite>
+          <sprite>sprites\MinionMedium</sprite>
+          <sprite>sprites\MinionHard</sprite>
+        </sprites>
       </sprites>
       <sprites name="Bosses">
         <sprites name="Gluttony">
@@ -347,6 +352,13 @@
           <object>objects\obj_minion_pride</object>
           <object>objects\obj_minion_pride_Pur</object>
           <object>objects\obj_minion_pride_Red</object>
+        </objects>
+      </objects>
+      <objects name="Wrath">
+        <objects name="Minions">
+          <object>objects\obj_wrathminionIdleeasy</object>
+          <object>objects\obj_WrathMinionMedium</object>
+          <object>objects\obj_WrathMinionHard</object>
         </objects>
       </objects>
     </objects>
