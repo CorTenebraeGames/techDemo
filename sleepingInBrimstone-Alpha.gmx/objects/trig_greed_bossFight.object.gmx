@@ -64,7 +64,7 @@ if !instance_exists (obj_greed)
 {
     audio_stop_sound(mus_greed);
     instance_create(x,y,eff_slothDefeated);
-    with(trig_sloth_bossFight)
+    with(trig_greed_bossFight)
     {
         instance_destroy();
     }

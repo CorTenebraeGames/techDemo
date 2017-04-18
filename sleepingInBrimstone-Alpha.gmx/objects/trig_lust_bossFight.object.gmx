@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>playerEncountered = false;
-global.envyFightStart = false;
+global.lustFightStart = false;
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,7 @@ global.envyFightStart = false;
             <kind>1</kind>
             <string>if ((playerEncountered = true) &amp;&amp; (instance_exists(obj_textbox)))
 {
-    global.envyFightStart = true;
+    global.lustFightStart = true;
     /*
     with(obj_sloth)
     {
@@ -60,11 +60,12 @@ global.envyFightStart = false;
     */
 }
 
-if !instance_exists (obj_envy)
+if !instance_exists (obj_lust)
 {
     audio_stop_sound(mus_Sloth);
     instance_create(x,y,eff_slothDefeated);
-    with(trig_envy_bossFight)
+    room_goto (room_credits);
+    with(trig_lust_bossFight)
     {
         instance_destroy();
     }
