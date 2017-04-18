@@ -523,6 +523,10 @@ if (place_meeting(x,y,par_enemy))
     {
         if !recently_hit
         {
+            if ((!audio_is_playing(snd_grunt_01)) &amp;&amp; (!audio_is_playing(snd_grunt_02)) &amp;&amp; (!audio_is_playing(snd_grunt_03)))
+            {
+                audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
+            }
             global.playerHp -= 2;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
@@ -549,6 +553,10 @@ if (place_meeting(x,y,par_enemy2))
     {
         if !recently_hit
         {
+            if ((!audio_is_playing(snd_grunt_01)) &amp;&amp; (!audio_is_playing(snd_grunt_02)) &amp;&amp; (!audio_is_playing(snd_grunt_03)))
+            {
+                audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
+            }
             global.playerHp -= 4;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
@@ -575,6 +583,10 @@ if (place_meeting(x,y,par_enemy3))
     {
         if !recently_hit
         {
+            if ((!audio_is_playing(snd_grunt_01)) &amp;&amp; (!audio_is_playing(snd_grunt_02)) &amp;&amp; (!audio_is_playing(snd_grunt_03)))
+            {
+                audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
+            }
             global.playerHp -= 6;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
@@ -601,6 +613,10 @@ if (place_meeting(x,y,par_enemyGreed))
     {
         if !recently_hit
         {
+            if ((!audio_is_playing(snd_grunt_01)) &amp;&amp; (!audio_is_playing(snd_grunt_02)) &amp;&amp; (!audio_is_playing(snd_grunt_03)))
+            {
+                audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
+            }
             global.playerHp -= 4;
             recently_hit = true;
             recently_hitGold = true;
@@ -630,6 +646,10 @@ if (place_meeting(x,y,par_enemySloth))
     {
         if !recently_hit
         {
+            if ((!audio_is_playing(snd_grunt_01)) &amp;&amp; (!audio_is_playing(snd_grunt_02)) &amp;&amp; (!audio_is_playing(snd_grunt_03)))
+            {
+                audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
+            }
             global.playerHp -= 9;
             recently_hit = true;
             alarm[0] = 1 * room_speed;
@@ -732,6 +752,10 @@ file_text_close(Savefile);
         draw_sprite_ext(spr_idle,0,x,y,1,1,0,c_white,0.25);
     }
 }
+if (!recently_hit)
+{
+    draw_self();
+}
 if (recently_hitGold)
 {
     if counter mod 5 = 0
@@ -739,10 +763,12 @@ if (recently_hitGold)
         draw_self();
     }
 }
+/*
 else
 {
     draw_self();
 }
+*/
 </string>
           </argument>
         </arguments>

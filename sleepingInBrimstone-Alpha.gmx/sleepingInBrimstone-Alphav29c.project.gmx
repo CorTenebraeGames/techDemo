@@ -420,6 +420,7 @@
         <object>objects\trig_greed_bossFight</object>
         <object>objects\trig_envy_bossFight</object>
         <object>objects\trig_lust_bossFight</object>
+        <object>objects\trig_pride_bossFight</object>
       </objects>
     </objects>
     <object>objects\cont_audioInit</object>
