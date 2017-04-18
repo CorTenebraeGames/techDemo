@@ -1,5 +1,9 @@
 # Changelog
 ____________________
+4/17/2017 (23:15) - v23
+- UPDATED Intro sequence 
+	- Now with pictures :P
+
 4/17/2017 (22:09) - v21
 - UPDATED Pride minion sprites
 - CHANGED Pride minion collision to work properly with new sprites
