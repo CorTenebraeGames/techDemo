@@ -498,7 +498,6 @@
     <instance objName="trig_textTutorial" x="672" y="672" name="inst_8A6CA54F" locked="0" code="creationText = &quot;Shrines are multi-purpose.##They save the game, heal you, and refill all the water vessels you've collected.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_textTutorial" x="960" y="672" name="inst_7F7ACB52" locked="0" code="creationText = &quot;Press the 'Space' key or the 'A' button to jump.##You can press it again to double-jump.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_textTutorial" x="2976" y="480" name="inst_754E44DF" locked="0" code="creationText = &quot;Press the 'A' key, or 'RT' to attack.##Press the 'S' key, or 'RB' to block.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="256" y="672" name="inst_363E7310" locked="0" code="target_x = 160;&#xA;target_y = 640;&#xA;target_r = room_level02_saveBoss;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

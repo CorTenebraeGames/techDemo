@@ -1,5 +1,23 @@
 # Changelog
 ____________________
+4/18/2017 (16:17) - v28c - v29d
+- ADDED Lust boss level placeholder
+
+- ADDED Grunt sounds for player damage
+	- Sounds created by Ott
+
+- ADDED Lust and Pride triggers to display "Boss Defeated" when they are killed respectively
+
+- REMOVED Debug door I placed to quickly skip to level 03 and beyond
+
+- CHANGED God mode can now be activated by holding backspace and block at the same time, then releasing
+
+- FIXED Settings save bug
+
+- FIXED Kill trigger at the bottom of Greed level.
+
+- FIXED Invincibility Graphic Not working
+
 4/18/2017 (05:14) - v28b
 - ADDED Greed Placeholder
 - ADDED Envy Placeholder

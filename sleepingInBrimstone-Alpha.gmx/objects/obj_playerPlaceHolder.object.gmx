@@ -194,7 +194,7 @@ key_grenade = keyboard_check_pressed(ord('G')) || (gamepad_button_check_pressed(
 
 //-----------------------
 // God Mode (Comment all this shit out later)
-key_god = (gamepad_button_check(0,gp_select));
+key_god = (gamepad_button_check(0,gp_select)) || keyboard_check_direct(vk_backspace);
 if ((key_god) &amp;&amp; (key_block))
 {
     godModeEnabled = true;
