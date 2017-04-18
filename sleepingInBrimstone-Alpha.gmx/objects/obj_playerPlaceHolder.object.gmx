@@ -365,11 +365,16 @@ else
         }
     }
 }
-if(key_down)
+if(key_down) &amp;&amp; (ladder = false)
 {
     movespeed=0;
     hsp = 0;
     sprite_index = spr_duck;
+    if (audio_is_playing(snd_footsteps1) || audio_is_playing(snd_footsteps2))
+    {
+        audio_stop_sound(snd_footsteps1)
+        audio_stop_sound(snd_footsteps2)
+    }
 }
 else
 {
@@ -388,7 +393,7 @@ if (ladder)
     grav=0;
     sprite_index = spr_climbing;
     //hsp=0;
-    if ((key_up = false) &amp;&amp;  (key_down = false))
+    if ((key_up = false) &amp;&amp; (key_down = false))
     {
         image_index=2;
     }
