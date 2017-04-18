@@ -342,12 +342,12 @@
         </objects>
       </objects>
       <objects name="Pride">
-        <object>objects\obj_Pride</object>
         <objects name="Minions">
           <object>objects\obj_minion_pride</object>
           <object>objects\obj_minion_pride_Pur</object>
           <object>objects\obj_minion_pride_Red</object>
         </objects>
+        <object>objects\obj_Pride</object>
       </objects>
     </objects>
     <objects name="Parents">
@@ -499,12 +499,13 @@
       <room>rooms\room_level04_boss</room>
     </rooms>
     <rooms name="Pride">
+      <room>rooms\room_level05_boss</room>
       <room>rooms\room_level05_main</room>
+      <room>rooms\room_level05_saveBoss</room>
+      <room>rooms\room_level05_start</room>
       <room>rooms\room_level05_sub01</room>
       <room>rooms\room_level05_sub02</room>
       <room>rooms\room_level05_sub03</room>
-      <room>rooms\room_level05_saveBoss</room>
-      <room>rooms\room_level05_boss</room>
     </rooms>
     <rooms name="Wrath">
       <room>rooms\room_level06_wrath_start</room>

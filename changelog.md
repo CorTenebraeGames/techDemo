@@ -1,5 +1,9 @@
 # Changelog
 ____________________
+4/18/2017 (02:49)
+- UPDATED Pride
+- UPDATED Pride rooms
+
 4/17/2017 (23:15) - v23
 - UPDATED Intro sequence 
 	- Now with pictures :P
