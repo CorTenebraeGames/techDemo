@@ -564,7 +564,7 @@ if (place_meeting(x,y,par_enemy3))
     { 
         if !recently_hit
         {
-            global.playerHp -= 0.5; // Blocking Handler
+            global.playerHp -= 1; // Blocking Handler
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -590,7 +590,7 @@ if (place_meeting(x,y,par_enemyGreed))
     { 
         if !recently_hit
         {
-            global.playerHp -= 0.5; // Blocking Handler
+            global.playerHp -= 1; // Blocking Handler
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             hsp =-5;
@@ -608,6 +608,33 @@ if (place_meeting(x,y,par_enemyGreed))
             global.moveLock = true;
             alarm[2] = 1 * room_speed;
             alarm[0] = 1 * room_speed;
+        }
+    }
+}
+
+// Enemy Damage (Sloth Near Insta-kill)
+if (place_meeting(x,y,par_enemySloth))
+{
+    if global.playerBlocking = 1
+    { 
+        if !recently_hit
+        {
+            global.playerHp -= 1; // Blocking Handler
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+            audio_play_sound(snd_shieldBlock, 0, false);
+        }
+    }
+    if global.playerBlocking = 0
+    {
+        if !recently_hit
+        {
+            global.playerHp -= 9;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            vsp=-5;
+            hsp =-5;
         }
     }
 }

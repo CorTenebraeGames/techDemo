@@ -115,6 +115,11 @@
           <sprite>sprites\spr_sloth_minion</sprite>
           <sprite>sprites\spr_sloth_minion_attack</sprite>
           <sprite>sprites\spr_sloth_minion_damage</sprite>
+          <sprites name="Boss">
+            <sprite>sprites\spr_sloth_boss_attack</sprite>
+            <sprite>sprites\spr_slothBossDMG</sprite>
+            <sprite>sprites\spr_slothBoss</sprite>
+          </sprites>
         </sprites>
         <sprites name="Greed">
           <sprite>sprites\spr_greed_minion</sprite>
@@ -331,8 +336,10 @@
         </objects>
       </objects>
       <objects name="Envy">
-        <object>objects\obj_minion_envy01</object>
-        <object>objects\obj_minion_envy02</object>
+        <objects name="Minions">
+          <object>objects\obj_minion_envy01</object>
+          <object>objects\obj_minion_envy02</object>
+        </objects>
       </objects>
       <objects name="Pride">
         <object>objects\obj_Pride</object>
@@ -350,7 +357,9 @@
       <object>objects\par_enemy</object>
       <object>objects\par_enemy2</object>
       <object>objects\par_enemy3</object>
+      <object>objects\par_enemySloth</object>
       <object>objects\par_enemyGreed</object>
+      <object>objects\par_enemy_hitbox</object>
     </objects>
     <objects name="Player Related">
       <object>objects\obj_playerPlaceHolder</object>
@@ -486,6 +495,7 @@
       <room>rooms\room_level04_start</room>
       <room>rooms\room_level04_main</room>
       <room>rooms\room_level04_sub01</room>
+      <room>rooms\room_level04_saveBoss</room>
       <room>rooms\room_level04_boss</room>
     </rooms>
     <rooms name="Pride">

@@ -237,9 +237,8 @@
     <instance objName="obj_tileset01" x="1952" y="160" name="inst_9E9DDCD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1952" y="96" name="inst_CEE80993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1952" y="32" name="inst_5EE5A04E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bossDefeatedDoor" x="1600" y="480" name="inst_FF135497" locked="0" code="target_x = 128;&#xA;target_y = 640;&#xA;target_r = room_level04_start;&#xA;boss_index = obj_gluttony;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bossDefeatedDoor" x="1600" y="480" name="inst_FF135497" locked="0" code="target_x = 128;&#xA;target_y = 640;&#xA;target_r = room_level05_main;&#xA;boss_index = obj_gluttony;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_sloth_bossFight" x="1216" y="480" name="inst_1B300C7F" locked="0" code="creationText = &quot;Work on this Boss Fight is not 100% completed.##You may proceed to the next level.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sloth" x="1440" y="448" name="inst_F55C8537" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

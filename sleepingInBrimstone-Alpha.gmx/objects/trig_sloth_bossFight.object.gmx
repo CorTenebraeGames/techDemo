@@ -52,10 +52,12 @@ global.slothFightStart = false;
             <string>if ((playerEncountered = true) &amp;&amp; (instance_exists(obj_textbox)))
 {
     global.slothFightStart = true;
+    /*
     with(obj_sloth)
     {
         hp = 0;
     }
+    */
 }
 
 if !instance_exists (obj_sloth)
