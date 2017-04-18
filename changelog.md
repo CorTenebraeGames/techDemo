@@ -1,5 +1,26 @@
 # Changelog
 ____________________
+4/18/2017 (05:14) - v28b
+- ADDED Greed Placeholder
+- ADDED Envy Placeholder
+- ADDED Ra's Build
+	- Wrath rooms
+	- Wrath minions
+
+- FIXED doors
+	- Specifically from Envy -> Pride; Pride -> Wrath; Wrath - > Lust
+
+- FIXED Sloth placeholder getting stuck in ground
+
+- CHANGED Music during intro
+
+- CHANGED Music during bossfights to placeholders
+
+- CHANGED Background for Envy
+
+- Misc
+	- (Ott) Added Grunt sound files
+
 4/18/2017 (02:49)
 - UPDATED Pride
 - UPDATED Pride rooms

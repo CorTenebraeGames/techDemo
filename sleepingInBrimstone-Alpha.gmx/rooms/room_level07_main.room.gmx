@@ -518,11 +518,11 @@
     <instance objName="obj_tilesetIndoor" x="2720" y="288" name="inst_AFC27302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tilesetIndoor" x="2720" y="224" name="inst_B95CF884" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tilesetIndoor" x="2720" y="160" name="inst_61F5411F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lockedInterior" x="128" y="704" name="inst_CBE2D49A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lockedInterior" x="128" y="704" name="inst_CBE2D49A" locked="0" code="target_x = 128;&#xA;target_y = 672;&#xA;target_r = room_level07_saveBoss;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_int_divider" x="1440" y="704" name="inst_8D151861" locked="0" code="" scaleX="1" scaleY="1" colour="1895825407" rotation="0"/>
     <instance objName="obj_lockedFront" x="1376" y="704" name="inst_2554D39C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key" x="1920" y="672" name="inst_33C0A38A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lustMain" x="64" y="608" name="inst_8FBDB2FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lustMain" x="64" y="608" name="inst_8FBDB2FD" locked="0" code="target_x = 896;&#xA;target_y = 672;&#xA;target_r = room_level07_start;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

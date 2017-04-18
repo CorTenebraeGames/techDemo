@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4096</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>6</vsnap>
+  <hsnap>6</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -132,7 +132,7 @@
     <instance objName="obj_tileset01" x="192" y="608" name="inst_0D386F0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="224" y="608" name="inst_2A53A606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1888" y="640" name="inst_70B6F7DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="42" y="532" name="inst_81E85541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="42" y="532" name="inst_81E85541" locked="0" code="target_x = 2184;&#xA;target_y = 270;&#xA;target_r = room_level06_wrath_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="320" y="32" name="inst_BAB68AD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="352" y="96" name="inst_57B01F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="352" y="160" name="inst_3A868946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -238,7 +238,6 @@
     <instance objName="obj_tileset01" x="1664" y="224" name="inst_C2DD1158" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1696" y="224" name="inst_246E6726" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1760" y="224" name="inst_C28542E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ladder" x="1536" y="704" name="inst_CADE6DB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1696" y="640" name="inst_B217A54D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1696" y="512" name="inst_7D67EDFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="1696" y="576" name="inst_9A9F9053" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -290,7 +289,7 @@
     <instance objName="obj_tileset01" x="1760" y="256" name="inst_0DA55958" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1760" y="416" name="inst_C8E6D9E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1760" y="480" name="inst_89C8A1D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="2080" y="468" name="inst_C70D0593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="2080" y="468" name="inst_C70D0593" locked="0" code="target_x = 1860;&#xA;target_y = 132;&#xA;target_r = room_level06_wrath_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1120" y="384" name="inst_25D8B076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1344" y="544" name="inst_FC6A575B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1952" y="384" name="inst_74756A2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -328,6 +327,32 @@
     <instance objName="obj_tileset01" x="1504" y="512" name="inst_E5952F05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1184" y="160" name="inst_94AB26F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key" x="1184" y="96" name="inst_7EE62075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="372" y="624" name="inst_8E7B0006" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1224" y="624" name="inst_F7246AAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1734" y="174" name="inst_0E43AFEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1266" y="174" name="inst_A586AF65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1608" y="336" name="inst_A3FDAF8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1266" y="336" name="inst_A30D3B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1674" y="678" name="inst_42D60756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hitbox" x="1266" y="684" name="inst_8CA72FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="648" y="390" name="inst_428C8A39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="900" y="390" name="inst_DFEDEB44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1188" y="618" name="inst_6E7994F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="468" y="618" name="inst_8655C6E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="870" y="618" name="inst_7BA6C5E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1638" y="684" name="inst_2EACDBE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1494" y="684" name="inst_35FE864E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1374" y="684" name="inst_CD9BDF6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1584" y="330" name="inst_C3363E7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wrathminionIdleeasy" x="1374" y="330" name="inst_9B5F05A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="768" y="324" name="inst_0D989FC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="510" y="456" name="inst_8D59417E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1062" y="492" name="inst_323284AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1476" y="330" name="inst_C3D27EEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1716" y="168" name="inst_5A952884" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1644" y="168" name="inst_7C506C69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1560" y="168" name="inst_DDFFFF7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_WrathMinionHard" x="1488" y="168" name="inst_A1EAED34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

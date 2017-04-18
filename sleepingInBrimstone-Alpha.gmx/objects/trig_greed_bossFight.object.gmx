@@ -62,7 +62,7 @@ global.greedFightStart = false;
 
 if !instance_exists (obj_greed)
 {
-    audio_stop_sound(mus_Sloth);
+    audio_stop_sound(mus_greed);
     instance_create(x,y,eff_slothDefeated);
     with(trig_sloth_bossFight)
     {
@@ -127,9 +127,9 @@ if (playerEncountered = true)
           <argument>
             <kind>1</kind>
             <string>///Music And Alarm Control
-if !audio_is_playing(mus_Sloth)
+if !audio_is_playing(mus_greed)
 {
-    audio_play_sound(mus_Sloth,0, true);
+    audio_play_sound(mus_greed,0, true);
     alarm[0] = 10 * room_speed;
     alarm[2] = 0.5 * room_speed;
 }

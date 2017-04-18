@@ -53,6 +53,7 @@
   <instances>
     <instance objName="trig_text_intro" x="224" y="224" name="inst_1ED4EB55" locked="0" code="global.introTime = 8&#xA;&#xA;creationText = &quot;How did I even get here?#There's no rhyme or reason for this punishment...&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_intro01" x="512" y="384" name="inst_F415C9CF" locked="0" code="fadeIn = true;&#xA;fadeOut = false;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="eff_introMusic" x="192" y="320" name="inst_8DAB0F37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

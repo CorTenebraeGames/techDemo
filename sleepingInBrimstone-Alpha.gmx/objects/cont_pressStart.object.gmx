@@ -51,7 +51,14 @@ global.holyWaterMax = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if fading = 1
+            <string>if instance_exists(eff_introMusic)
+{
+    with(eff_introMusic)
+    {
+        instance_destroy();
+    }
+}
+if fading = 1
 {
     alpha -= (0.1/15);
 }
@@ -101,6 +108,35 @@ if (keyboard_check_pressed(vk_anykey)) || (gamepad_button_check_pressed(0,gp_fac
           <argument>
             <kind>3</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(eff_introMusic)
+{
+    instance_destroy();
+}
+
+if audio_is_playing(mus_sleeping)
+{
+    audio_stop_sound(mus_sleeping)
+}
+</string>
           </argument>
         </arguments>
       </action>
