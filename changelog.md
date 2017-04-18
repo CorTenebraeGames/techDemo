@@ -1,5 +1,10 @@
 # Changelog
 ____________________
+4/18/2017 (16:30) - v29e
+- FIXED Pride room to make it playable
+
+- ADDED Key to Envy room
+
 4/18/2017 (16:17) - v28c - v29d
 - ADDED Lust boss level placeholder
 
