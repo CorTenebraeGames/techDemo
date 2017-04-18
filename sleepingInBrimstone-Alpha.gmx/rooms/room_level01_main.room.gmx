@@ -414,7 +414,6 @@
     <instance objName="obj_minionPlaceHolder" x="3200" y="288" name="inst_367C2E7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minionPlaceholder_Org" x="3264" y="672" name="inst_A6BABE83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_levelTransitionDoor" x="96" y="96" name="inst_86890F47" locked="0" code="target_x = 3904;&#xA;target_y = 672;&#xA;target_r = room_Tutorial;&#xA;" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
-    <instance objName="obj_minion_pride" x="1056" y="320" name="inst_5FA1AA5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
