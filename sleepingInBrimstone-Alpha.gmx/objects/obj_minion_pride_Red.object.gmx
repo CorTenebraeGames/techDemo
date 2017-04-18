@@ -59,7 +59,7 @@ hit = 0;
             <kind>1</kind>
             <string>///Damaging the player
 //Double checking that player is still in range
-if ((sight &gt; x - obj_playerPlaceHolder.x) &amp;&amp; (sign(obj_playerPlaceHolder.x - x) = sign(dir)) &amp;&amp; abs(y-obj_playerPlaceHolder.y) &lt; 32)
+if ((sight &gt; x - obj_playerPlaceHolder.x) &amp;&amp; (sign(obj_playerPlaceHolder.x - x) = sign(dir)) &amp;&amp; abs(y-obj_playerPlaceHolder.y) &lt; (sprite_height/2))
 {
     if (obj_playerPlaceHolder.sprite_index != spr_block)
     {
@@ -183,7 +183,7 @@ vsp += grav;
 
 //Doing damage to the player if they are in range &amp;&amp; minion is looking at them &amp;&amp; they're on level plane
 //Actual Damage code is in the alarm
-if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPlaceHolder.x - x) = sign(dir)) &amp;&amp; abs(y-obj_playerPlaceHolder.y) &lt; 32)
+if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPlaceHolder.x - x) = sign(dir)) &amp;&amp; abs(y-obj_playerPlaceHolder.y) &lt; (sprite_height/2))
 {   
     if (alarm[2] = -1)
     {
