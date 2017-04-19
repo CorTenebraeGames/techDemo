@@ -85,6 +85,10 @@ switch(global.SFXVolumeSetting)
         audio_sound_gain(snd_swordswing2, SFXVolume, 0);
         audio_sound_gain(snd_swordswing3, SFXVolume, 0);
         audio_sound_gain(snd_swordswing4, SFXVolume, 0);
+        // Damaged
+        audio_sound_gain(snd_grunt_01, SFXVolume, 0);
+        audio_sound_gain(snd_grunt_02, SFXVolume, 0);
+        audio_sound_gain(snd_grunt_03, SFXVolume, 0);
         //---- ------ ----
         // Enemy Damage
         audio_sound_gain(snd_slothMinionDmg, SFXVolume, 0);

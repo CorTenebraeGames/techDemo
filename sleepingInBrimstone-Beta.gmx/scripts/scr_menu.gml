@@ -3,7 +3,7 @@ switch mpos
 {
 case 0:
         {
-        script_execute(scr_newgame);
+        script_execute(scr_checkNewGame);
         break;
         }
 case 1:

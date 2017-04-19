@@ -1,5 +1,19 @@
 # Changelog
 ____________________
+4/19/2017 (10:55) - Beta v1
+- ADDED Confirmation to create new save file if an existing save exists
+
+- FIXED Transition into greed's level with the moveLock and textbox glitch
+
+- FIXED Game crash on player entering pride's boss fight.
+
+- CHANGED Audio array for SFX Volume control.
+	- Grunting sounds for player are now controlled by SFX volume settings
+
+- Misc.
+	- Beginning of the BETA development phase.
+	- yay
+
 4/18/2017 (17:05) - v30
 - FIXED Door transition for pride levels
 

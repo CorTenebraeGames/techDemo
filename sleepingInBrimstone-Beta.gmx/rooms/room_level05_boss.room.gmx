@@ -228,7 +228,7 @@
     <instance objName="obj_ladder" x="1248" y="672" name="inst_844B3FCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="352" y="672" name="inst_38C86E52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Pride" x="736" y="1088" name="inst_574A5173" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="trig_pride_bossFight" x="736" y="1184" name="inst_F82FAE2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="trig_pride_bossFight" x="672" y="1184" name="inst_F82FAE2F" locked="0" code="creationText = &quot;This boss fight is not 100% completed.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
