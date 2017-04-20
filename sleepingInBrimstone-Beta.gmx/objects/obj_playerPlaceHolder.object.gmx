@@ -45,6 +45,8 @@ recently_hitGold=false;
 move_lock = false;
 wallJumping = false;
 grounded = false;
+attacking = 0;
+attacked_recent = 0;
 ini_open("SaveNew.sav");
 obj_playerPlaceHolder.x = ini_read_real("Save1","xLocation",96);
 obj_playerPlaceHolder.y = ini_read_real("Save1","yLocation",640);
@@ -84,6 +86,32 @@ stepcount = 0;
 steppitch = 0.8;
 
 gamepad_set_axis_deadzone(0,0.4);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>attacked_recent = 0;
+attacking = 0;
+move_lock = false
+global.moveLock = false;
 </string>
           </argument>
         </arguments>
@@ -187,7 +215,8 @@ key_right = keyboard_check(vk_right) || (gamepad_axis_value(0,gp_axislh) &gt; 0)
 key_left = -(keyboard_check(vk_left) || (gamepad_axis_value(0,gp_axislh) &lt; 0 ));
 key_up = keyboard_check_direct(vk_up) || (gamepad_axis_value(0,gp_axislv) &lt; 0);
 key_jump = keyboard_check_pressed(vk_space) || (gamepad_button_check_pressed(0,gp_face1));
-key_attack = keyboard_check_direct(ord('A')) || (gamepad_button_check(0,gp_shoulderrb));
+key_attack = keyboard_check_pressed(ord('A')) || (gamepad_button_check_pressed(0,gp_shoulderrb));
+key_attack_release = keyboard_check_released(ord('A')) || (gamepad_button_check_released(0,gp_shoulderrb));
 key_heal = keyboard_check_pressed(ord('F')) || (gamepad_button_check_pressed(0,gp_shoulderl));
 key_block = keyboard_check_direct(ord('S')) || (gamepad_button_check(0,gp_shoulderr));
 key_grenade = keyboard_check_pressed(ord('G')) || (gamepad_button_check_pressed(0,gp_shoulderlb));
@@ -340,7 +369,7 @@ if(place_meeting(x,y+1,par_tilesets))
         audio_play_sound((choose(snd_footsteps1,snd_footsteps2)), 1, false);
         }
     }
-    if ((!key_attack) &amp;&amp; (move=0) &amp;&amp; (grounded = true) &amp;&amp; (!recently_hitGold))
+    if ((!key_attack) &amp;&amp; (move=0) &amp;&amp; (grounded = true) &amp;&amp; (!recently_hitGold) &amp;&amp; (attacking = 0))
     {
         sprite_index = spr_idle;
         audio_stop_sound(snd_footsteps1);
@@ -391,7 +420,14 @@ if (ladder)
 {
     vsp=0;
     grav=0;
-    sprite_index = spr_climbing;
+    if (attacking != 1)
+    {
+        sprite_index = spr_climbing;
+    }
+    if attacking = 1
+    {
+        sprite_index = spr_attack;
+    }
     //hsp=0;
     if ((key_up = false) &amp;&amp; (key_down = false))
     {
@@ -423,20 +459,28 @@ if (ladder = false)
 }
 
 //Attacking
-if ((key_attack) &amp;&amp; (!recently_hitGold))
+if ((key_attack) &amp;&amp; (!recently_hitGold) &amp;&amp; (grounded = true) &amp;&amp; (attacked_recent = 0))
 {
+    attacking = 1;
+    attacked_recent = 1;
+    alarm[3] = 20;
+}
+if (attacking = 1)
+{
+    move_lock = true;
+    global.moveLock = true;
     move=0;
-    image_speed = 0.17;
+    image_speed = 0.15;
     hsp = 0;
     // Animate
     sprite_index = spr_attack;
     //SFX
-    if (image_index &gt; 2) &amp;&amp; (image_index &lt;2.2)
+    if (image_index &gt; 0) &amp;&amp; (image_index &lt;0.2)
     {
         audio_play_sound((choose(snd_swordswing,snd_swordswing2,snd_swordswing3,snd_swordswing4)), 1, false);
     }
     //Hitbox
-    if (image_index &gt;=2) &amp;&amp; (image_index &lt;=3)
+    if (image_index &gt;=0) &amp;&amp; (image_index &lt;=1)
     {
         with(instance_create(x,y,obj_hitbox))
         {
