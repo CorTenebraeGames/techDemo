@@ -6,6 +6,10 @@ ____________________
 - CHANGED HP and "Sight" values for Pride minions
 	- Made them harder to fight than previously
 
+- ADDED An "Outside room" function for all enemy parents
+	- Will destroy instances if they leave the room (knocked off into pits)
+	- Intended to increase performance
+
 4/21/2017 (00:08) - Beta v3a
 - FIXED Repo formatting
 
