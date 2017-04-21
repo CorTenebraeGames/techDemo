@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Persistent checks for holyWater.
+            <string>/// Persistent checks for holyWater.
 global.persistentHolyWater01 = 1;
 global.persistentHolyWater02 = 1;
 global.persistentHolyWater03 = 1;

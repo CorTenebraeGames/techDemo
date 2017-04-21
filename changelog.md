@@ -1,5 +1,19 @@
 # Changelog
 ____________________
+4/21/2017 (00:08) - Beta v3a
+- FIXED Repo formatting
+
+4/20/2017 (1:00 - 23:00) - Beta v2 and Beta v3
+- CHANGED combat
+	- No longer press and hold to kill, instead it is tap to attack
+		- Trigger temporarily set to visible for bug testing.
+		
+- FIXED Pride door
+	- (It was the wrong type of door. Switched it to the right one)
+	
+- FIXED Pause crash bug prior to start screen (Ra's bugfix)
+	- Moved object_pause (aka pause init file) to room_pressStart
+	
 4/19/2017 (10:55) - Beta v1
 - ADDED Confirmation to create new save file if an existing save exists
 
