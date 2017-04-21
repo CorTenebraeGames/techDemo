@@ -87,10 +87,10 @@ Also the actual AoE efffect*/
 if place_meeting(x,y,obj_tileset01) || place_meeting(x,y,par_enemy) || place_meeting(x,y,par_enemy2) || place_meeting(x,y,par_enemy3)
 {
     instance_destroy();
-    instance_create(x-5,y+10,obj_shrapnel);
-    instance_create(x+5,y+10,obj_shrapnel);
-    instance_create(x-20,y,obj_shrapnel);
-    instance_create(x+20,y,obj_shrapnel);
+    instance_create(x-5,y-10,obj_shrapnel);
+    instance_create(x+5,y-10,obj_shrapnel);
+    instance_create(x-20,y-5,obj_shrapnel);
+    instance_create(x+20,y-5,obj_shrapnel);
 }
 
 //Gravity (probably did this really sub-optimal)

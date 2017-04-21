@@ -31,9 +31,9 @@ dir = -1;
 movespeed = 2;
 vsp = 0;
 grav = 0.1;
-sight = 400;
+sight = 500;
 alarm[1] = irandom_range(20,200);
-hp = 60;
+hp = 70;
 hit = 0;
 </string>
           </argument>

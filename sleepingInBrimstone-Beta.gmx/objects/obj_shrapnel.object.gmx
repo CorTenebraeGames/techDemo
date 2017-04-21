@@ -51,7 +51,7 @@
             <string>//Gravity
 vspeed += 0.5;
 //Collision Checks
-if place_meeting(x,y,obj_tileset01 || par_enemy || par_enemy2 || par_enemy3)
+if place_meeting(x,y,par_tilesets) || place_meeting(x,y,par_enemy) || place_meeting(x,y,par_enemy2) || place_meeting(x,y,par_enemy3)
 {
       instance_destroy();
 }

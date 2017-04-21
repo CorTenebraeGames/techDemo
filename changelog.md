@@ -1,5 +1,11 @@
 # Changelog
 ____________________
+4/21/2017 (12:12) - v4
+- FIXED Glitch where grenade shrapnel would fall through walls
+
+- CHANGED HP and "Sight" values for Pride minions
+	- Made them harder to fight than previously
+
 4/21/2017 (00:08) - Beta v3a
 - FIXED Repo formatting
 
