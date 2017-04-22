@@ -164,6 +164,9 @@
     <instance objName="obj_minion_pride_Pur" x="512" y="480" name="inst_1B40DF6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_pride_Red" x="160" y="352" name="inst_ACD0360A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_pride_Red" x="864" y="1152" name="inst_81B76D91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_deathFall" x="160" y="1344" name="inst_0DBF6ED2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_deathFall" x="544" y="1344" name="inst_FA273DE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_deathFall" x="1088" y="1344" name="inst_B13C9B88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

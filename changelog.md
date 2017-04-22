@@ -1,5 +1,20 @@
 # Changelog
 ____________________
+4/22/2017 (19:42) - v5
+- ADDED Ceilings and walls to rooms that did not have them
+	- Prevents player from exiting playable area
+	- Affected levels
+		- Sloth
+		- Envy (left ceiling above room in sub-level)
+		- Wrath (Main only, haven't checked others)
+		- All boss rooms where the player falls in at the start
+- ADDED Deathfall triggers to all Pride levels and Greed sub01
+
+- CHANGED Door in Wrath start level to correct door
+
+- CHANGED "par_enemy_hitbox" objects in Wrath start level to "legde_hitbox" objects
+	- Unsure if that was intentional or not, but can easily be changed back if so
+
 4/21/2017 (12:12) - v4
 - FIXED Glitch where grenade shrapnel would fall through walls
 
