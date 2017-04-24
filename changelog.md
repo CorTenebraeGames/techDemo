@@ -1,5 +1,18 @@
 # Changelog
 ____________________
+4/23/2017 (22:01) - v6 (Prolaby shoulda been 5b... oh well)
+- CHANGED Room flow in Wrath levels
+	- Unique format (main>03>02>01>main)
+
+- CHANGED Wrath levels to feature ceilings and walls throughout
+
+- CHANGED Key position in Wrath levels
+
+- REMOVED Unnecessary shrines in Wrath rooms
+
+- CHANGED Door in Wrath boss room to correct door type
+	- Current boss index is obj_Wrath, will be adjusted if necessary later on
+
 4/22/2017 (19:42) - v5
 - ADDED Ceilings and walls to rooms that did not have them
 	- Prevents player from exiting playable area

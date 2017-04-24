@@ -369,8 +369,8 @@
     <instance objName="obj_tileset01" x="2080" y="256" name="inst_9824AC0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1984" y="256" name="inst_1E689F0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2016" y="320" name="inst_75148178" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bossDoor" x="2085" y="405" name="inst_89677B5C" locked="0" code="target_x = 128;&#xA;target_y = 608;&#xA;target_r = room_level06_savehall_saveBoss;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="1860" y="120" name="inst_744DFD1B" locked="0" code="target_x = 2052;&#xA;target_y = 480;&#xA;target_r = room_level06_wrath_sub03;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bossDoor" x="2085" y="405" name="inst_89677B5C" locked="0" code="target_x = 128;&#xA;target_y = 608;&#xA;target_r = room_level06_savehall_saveBoss;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="1860" y="120" name="inst_744DFD1B" locked="0" code="target_x = 2052;&#xA;target_y = 480;&#xA;target_r = room_level06_wrath_sub03;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1860" y="195" name="inst_725CA79C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2944" y="544" name="inst_DF78246B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2940" y="345" name="inst_EC25FF34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -459,14 +459,11 @@
     <instance objName="obj_tileset01" x="2656" y="128" name="inst_F470C1E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2720" y="128" name="inst_313CB8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2784" y="128" name="inst_6446BDDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="2848" y="128" name="inst_70892D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="3300" y="270" name="inst_05CDB5C3" locked="0" code="target_x = 84;&#xA;target_y = 528;&#xA;target_r = room_level06_wrath_sub02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="3872" y="768" name="inst_4147D10A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="3904" y="768" name="inst_AAF23E55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="3904" y="704" name="inst_9C4AD6CC" locked="0" code="target_x = 4002;&#xA;target_y = 126;&#xA;target_r = room_level06_wrath_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="3968" y="128" name="inst_00EE3F53" locked="0" code="target_x = 3852;&#xA;target_y = 696;&#xA;target_r = room_level06_wrath_main;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="3872" y="736" name="inst_4147D10A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="3904" y="736" name="inst_AAF23E55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2190" y="345" name="inst_88029CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_doorPlaceHolder" x="2145" y="270" name="inst_ABA7D123" locked="0" code="target_x = 90;&#xA;target_y = 540;&#xA;target_r = room_level06_wrath_sub03;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="2145" y="270" name="inst_ABA7D123" locked="0" code="target_x = 90;&#xA;target_y = 540;&#xA;target_r = room_level06_wrath_sub03;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1800" y="195" name="inst_7A8C37CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="2190" y="684" name="inst_DDB6DECD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="2880" y="684" name="inst_FDDCFBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -534,6 +531,8 @@
     <instance objName="obj_tileset01" x="32" y="224" name="inst_414A2577" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="32" y="160" name="inst_113F57C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_enemy_hitbox" x="160" y="608" name="inst_B343562E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="3904" y="672" name="inst_470DE73C" locked="0" code="target_x = 4002;&#xA;target_y = 126;&#xA;target_r = room_level06_wrath_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorPlaceHolder" x="3936" y="128" name="inst_2C2FE480" locked="0" code="target_x = 3852;&#xA;target_y = 672;&#xA;target_r = room_level06_wrath_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
