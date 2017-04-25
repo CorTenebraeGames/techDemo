@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4096</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -453,7 +453,7 @@
     <instance objName="obj_tileset01" x="4064" y="352" name="inst_E0B96ACA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="4064" y="288" name="inst_A27F2D2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="1696" y="608" name="inst_9514CEFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shrinePlaceholder" x="288" y="608" name="inst_BAC5516C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shrinePlaceholder" x="288" y="616" name="inst_BAC5516C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

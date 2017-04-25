@@ -1,5 +1,18 @@
 # Changelog
-____________________
+4/25/2017 (14:39) – v6 UPDATE
+
+-ADDED Wraths official minions
+
+-ADDED Wraths official Boss
+
+-ADDED Wraths boss object
+	-obj_Wrath
+		-Base code similar to that of sloths at the moment but will be further worked on and dynamically improved over time 
+
+	-CHANGED room flow further for fitment of wraths official Minions
+		- Moved some tiles around for fitment
+		- Moved latter object to a better suited position in Wrath    sub_room02 (the left most play area)
+	
 4/23/2017 (22:01) - v6 (Prolaby shoulda been 5b... oh well)
 - CHANGED Room flow in Wrath levels
 	- Unique format (main>03>02>01>main)
