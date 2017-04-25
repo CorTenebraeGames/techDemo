@@ -145,6 +145,7 @@
           <sprite>sprites\MinionHard</sprite>
           <sprite>sprites\MinionIdle_easy</sprite>
           <sprite>sprites\MinionMedium</sprite>
+          <sprite>sprites\Wrath_boss</sprite>
         </sprites>
       </sprites>
       <sprites name="Bosses">
@@ -372,9 +373,12 @@
         </objects>
       </objects>
       <objects name="Wrath">
-        <object>objects\obj_WrathMinionHard</object>
-        <object>objects\obj_wrathminionIdleeasy</object>
-        <object>objects\obj_WrathMinionMedium</object>
+        <object>objects\obj_wrath</object>
+        <objects name="Wrath_minions">
+          <object>objects\obj_WrathMinionMedium</object>
+          <object>objects\obj_wrathminionIdleeasy</object>
+          <object>objects\obj_WrathMinionHard</object>
+        </objects>
       </objects>
       <objects name="Lust">
         <object>objects\obj_lust_minion</object>
