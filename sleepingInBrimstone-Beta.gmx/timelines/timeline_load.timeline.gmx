@@ -20,6 +20,8 @@
           <argument>
             <kind>1</kind>
             <string>instance_create(x,y,object_fadeout);
+
+scr_loaddeath()
 </string>
           </argument>
         </arguments>

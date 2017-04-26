@@ -60,6 +60,8 @@
       <sounds name="Loading">
         <sound>sound\Loading_music</sound>
       </sounds>
+      <sound>sound\wrath_level</sound>
+      <sound>sound\wrath_boss_fight</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

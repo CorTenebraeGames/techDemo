@@ -1,4 +1,25 @@
 # Changelog
+
+4/25/2017 (22:11) – v6 UPDATE #3/V7
+
+-ADDED Level music to play throughout each of wraths levels except the save room and boss room
+	- Wrath_level is the name under sounds/music
+
+-ADDED Wrath boss fight song that Dylan made for the actual Boss fight
+	- Wrath_boss_fight is the name under sounds/music 
+
+-CHANGED functionality for doors and shrines to where they can actually work now
+
+-CHANGED what happens after the player hits enter after they die and the death screen comes up. The “Helpful tips” screens will come up now and will work without interference of the load death script as it did before in previous versions. (YYYEEEEESSS I FINNLLY DID ITT!!!)
+
+- The code for the enter button in the cont_death is changed so when you hit it, instead of it loading the load death script, it shows the helpful tip then goes to load script as said before 
+
+
+
+
+
+
+
 4/25/2017 (14:39) – v6 UPDATE
 
 -ADDED Wraths official minions
