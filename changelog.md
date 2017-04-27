@@ -1,4 +1,11 @@
 # Changelog
+4/27/2017 (17:25) v8b
+- ADDED Decoration Sprite and Object groups
+
+- ADDED Hand decoration for hell walls.
+
+- CHANGED Red hell background
+	- Scaled up
 
 4/27/2017 (15:57) v8a
 - ADDED Level intro text for all existing levels (except Lust/level 07)

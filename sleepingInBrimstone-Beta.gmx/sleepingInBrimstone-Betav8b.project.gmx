@@ -194,6 +194,9 @@
       <sprite>sprites\lust_mainBG</sprite>
     </sprites>
     <sprite>sprites\sprite77</sprite>
+    <sprites name="Decoration">
+      <sprite>sprites\spr_handsBG</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background_castle</background>
@@ -461,6 +464,9 @@
       <object>objects\obj_intro13</object>
       <object>objects\obj_intro14</object>
       <object>objects\obj_intro15</object>
+    </objects>
+    <objects name="Background/Deco">
+      <object>objects\deco_hand_wall</object>
     </objects>
   </objects>
   <timelines name="timelines">
