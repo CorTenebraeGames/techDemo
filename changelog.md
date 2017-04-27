@@ -1,5 +1,16 @@
 # Changelog
 
+4/27/2017 (15:57) v8a
+- ADDED Level intro text for all existing levels (except Lust/level 07)
+	- To clarify this is the text that appears when you enter the main room and it says "Level 01" or "Level ##"
+
+- ADDED Music for Wrath level
+	
+- CHANGED Music volume config to be handled by an easier switch/case method. (Now nearly identical to how SFX is handled).
+	- Wrath music files have been added to the config to be controlled by options
+	
+- REMOVED Excessive files
+
 4/25/2017 (22:11) – v6 UPDATE #3/V7
 
 -ADDED Level music to play throughout each of wraths levels except the save room and boss room
