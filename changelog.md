@@ -1,4 +1,9 @@
 # Changelog
+4/27/2017 (18:48) v8d
+- FIXED Gluttony sprite issues
+
+- ADDED Controller support for death menu
+
 4/27/2017 (17:25) v8b
 - ADDED Decoration Sprite and Object groups
 
