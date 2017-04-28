@@ -89,6 +89,7 @@
       <sprite>sprites\spr_ladder</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_shrineUsed</sprite>
+      <sprite>sprites\spr_rope</sprite>
       <sprite>sprites\spr_shrinePH</sprite>
       <sprites name="Items">
         <sprite>sprites\spr_key</sprite>
@@ -311,6 +312,7 @@
       <object>objects\obj_bossDoor</object>
       <object>objects\obj_bossDefeatedDoor</object>
       <object>objects\obj_ladder</object>
+      <object>objects\obj_climbingRope</object>
       <objects name="Gluttony Food">
         <object>objects\obj_bowlAesthetic</object>
         <object>objects\obj_bottle</object>

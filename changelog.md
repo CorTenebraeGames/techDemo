@@ -1,10 +1,10 @@
 # Changelog
-4/28/2017 (13:23) v8e
-- FIXED Pride Minion sprites looking so... ick
+4/28/2017 (13:37) - v8f
+- ADDED Rope sprite
 
-- ADDED Aerial attacking
-
-- ADDED Parents for Wrath minions
+- ADDED Rope object
+	- Located in Objects>Environment
+	- Functionally the same as ladder.
 
 4/27/2017 (18:48) v8d
 - FIXED Gluttony sprite issues
