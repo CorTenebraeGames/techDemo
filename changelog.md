@@ -1,4 +1,10 @@
 # Changelog
+4/28/2017 (14:08) - v9
+- ADDED Greed Minion Sprite
+	- All greed minions have been replaced with proper sprite.
+
+- CHANGED Greed Minion Movespeed
+
 4/28/2017 (13:37) - v8f
 - ADDED Rope sprite
 

@@ -405,9 +405,9 @@
     <instance objName="obj_minion_greed" x="1216" y="288" name="inst_F7BBF9A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_greed" x="2368" y="288" name="inst_9CAF6F70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_greed" x="2624" y="32" name="inst_90DAAFEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_minion_greed" x="832" y="288" name="inst_71F8D70E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minion_greed" x="928" y="288" name="inst_71F8D70E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="736" y="288" name="inst_177126F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1504" y="608" name="inst_62CB1531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1536" y="608" name="inst_62CB1531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="1824" y="288" name="inst_E3E61F1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="2400" y="32" name="inst_AD34C2E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="2848" y="32" name="inst_7BC0ED1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
