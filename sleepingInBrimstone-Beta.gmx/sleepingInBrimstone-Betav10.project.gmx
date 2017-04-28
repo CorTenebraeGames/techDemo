@@ -70,6 +70,7 @@
       <sprite>sprites\spr_ladderParent</sprite>
       <sprite>sprites\spr_hitbox</sprite>
       <sprite>sprites\spr_ledge_hitbox</sprite>
+      <sprite>sprites\spr_text_trigger</sprite>
       <sprite>sprites\spr_gluttonyMusicTrig</sprite>
       <sprite>sprites\spr_deathTrigger</sprite>
     </sprites>

@@ -2,12 +2,10 @@
 ___________________
 
 Visible Hitbox
-    
-Gluttony Hitbox
 
 GOD MODE
 
-Ledge hitbox (if possible)
+Ledge hitbox (refine?)
 
 Finish Tutorial textboxes (Ladders, Pausing)
 

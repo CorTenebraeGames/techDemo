@@ -404,10 +404,8 @@
     <instance objName="obj_level01_music" x="192" y="32" name="inst_8BEDB786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_HUD" x="256" y="32" name="inst_48FC72FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bossDoor" x="2176" y="416" name="inst_9C8C00F1" locked="0" code="target_x = 160;&#xA;target_y = 672;&#xA;target_r = room_level01_saveBoss;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="2912" y="288" name="inst_CA9BC4AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="3104" y="288" name="inst_1E4AF6DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="2720" y="288" name="inst_CEEF4D0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="3296" y="288" name="inst_52FA0278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="3136" y="288" name="inst_1E4AF6DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="3264" y="288" name="inst_52FA0278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minionPlaceholder_Org" x="960" y="352" name="inst_D67A4168" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minionPlaceholder_Org" x="2688" y="416" name="inst_13ECD4E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minionPlaceholder_Org" x="3104" y="416" name="inst_50ABC3C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

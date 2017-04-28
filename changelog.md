@@ -1,4 +1,11 @@
 # Changelog
+4/28/2017 (2:22) - v10
+- CHANGED Ledge hitbox sprite
+	- Made 1 px wide O.o
+- CHANGED hitbox detection on Gluttony to precise while walking
+
+- ADDED Text trigger sprite
+	- Changed text triggers to this to preserve funcionality
 4/28/2017 (14:08) - v9
 - ADDED Greed Minion Sprite
 	- All greed minions have been replaced with proper sprite.
