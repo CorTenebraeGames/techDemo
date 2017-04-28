@@ -1,5 +1,17 @@
 # Changelog
-4/28/2017 (2:22) - v10
+4/28/2017 (15:21) - v11
+- ADDED Raining Gold Event (Greed Fight)
+	- This will likely be changed to throwing when we get proper throwing animations
+	
+- ADDED Gold Bar sprite and object
+
+- CHANGED Trigger for greed fight.
+
+- NOTES:
+	- Timing of gold raining will probably be more rapid
+	- Needs a lot of testing.
+
+4/28/2017 (14:22) - v10
 - CHANGED Ledge hitbox sprite
 	- Made 1 px wide O.o
 - CHANGED hitbox detection on Gluttony to precise while walking

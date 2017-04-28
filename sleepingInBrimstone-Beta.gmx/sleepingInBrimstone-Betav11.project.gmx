@@ -134,6 +134,7 @@
         <sprites name="Greed">
           <sprite>sprites\spr_greed_minion</sprite>
           <sprite>sprites\spr_greed_minion_damage</sprite>
+          <sprite>sprites\spr_gold_bar</sprite>
         </sprites>
         <sprites name="Envy">
           <sprite>sprites\spr_sloth_minionDark</sprite>
@@ -278,6 +279,7 @@
         </objects>
       </objects>
       <object>objects\cont_bossInit</object>
+      <object>objects\cont_rainingGold</object>
     </objects>
     <objects name="Effects">
       <objects name="Textboxes">
@@ -365,6 +367,7 @@
       </objects>
       <objects name="Greed">
         <object>objects\obj_greed</object>
+        <object>objects\obj_gold_bar</object>
         <objects name="Minions">
           <object>objects\obj_minion_greed</object>
         </objects>
@@ -441,6 +444,7 @@
       <objects name="Boss Fights">
         <object>objects\trig_sloth_bossFight</object>
         <object>objects\trig_greed_bossFight</object>
+        <object>objects\trig_cleanupGold</object>
         <object>objects\trig_envy_bossFight</object>
         <object>objects\trig_lust_bossFight</object>
         <object>objects\trig_pride_bossFight</object>
