@@ -5,8 +5,6 @@ Visible Hitbox
     
 Gluttony Hitbox
 
-Aerials
-
 GOD MODE
 
 Ledge hitbox (if possible)

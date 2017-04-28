@@ -35,6 +35,8 @@ sight = 425;
 alarm[1] = irandom_range(60, 270);
 hp = 40;
 hit = 0;
+
+image_speed = 0.3;
 </string>
           </argument>
         </arguments>

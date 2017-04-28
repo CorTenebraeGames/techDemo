@@ -460,7 +460,7 @@ if (ladder = false)
 }
 
 //Attacking
-if ((key_attack) &amp;&amp; (!recently_hitGold) &amp;&amp; (grounded = true) &amp;&amp; (attacked_recent = 0) &amp;&amp; (key_block = false))
+if ((key_attack) &amp;&amp; (!recently_hitGold) &amp;&amp; (attacked_recent = 0) &amp;&amp; (key_block = false))
 {
     attacking = 1;
     attacked_recent = 1;
