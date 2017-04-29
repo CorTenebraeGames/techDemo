@@ -1,4 +1,11 @@
 # Changelog
+4/29/2017 (17:57) - v12
+- ADDED Screen shake
+	- ONLY WORKS IN: room_level01_main
+
+- CHANGED Timing of raining gold
+	- Rate has increased from gold every 3 seconds to gold every 1.5 seconds
+
 4/28/2017 (15:21) - v11
 - ADDED Raining Gold Event (Greed Fight)
 	- This will likely be changed to throwing when we get proper throwing animations

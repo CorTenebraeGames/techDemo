@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 3 * 60;
-
+            <string>alarm[0] = 1.5 * 60;
 </string>
           </argument>
         </arguments>
@@ -49,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 3 * 60;
+            <string>alarm[0] = 1.5 * 60;
 instance_create(obj_playerPlaceHolder.x, 64, obj_gold_bar);
 </string>
           </argument>
@@ -73,7 +72,7 @@ instance_create(obj_playerPlaceHolder.x, 64, obj_gold_bar);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 3 * 60;
+            <string>alarm[1] = 1.5 * 60;
 instance_create(obj_playerPlaceHolder.x, 64, obj_gold_bar);
 </string>
           </argument>

@@ -280,6 +280,7 @@
       </objects>
       <object>objects\cont_bossInit</object>
       <object>objects\cont_rainingGold</object>
+      <object>objects\obj_shake</object>
     </objects>
     <objects name="Effects">
       <objects name="Textboxes">

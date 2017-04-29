@@ -185,6 +185,7 @@ move_lock = false;
             <kind>1</kind>
             <string>recently_hit = false;
 recently_hitGold = false;
+
 </string>
           </argument>
         </arguments>
@@ -578,6 +579,7 @@ if (place_meeting(x,y,par_enemy))
                 audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
             }
             global.playerHp -= 2;
+            instance_create(x,y,obj_shake); // Screen Shake
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -609,6 +611,7 @@ if (place_meeting(x,y,par_enemy2))
             }
             global.playerHp -= 4;
             recently_hit = true;
+            instance_create(x,y,obj_shake); // Screen Shake
             alarm[0] = 1 * room_speed;
             vsp=-5;
             hsp =-5;
@@ -638,6 +641,7 @@ if (place_meeting(x,y,par_enemy3))
                 audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
             }
             global.playerHp -= 6;
+            instance_create(x,y,obj_shake); // Screen Shake
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
@@ -668,6 +672,7 @@ if (place_meeting(x,y,par_enemyGreed))
                 audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
             }
             global.playerHp -= 4;
+            instance_create(x,y,obj_shake); // Screen Shake
             recently_hit = true;
             recently_hitGold = true;
             sprite_index = spr_gold;
@@ -701,6 +706,7 @@ if (place_meeting(x,y,par_enemySloth))
                 audio_play_sound((choose(snd_grunt_01,snd_grunt_02,snd_grunt_03)), 1, false);
             }
             global.playerHp -= 9;
+            instance_create(x,y,obj_shake); // Screen Shake
             recently_hit = true;
             alarm[0] = 1 * room_speed;
             vsp=-5;
