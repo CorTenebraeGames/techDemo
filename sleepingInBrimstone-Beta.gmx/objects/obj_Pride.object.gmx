@@ -31,13 +31,37 @@ vsp = 0
 grav = 5;
 hp = 1000;
 dir = -1;
-movespeed = 4;
+movespeed = 1;
 hit = 0;
 alarm [1] = 900;
 alarm [3] = irandom_range(700,1200);
 sight = 800;
 
 sprite_index = spr_pride_upper;
+image_speed = room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = room_speed;
 </string>
           </argument>
         </arguments>
@@ -122,7 +146,12 @@ if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPl
 {
     movespeed = 0;
     sprite_index = spr_pride_lower;
-    alarm [1] = irandom_range(240,300);
+    alarm[1] = irandom_range(240,300);
+    if (image_index = 23)
+    {
+        image_speed = 0;
+        alarm[4] = alarm[1] - 18;
+    }
 }
 else 
 {

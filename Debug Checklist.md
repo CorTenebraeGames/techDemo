@@ -7,5 +7,3 @@ GOD MODE
 
 Ledge hitbox (refine?)
 
-Finish Tutorial textboxes (Ladders, Pausing)
-

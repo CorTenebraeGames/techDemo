@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>view_visible[1]=1;
-alarm[0] = 1 * room_speed;
-amount = 10
+alarm[0] = 1 * room_speed/2;
+amount = 3.5
 view_xview[1]=view_xview[0]+(irandom(amount)-amount/2);
 view_yview[1]=view_yview[0]+(irandom(amount)-amount/2);
 </string>

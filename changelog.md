@@ -1,4 +1,13 @@
 # Changelog
+4/29/2017 (23:19) - v13
+- ADDED Screen shake functionality to the rest of the rooms
+
+- CHANGED Pride kneeling sprite
+
+- ADDED Pause and Ladder tutorial text
+
+- NOTE - 2319! WE HAVE A 2319!!!.... I'm an idiot and going insane
+
 4/29/2017 (17:57) - v12
 - ADDED Screen shake
 	- ONLY WORKS IN: room_level01_main
