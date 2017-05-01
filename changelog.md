@@ -11,6 +11,7 @@
 
 - FIXED Audio for sword swing
 
+5/1/2017 (00:23) - v15
 
 -ADDED animations for Wrath Minions
 
