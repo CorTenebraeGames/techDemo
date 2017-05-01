@@ -1,4 +1,12 @@
 # Changelog
+4/30/2017 (22:36) - v14
+- ADDED Pride walking Anim and Kneeling Anim
+
+- ADDED Ledge hitbox for Pride levels
+	- the other one wouldn't work, just the way the collisions are set up
+
+- CHANGED Position of ledge hitbox in Envy boss room to prevent "dash dance"
+
 4/29/2017 (23:19) - v13
 - ADDED Screen shake functionality to the rest of the rooms
 

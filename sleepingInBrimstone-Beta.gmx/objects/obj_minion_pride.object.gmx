@@ -172,7 +172,7 @@ if (vsp &lt; 5) vsp += grav;
 
 //Avoiding Ledges
 //^^^^^^Working to change so that we can eliminate the ledge hitbox object eventually
-if (position_meeting(x+(sprite_width/2),y,obj_ledge_hitbox))
+if (position_meeting(x+sprite_width/5,y,obj_ledge_hitbox_pride))
 {
     movespeed = 0;
 }

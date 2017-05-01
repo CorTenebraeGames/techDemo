@@ -38,30 +38,7 @@ alarm [3] = irandom_range(700,1200);
 sight = 800;
 
 sprite_index = spr_pride_upper;
-image_speed = room_speed;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_speed = room_speed;
+image_speed = 0.7;
 </string>
           </argument>
         </arguments>
@@ -144,19 +121,17 @@ if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPl
             <kind>1</kind>
             <string>if (sprite_index = spr_pride_upper)
 {
+    image_speed = 0.5;
     movespeed = 0;
     sprite_index = spr_pride_lower;
     alarm[1] = irandom_range(240,300);
-    if (image_index = 23)
-    {
-        image_speed = 0;
-        alarm[4] = alarm[1] - 18;
-    }
 }
 else 
 {
+    image_speed = 0.7;
     movespeed = 1;
     sprite_index = spr_pride_upper;
+    image_index = 0;
     alarm [1] = irandom_range(600,900);
 }
 </string>
@@ -221,7 +196,7 @@ if (place_meeting(x+hsp,y,par_tilesets))
     }
     hsp = 0;
     
-   // dir *= -1;
+    dir *= -1;
 }
 x += hsp;
 
@@ -252,6 +227,11 @@ if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPl
     }
 }
 
+//Keeping Pride knelt
+while ((sprite_index = spr_pride_lower) &amp;&amp; (image_index &gt;= 23 &amp;&amp; image_index &lt;= 24))
+    {
+        image_index = 23;   
+    }
 //Main Logic
 //=====Tick
 

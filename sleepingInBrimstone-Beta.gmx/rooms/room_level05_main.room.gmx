@@ -509,24 +509,24 @@
     <instance objName="obj_tileset01" x="1728" y="960" name="inst_AC4CB1A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1792" y="1024" name="inst_1F8EFE09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1856" y="1088" name="inst_F2B30F33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="960" y="480" name="inst_DE4BC687" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="992" y="480" name="inst_DE4BC687" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="640" y="480" name="inst_637E4A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="128" y="480" name="inst_AB4C1569" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="960" y="160" name="inst_B6720641" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="992" y="160" name="inst_B6720641" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="768" y="160" name="inst_18431A88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1760" y="768" name="inst_FBB80F5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1504" y="768" name="inst_F85F5C91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1120" y="896" name="inst_028EA2AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1792" y="768" name="inst_FBB80F5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1472" y="768" name="inst_F85F5C91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1088" y="896" name="inst_028EA2AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="288" y="1504" name="inst_AAF227BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="480" y="1504" name="inst_2B48C97F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="288" y="1760" name="inst_7A41FE6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="640" y="1760" name="inst_053C5C07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1664" y="1568" name="inst_EB4CE27F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1920" y="1568" name="inst_05530231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1472" y="2080" name="inst_4FE30E08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1632" y="1568" name="inst_EB4CE27F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1952" y="1568" name="inst_05530231" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1440" y="2080" name="inst_4FE30E08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ledge_hitbox" x="1888" y="2080" name="inst_6FBC4805" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="768" y="2208" name="inst_36D04D0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ledge_hitbox" x="1024" y="2208" name="inst_E8492CA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="736" y="2208" name="inst_36D04D0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox" x="1056" y="2208" name="inst_E8492CA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_pride" x="864" y="2176" name="inst_3206E3F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_pride" x="1568" y="2048" name="inst_FF8EC8BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minion_pride" x="1760" y="1536" name="inst_3F80AAE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -551,6 +551,24 @@
     <instance objName="obj_deathFall" x="320" y="2624" name="inst_BFBBF2A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_deathFall" x="1344" y="2624" name="inst_919A495D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level05_music" x="192" y="2048" name="inst_FFBFDEC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="992" y="160" name="inst_10E3FA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="736" y="160" name="inst_B0E108D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="992" y="480" name="inst_58677CA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="640" y="480" name="inst_CF3F2387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="128" y="480" name="inst_1301ED2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1792" y="768" name="inst_CA600C5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1472" y="768" name="inst_1F46E0C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1088" y="896" name="inst_58D43D9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1952" y="1568" name="inst_C24C2412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1632" y="1568" name="inst_1D96F54D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1888" y="2080" name="inst_AD5845A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1440" y="2080" name="inst_41C17E5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="1056" y="2208" name="inst_A03A992F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="736" y="2208" name="inst_EDBF4CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="640" y="1760" name="inst_114D40A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="288" y="1760" name="inst_D4A5D052" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="480" y="1504" name="inst_76E7FBF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ledge_hitbox_pride" x="288" y="1504" name="inst_8BD4C938" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

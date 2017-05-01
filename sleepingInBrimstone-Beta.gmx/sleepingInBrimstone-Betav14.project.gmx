@@ -71,6 +71,7 @@
       <sprite>sprites\spr_hitbox</sprite>
       <sprite>sprites\spr_ledge_hitbox</sprite>
       <sprite>sprites\spr_text_trigger</sprite>
+      <sprite>sprites\spr_legde_hitbox_pride</sprite>
       <sprite>sprites\spr_gluttonyMusicTrig</sprite>
       <sprite>sprites\spr_deathTrigger</sprite>
     </sprites>
@@ -405,6 +406,7 @@
       <object>objects\par_tilesets</object>
       <object>objects\par_ladder</object>
       <object>objects\obj_ledge_hitbox</object>
+      <object>objects\obj_ledge_hitbox_pride</object>
       <object>objects\par_enemy</object>
       <object>objects\par_enemy2</object>
       <object>objects\par_enemy3</object>
