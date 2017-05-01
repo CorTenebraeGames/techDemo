@@ -1,4 +1,11 @@
 # Changelog
+5/1/2017 (19:50) - v18
+- ADDED Lust boss fight framework
+	- Will add lust minion AI when I get home
+	- Will add end screen when I get home
+
+- Notes: Might be time to decorate our current enviros and last minute test the shit out of everything.
+
 5/1/2017 (04:40) - v17
 - ADDED Envy animations
 	- Attack

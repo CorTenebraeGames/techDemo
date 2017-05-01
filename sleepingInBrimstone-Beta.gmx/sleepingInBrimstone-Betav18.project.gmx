@@ -182,6 +182,11 @@
           <sprite>sprites\spr_envyRun</sprite>
           <sprite>sprites\spr_envyBlock</sprite>
         </sprites>
+        <sprites name="Lust">
+          <sprite>sprites\spr_lustIdle</sprite>
+          <sprite>sprites\spr_lustAttack</sprite>
+          <sprite>sprites\spr_lustWalk</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprite>sprites\spr_sword</sprite>
@@ -298,6 +303,7 @@
       <object>objects\cont_bossInit</object>
       <object>objects\cont_rainingGold</object>
       <object>objects\obj_shake</object>
+      <object>objects\cont_lustMinionSpawn</object>
     </objects>
     <objects name="Effects">
       <objects name="Textboxes">
