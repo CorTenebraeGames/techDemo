@@ -151,7 +151,7 @@
           <sprite>sprites\MinionHard</sprite>
           <sprite>sprites\MinionIdle_easy</sprite>
           <sprite>sprites\MinionMedium</sprite>
-          <sprite>sprites\Wrath_boss</sprite>
+          <sprite>sprites\Wrath_minion_damage</sprite>
         </sprites>
       </sprites>
       <sprites name="Bosses">
@@ -165,6 +165,10 @@
           <sprite>sprites\spr_pride_idle</sprite>
           <sprite>sprites\spr_pride_upper</sprite>
           <sprite>sprites\spr_pride_lower</sprite>
+        </sprites>
+        <sprites name="Wrath">
+          <sprite>sprites\Wrath_boss</sprite>
+          <sprite>sprites\Wrath_ThrowingFire</sprite>
         </sprites>
       </sprites>
     </sprites>
