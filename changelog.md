@@ -1,4 +1,16 @@
 # Changelog
+5/1/2017 (04:40) - v17
+- ADDED Envy animations
+	- Attack
+	- Run
+	- Block
+
+- ADDED Temporary doors in tutorial start that can be configured to any of the boss save rooms
+
+- CHANGED Sloth HP value
+
+- CHANGED Envy HP Value
+
 5/1/2017 (03:02) - v16
 - ADDED walk animation for Sloth
 

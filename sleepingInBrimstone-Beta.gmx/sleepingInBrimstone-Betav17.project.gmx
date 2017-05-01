@@ -175,6 +175,13 @@
           <sprite>sprites\spr_slothAttack</sprite>
           <sprite>sprites\spr_slothWalk</sprite>
         </sprites>
+        <sprites name="Envy">
+          <sprite>sprites\spr_envyIdle</sprite>
+          <sprite>sprites\spr_envyDmg</sprite>
+          <sprite>sprites\spr_envyAttack</sprite>
+          <sprite>sprites\spr_envyRun</sprite>
+          <sprite>sprites\spr_envyBlock</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprite>sprites\spr_sword</sprite>
@@ -422,6 +429,7 @@
       <object>objects\par_enemySloth</object>
       <object>objects\par_enemyGreed</object>
       <object>objects\par_enemy_hitbox</object>
+      <object>objects\par_envy_hitbox</object>
     </objects>
     <objects name="Player Related">
       <object>objects\obj_playerPlaceHolder</object>
