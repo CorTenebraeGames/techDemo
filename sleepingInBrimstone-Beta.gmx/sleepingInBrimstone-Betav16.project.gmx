@@ -74,6 +74,7 @@
       <sprite>sprites\spr_legde_hitbox_pride</sprite>
       <sprite>sprites\spr_gluttonyMusicTrig</sprite>
       <sprite>sprites\spr_deathTrigger</sprite>
+      <sprite>sprites\spr_slothHitbox</sprite>
     </sprites>
     <sprites name="Player/Protag">
       <sprite>sprites\spr_attack</sprite>
@@ -169,6 +170,10 @@
         <sprites name="Wrath">
           <sprite>sprites\Wrath_boss</sprite>
           <sprite>sprites\Wrath_ThrowingFire</sprite>
+        </sprites>
+        <sprites name="Greed">
+          <sprite>sprites\spr_slothAttack</sprite>
+          <sprite>sprites\spr_slothWalk</sprite>
         </sprites>
       </sprites>
     </sprites>

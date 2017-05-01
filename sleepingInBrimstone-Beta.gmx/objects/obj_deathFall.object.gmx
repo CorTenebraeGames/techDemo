@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>global.playerHp= 0; // Death on fall;
+
+with (obj_playerPlaceHolder)
+{
+    godModeEnabled = false
+}
 </string>
           </argument>
         </arguments>

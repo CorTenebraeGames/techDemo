@@ -466,6 +466,7 @@ if ((key_attack) &amp;&amp; (!recently_hitGold) &amp;&amp; (attacked_recent = 0)
     attacking = 1;
     attacked_recent = 1;
     alarm[3] = 20;
+    audio_play_sound((choose(snd_swordswing,snd_swordswing2,snd_swordswing3,snd_swordswing4)), 1, false);
 }
 if (attacking = 1)
 {
@@ -477,10 +478,12 @@ if (attacking = 1)
     // Animate
     sprite_index = spr_attack;
     //SFX
-    if (image_index &gt; 0) &amp;&amp; (image_index &lt;0.2)
+    /*
+    if (image_index &gt; 0) &amp;&amp; (image_index &lt;0.3)
     {
         audio_play_sound((choose(snd_swordswing,snd_swordswing2,snd_swordswing3,snd_swordswing4)), 1, false);
     }
+    */
     //Hitbox
     if (image_index &gt;=0) &amp;&amp; (image_index &lt;=1)
     {

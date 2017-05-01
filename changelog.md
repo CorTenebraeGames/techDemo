@@ -1,4 +1,25 @@
 # Changelog
+5/1/2017 (03:02) - v16
+- ADDED walk animation for Sloth
+
+- ADDED attack animation for Sloth
+
+- ADDED custom hitbox for sloth
+
+- CHANGED Falling death trigger
+	- NOW KILLS EVEN WITH GOD MODE ON
+
+- FIXED Audio for sword swing
+
+
+-ADDED animations for Wrath Minions
+
+-ADDED animations for Wrath Boss
+
+-ADDED animations for Wrath minions being damaged
+
+-CHANGED sizing of wrath enemies (mostly for wrath)
+
 4/30/2017 (22:36) - v14
 - ADDED Pride walking Anim and Kneeling Anim
 
