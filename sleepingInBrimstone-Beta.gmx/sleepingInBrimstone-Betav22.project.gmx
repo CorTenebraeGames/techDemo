@@ -113,6 +113,8 @@
         <sprite>sprites\spr_eggplant</sprite>
         <sprite>sprites\spr_bottle</sprite>
       </sprites>
+      <sprite>sprites\Fire_pits</sprite>
+      <sprite>sprites\FirePipe</sprite>
     </sprites>
     <sprite>sprites\spr_indoorTileset</sprite>
     <sprite>sprites\spr_tileset01</sprite>
@@ -385,6 +387,8 @@
       </objects>
       <objects name="Hazards">
         <object>objects\obj_deathFall</object>
+        <object>objects\obj_FirePipe</object>
+        <object>objects\FirePits</object>
       </objects>
     </objects>
     <objects name="Items">

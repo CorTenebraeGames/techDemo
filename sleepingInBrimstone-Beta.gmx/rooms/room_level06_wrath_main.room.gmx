@@ -379,10 +379,10 @@
     <instance objName="obj_tileset01" x="2580" y="345" name="inst_AFDA6136" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2520" y="345" name="inst_63C6E6AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2460" y="345" name="inst_0DF8B8FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="2752" y="608" name="inst_4F0A3A42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="2368" y="608" name="inst_0BD3EE7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1472" y="608" name="inst_15E0B83B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1632" y="608" name="inst_30815236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2744" y="560" name="inst_4F0A3A42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="2432" y="536" name="inst_0BD3EE7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="1416" y="568" name="inst_15E0B83B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="1704" y="568" name="inst_30815236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1888" y="672" name="inst_EA0395BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1952" y="672" name="inst_6650BC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="2112" y="672" name="inst_18C61BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -463,15 +463,11 @@
     <instance objName="obj_tileset01" x="2190" y="345" name="inst_88029CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doorPlaceHolder" x="2145" y="270" name="inst_ABA7D123" locked="0" code="target_x = 90;&#xA;target_y = 540;&#xA;target_r = room_level06_wrath_sub03;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1800" y="195" name="inst_7A8C37CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hitbox" x="2190" y="684" name="inst_DDB6DECD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hitbox" x="2880" y="684" name="inst_FDDCFBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="2898" y="492" name="inst_D2302931" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="3804" y="492" name="inst_16F45F1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="2346" y="294" name="inst_45FDF1A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="3336" y="294" name="inst_DFA75246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="1026" y="618" name="inst_D12443C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hitbox" x="1260" y="696" name="inst_6A20524D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hitbox" x="1806" y="690" name="inst_9055B25F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wrathminionIdleeasy" x="3048" y="464" name="inst_36453FC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wrathminionIdleeasy" x="3328" y="464" name="inst_E1F14B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wrathminionIdleeasy" x="3696" y="464" name="inst_4767D90D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -517,6 +513,58 @@
     <instance objName="obj_WrathMinionMedium" x="3176" y="464" name="inst_09938FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_WrathMinionMedium" x="3480" y="464" name="inst_DF7C4668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level06_music" x="1288" y="376" name="inst_881A9838" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1304" y="680" name="inst_09F8FBC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1352" y="680" name="inst_368D0D49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1400" y="680" name="inst_262599F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1448" y="680" name="inst_B848F8DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1496" y="680" name="inst_06F0D625" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1544" y="680" name="inst_8D2BA4ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1592" y="680" name="inst_3DA6FCE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1640" y="680" name="inst_772CF44F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1688" y="680" name="inst_B92C9D16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1736" y="680" name="inst_D4AB67F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1784" y="680" name="inst_56161563" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="1832" y="680" name="inst_A8955088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2232" y="680" name="inst_B50ED1F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2280" y="680" name="inst_B00E6870" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2328" y="680" name="inst_8B457E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2376" y="680" name="inst_2407E442" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2424" y="680" name="inst_D08191DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2472" y="680" name="inst_1828CD2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2520" y="680" name="inst_DE5A3E03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2568" y="680" name="inst_973DF417" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2616" y="680" name="inst_26B6991E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2664" y="680" name="inst_CA0A9693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2712" y="680" name="inst_82406043" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2760" y="680" name="inst_9AF8EBD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2808" y="680" name="inst_8F89C3EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FirePipe" x="2856" y="680" name="inst_F1D107D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1304" y="632" name="inst_61FF3A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1352" y="632" name="inst_E70D0EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1400" y="632" name="inst_9FABEB4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1448" y="632" name="inst_21A1CA8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1496" y="632" name="inst_41B624BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1544" y="632" name="inst_16555B6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1592" y="632" name="inst_7EEC9A84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1640" y="632" name="inst_D62AC6BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1688" y="632" name="inst_8948DC9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1736" y="632" name="inst_22B7EB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1784" y="632" name="inst_E14B7900" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="1832" y="632" name="inst_668A9029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2232" y="632" name="inst_08DE7196" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2280" y="632" name="inst_3F05C1FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2328" y="632" name="inst_FE6DF7E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2376" y="632" name="inst_0C46BDD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2424" y="632" name="inst_5E830A2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2472" y="632" name="inst_C5DD80FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2520" y="632" name="inst_5F8C32A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2568" y="632" name="inst_82C4B8D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2616" y="632" name="inst_12A8DFA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2664" y="632" name="inst_4417E2B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2712" y="632" name="inst_B7C12760" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2760" y="632" name="inst_CC1E5BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2808" y="632" name="inst_A8CC3285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FirePits" x="2856" y="632" name="inst_65A8A328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
