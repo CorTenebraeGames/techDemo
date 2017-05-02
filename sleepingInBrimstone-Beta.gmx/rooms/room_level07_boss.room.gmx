@@ -295,7 +295,7 @@
     <instance objName="obj_tileset01" x="96" y="384" name="inst_7632ACA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="448" y="384" name="inst_7923C93E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_lust_bossFight" x="1184" y="480" name="inst_E6FAE7C1" locked="0" code="creationText = &quot;Anabel?&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lust" x="1120" y="256" name="inst_46C2905F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lust" x="672" y="352" name="inst_46C2905F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="640" y="32" name="inst_48E1AB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="704" y="32" name="inst_51FCF070" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="768" y="32" name="inst_672A3534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -313,11 +313,21 @@
     <instance objName="obj_tileset01" x="1248" y="32" name="inst_6C4E33E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1184" y="32" name="inst_D2808C70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="1120" y="32" name="inst_533DABC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1024" y="320" name="inst_F88AF371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1088" y="320" name="inst_76D5EFC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1152" y="320" name="inst_21DFE778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tileset01" x="1216" y="320" name="inst_D4CAB61D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="352" name="inst_F88AF371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="288" name="inst_76D5EFC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="416" name="inst_21DFE778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_lustMinionSpawn" x="640" y="480" name="inst_B728D28E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="224" name="inst_771F30D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="704" y="224" name="inst_5DF2BA1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="640" y="224" name="inst_329408BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="640" y="160" name="inst_9E097232" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="640" y="96" name="inst_A241852D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="704" y="96" name="inst_41A90FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="704" y="160" name="inst_2189914F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="160" name="inst_FB208782" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tileset01" x="768" y="96" name="inst_7C93602E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tilesetDoor" x="640" y="416" name="inst_DAEA3017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tilesetDoor" x="704" y="416" name="inst_1C2BF628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

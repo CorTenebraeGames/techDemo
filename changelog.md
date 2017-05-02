@@ -1,4 +1,10 @@
 # Changelog
+5/2/2017 (03:24) - v20
+- ADDED Lust minion AI
+	- Honestly re used most of the Envy assets with lower health
+
+- ADDED the most makeshift game end screen to meet deadline.
+
 5/1/2017 (22:48) - v19
 - ADDED Greed backgrounds
 

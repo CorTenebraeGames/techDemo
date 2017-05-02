@@ -247,6 +247,7 @@
       <background>background\background_10</background>
       <background>background\background_11</background>
     </backgrounds>
+    <background>background\bg_endGame</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -319,6 +320,8 @@
       <object>objects\cont_rainingGold</object>
       <object>objects\obj_shake</object>
       <object>objects\cont_lustMinionSpawn</object>
+      <object>objects\cont_endToCredits</object>
+      <object>objects\cont_checkGameDone</object>
     </objects>
     <objects name="Effects">
       <objects name="Textboxes">
@@ -437,6 +440,7 @@
       <objects name="Lust">
         <object>objects\obj_lust_minion</object>
         <object>objects\obj_lust</object>
+        <object>objects\obj_lust_minion_v2</object>
       </objects>
     </objects>
     <objects name="Parents">
@@ -458,6 +462,7 @@
     </objects>
     <objects name="Tilesets">
       <object>objects\obj_tileset01</object>
+      <object>objects\obj_tilesetDoor</object>
       <object>objects\obj_fakeTileset</object>
       <object>objects\obj_tilesetIndoor</object>
     </objects>
@@ -623,6 +628,7 @@
       <room>rooms\room_level07_saveBoss</room>
       <room>rooms\room_level07_boss</room>
     </rooms>
+    <room>rooms\room_endGame</room>
     <rooms name="Loading">
       <room>rooms\room_loadingset</room>
     </rooms>

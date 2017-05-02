@@ -60,18 +60,24 @@ global.lustMoveDown = false;
     }
     */
 }
-/*
+
 if !instance_exists (obj_lust)
 {
     audio_stop_sound(mus_Sloth);
     instance_create(x,y,eff_slothDefeated);
-    room_goto (room_credits);
+    with obj_playerPlaceHolder
+    {
+        godModeEnabled = false
+    }
+    global.gameWon = true;
+    global.playerHp = 0;
+    
     with(trig_lust_bossFight)
     {
         instance_destroy();
     }
 }
-*/
+
 </string>
           </argument>
         </arguments>
