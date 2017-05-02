@@ -221,6 +221,7 @@
     <sprite>sprites\sprite77</sprite>
     <sprites name="Decoration">
       <sprite>sprites\spr_handsBG</sprite>
+      <sprite>sprites\spr_gold_decor</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -232,6 +233,20 @@
     <background>background\background5</background>
     <background>background\bg_background01</background>
     <background>background\bg_disclaimer</background>
+    <backgrounds name="Greed">
+      <background>background\background_00</background>
+      <background>background\background_01</background>
+      <background>background\background_02</background>
+      <background>background\background_03</background>
+      <background>background\background_04</background>
+      <background>background\background_05</background>
+      <background>background\background_06</background>
+      <background>background\background_07</background>
+      <background>background\background_08</background>
+      <background>background\background_09</background>
+      <background>background\background_10</background>
+      <background>background\background_11</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -500,6 +515,7 @@
     </objects>
     <objects name="Background/Deco">
       <object>objects\deco_hand_wall</object>
+      <object>objects\obj_gold_decor</object>
     </objects>
   </objects>
   <timelines name="timelines">

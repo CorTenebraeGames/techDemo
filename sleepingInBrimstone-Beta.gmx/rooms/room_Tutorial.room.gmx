@@ -500,7 +500,7 @@
     <instance objName="trig_textTutorial" x="2976" y="480" name="inst_754E44DF" locked="0" code="creationText = &quot;Press the 'A' key, or 'RT' to attack.##Press the 'S' key, or 'RB' to block.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_textTutorial" x="1600" y="480" name="inst_7CB8ECD4" locked="0" code="creationText = &quot;Below you is a ladder. #You can climb them #by holding the Up #and Down arrow keys, #or by holding your #thumbstick up or down.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="trig_textTutorial" x="3776" y="416" name="inst_4DBF0C6E" locked="0" code="creationText = &quot;Need a break before continuing?##You can pause the game#by pressing 'P' or#'Start' on your controller.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_levelTransitionDoor" x="224" y="672" name="inst_76B30BCB" locked="0" code="target_x = 256;&#xA;target_y = 672;&#xA;target_r = room_level07_saveBoss;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelTransitionDoor" x="224" y="672" name="inst_76B30BCB" locked="0" code="target_x = 316;&#xA;target_y = 672;&#xA;target_r = room_level03_main;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

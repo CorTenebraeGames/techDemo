@@ -1,4 +1,12 @@
 # Changelog
+5/1/2017 (22:48) - v19
+- ADDED Greed backgrounds
+
+- ADDED Gold decor
+	- controls random switching of Greed backgrounds
+
+- REMOVED Visible sword hitbox
+
 5/1/2017 (19:50) - v18
 - ADDED Lust boss fight framework
 	- Will add lust minion AI when I get home
