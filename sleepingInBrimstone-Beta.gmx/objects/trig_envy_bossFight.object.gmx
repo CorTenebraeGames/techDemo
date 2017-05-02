@@ -92,13 +92,14 @@ if !instance_exists (obj_envy)
           <argument>
             <kind>1</kind>
             <string>///Text Control
+/*
 if (playerEncountered = false)
 {
     scr_textbox(creationText,1,300,100)
     playerEncountered = true;
     instance_create(576,480,obj_tileset01);
 }
-
+*/
 if (playerEncountered = true)
 {
 // This is made so that the text box doesn't keep reappearing.

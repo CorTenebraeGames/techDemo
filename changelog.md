@@ -1,4 +1,13 @@
 # Changelog
+5/2/2017 (16:25) - v23
+- ADDED Events so a lot of enemies could actually get hurt by holy water.
+
+- REMOVED text event for most boss triggers
+	- NEEDS TO BE HEAVILY TESTED LIKE Now	
+		- AKA speed run the game on god mode and make sure no crashes
+		
+- FIXED Wrath sprite transitions
+	- Needs testing as well to be sure.
 5/2/2017 (15:18) - v22
 - ADDED Damage sprites for Pride and minions
 

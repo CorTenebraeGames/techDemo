@@ -91,7 +91,7 @@ if ((distance_to_object(obj_playerPlaceHolder) &lt; 250) &amp;&amp; (hit == 0))
     if ((distance_to_object((obj_playerPlaceHolder) &gt; 100)) &amp;&amp; (distance_to_object(obj_playerPlaceHolder) &lt; 250) &amp;&amp; (hit == 0))
     {
         movespeed = 0.5;
-        sprite_index = spr_slothBoss;
+        sprite_index = Wrath_boss;
     }
 }
 /*
@@ -175,24 +175,25 @@ if(place_meeting(x,y+1,par_tilesets))
 if (hit == 1)
 {
     hp = (hp - 1);
-    sprite_index = spr_slothBossDMG;
+    image_blend = c_red
 }
 
 if (hit == 2)
 {
     hp = (hp - 5);
-    sprite_index = spr_slothBossDMG;
+    image_blend = c_red
 }
 
 if (hit == 3)
 {
     hp = (hp - 3);
-    sprite_index = spr_slothBossDMG;
+    image_blend = c_red
 }
    
 if (hit == 0)
 {
     hsp = dir * movespeed;
+    image_blend = c_white
 }
 
 if (hp &lt;= 0)
