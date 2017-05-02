@@ -726,6 +726,14 @@ if (global.playerHp &lt;= 0)
     global.playerIsAlive = 0;
     instance_destroy();
 }
+if global.gameWon = true
+{
+    room_goto(room_endGame)
+    with self
+    {
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -863,7 +871,7 @@ global.keyObtained = 1;
 //--------------------------------
 
 // Decomment the line below if R enables WALL JUMP
-//global.wallJumpAvailable = 1;
+global.wallJumpAvailable = 1;
 </string>
           </argument>
         </arguments>

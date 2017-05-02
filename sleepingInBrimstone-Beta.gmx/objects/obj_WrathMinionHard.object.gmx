@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_index = 0;
-image_speed = 0;
+image_speed = 0.2;
 
 dir = -1
 movespeed = 3;
@@ -137,25 +137,25 @@ y += vsp;
 
 if (hit == 1)
 {
-    image_index = 1;
+    image_blend = c_red;
     hp = (hp - 1);
 }
 
 if (hit == 2)
 {
-    image_index = 1;
+    image_blend = c_red;
     hp = (hp - 5);
 }
 
 if (hit == 3)
 {
-    image_index = 1;
+    image_blend = c_red;
     hp = (hp - 3);
 }
    
 if (hit == 0)
 {
-    image_index = 0;
+    image_blend = c_white
     hsp = dir * movespeed;
 }
 

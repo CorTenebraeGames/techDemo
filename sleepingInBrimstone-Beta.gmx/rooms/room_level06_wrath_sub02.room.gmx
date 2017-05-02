@@ -252,7 +252,6 @@
     <instance objName="obj_tileset01" x="104" y="264" name="inst_A6AE5A2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="224" y="264" name="inst_5515DBC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="288" y="80" name="inst_9B1B9B18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vessel_01" x="288" y="96" name="inst_E8BDE3F0" locked="0" code="" scaleX="0.5" scaleY="0.538461565971375" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="576" y="288" name="inst_8C2C056C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="640" y="288" name="inst_4560B14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tileset01" x="672" y="288" name="inst_556D0502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

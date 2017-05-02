@@ -506,8 +506,8 @@
       <objects name="Boss Fights">
         <object>objects\trig_sloth_bossFight</object>
         <object>objects\trig_greed_bossFight</object>
-        <object>objects\trig_cleanupGold</object>
         <object>objects\trig_envy_bossFight</object>
+        <object>objects\trig_cleanupGold</object>
         <object>objects\trig_lust_bossFight</object>
         <object>objects\trig_pride_bossFight</object>
       </objects>
@@ -545,7 +545,6 @@
   <rooms name="rooms">
     <rooms name="Init Rooms">
       <room>rooms\init</room>
-      <room>rooms\room_disclaimer</room>
       <room>rooms\Gamedev_room</room>
     </rooms>
     <rooms name="Intro Rooms">
@@ -644,6 +643,7 @@
       <room>rooms\room_level07_saveBoss</room>
       <room>rooms\room_level07_boss</room>
     </rooms>
+    <room>rooms\room_disclaimer</room>
     <room>rooms\room_endGame</room>
     <rooms name="Loading">
       <room>rooms\room_loadingset</room>

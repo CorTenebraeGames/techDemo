@@ -62,6 +62,10 @@ if (gamepad_button_check_released(0,gp_start))
 {
     game_restart();
 }
+if global.gameWon = true
+{
+    room_goto(room_endGame)
+}
 </string>
           </argument>
         </arguments>
