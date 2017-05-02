@@ -50,9 +50,9 @@
             <kind>1</kind>
             <string>global.lustMinionSpawn = true
 instance_create(992, 460, obj_lust_minion_v2)
-instance_create(1216, 460, obj_lust_minion_v2)
+//instance_create(1216, 460, obj_lust_minion_v2)
 instance_create(1408, 460, obj_lust_minion_v2)
-instance_create(1550, 460, obj_lust_minion_v2)
+//instance_create(1550, 460, obj_lust_minion_v2)
 </string>
           </argument>
         </arguments>

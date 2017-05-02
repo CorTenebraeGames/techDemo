@@ -84,10 +84,15 @@ switch(global.musicVolumeSetting)
         audio_sound_gain(mus_Sloth, musVolume, 0);
         audio_sound_gain(mus_SlothMain, musVolume, 0);
         // Greed Music
+        audio_sound_gain(mus_greed, musVolume, 0);
         // Envy Music
+        audio_sound_gain(mus_envyMain, musVolume, 0);
+        audio_sound_gain(mus_envyBoss, musVolume, 0);
         // Pride Music
         // Wrath Music
         audio_sound_gain(wrath_level, musVolume, 0);
         audio_sound_gain(wrath_boss_fight, musVolume, 0);
+        // Lust Music
+        audio_sound_gain(mus_lustFight, musVolume, 0);
         // Misc.
         audio_sound_gain(Loading_music, musVolume, 0);

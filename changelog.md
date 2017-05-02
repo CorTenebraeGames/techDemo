@@ -1,4 +1,14 @@
 # Changelog
+5/2/2017 (06:27) - v21
+- ADDED Music
+	- Envy Main Music
+	- Envy Boss Music
+	- Lust Boss Music
+
+- CHANGED Music Options config to include new files
+
+- Notes: I'm tired as fuck. It's 6:30 in the morning and I gotta wake up at 10 AM.
+
 5/2/2017 (03:24) - v20
 - ADDED Lust minion AI
 	- Honestly re used most of the Envy assets with lower health

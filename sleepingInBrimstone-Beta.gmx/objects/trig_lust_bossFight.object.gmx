@@ -63,7 +63,7 @@ global.lustMoveDown = false;
 
 if !instance_exists (obj_lust)
 {
-    audio_stop_sound(mus_Sloth);
+    audio_stop_sound(mus_lustFight);
     instance_create(x,y,eff_slothDefeated);
     with obj_playerPlaceHolder
     {
@@ -136,9 +136,9 @@ if (playerEncountered = true)
           <argument>
             <kind>1</kind>
             <string>///Music And Alarm Control
-if !audio_is_playing(mus_Sloth)
+if !audio_is_playing(mus_lustFight)
 {
-    audio_play_sound(mus_Sloth,0, true);
+    audio_play_sound(mus_lustFight,0, true);
     alarm[0] = 10 * room_speed;
     alarm[2] = 0.5 * room_speed;
 }

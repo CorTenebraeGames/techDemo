@@ -119,9 +119,9 @@ if alpha &lt; 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !audio_is_playing(mus_SlothMain)
+            <string>if !audio_is_playing(mus_envyMain)
 {
-    audio_play_sound(mus_SlothMain, 0, true);
+    audio_play_sound(mus_envyMain, 0, true);
 }
 </string>
           </argument>
