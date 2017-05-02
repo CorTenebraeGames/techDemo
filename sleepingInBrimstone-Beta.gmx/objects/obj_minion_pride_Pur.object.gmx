@@ -119,6 +119,7 @@ alarm[1] = irandom_range(60,270);
           <argument>
             <kind>1</kind>
             <string>hit = 0;
+sprite_index = spr_pride_pur;
 </string>
           </argument>
         </arguments>
@@ -202,14 +203,17 @@ if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPl
 if (hit == 1)
 {
     hp -= 1;
+    sprite_index = pur_DMG;
 }
 if (hit == 2)
 {
     hp -= 5;
+    sprite_index = pur_DMG;
 }
 if (hit == 3)
 {
     hp -= 3;
+    sprite_index = pur_DMG;
 }
 if (hit == 0)
 {

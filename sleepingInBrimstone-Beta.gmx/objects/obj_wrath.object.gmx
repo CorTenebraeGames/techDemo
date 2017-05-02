@@ -104,7 +104,7 @@ image_index = 0;
 if ((distance_to_object(obj_playerPlaceHolder) &lt; 9) &amp;&amp; (hit == 0))
 {
     movespeed = 0;
-    sprite_index = spr_sloth_boss_attack
+    sprite_index = Wrath_ThrowingFire;
     image_speed = 0.05;
     if (image_index &gt; 4) &amp;&amp; (image_index &lt;= 5)
     {

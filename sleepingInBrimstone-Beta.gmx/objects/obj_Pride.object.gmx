@@ -157,6 +157,15 @@ else
           <argument>
             <kind>1</kind>
             <string>hit = 0;
+if (sprite_index = spr_upper_DMG)
+{
+    sprite_index = spr_pride_upper;
+}
+else
+{  
+    sprite_index = spr_pride_lower;
+    image_index = 23;
+}
 </string>
           </argument>
         </arguments>
@@ -228,7 +237,7 @@ if ((sight &gt;= abs(x - obj_playerPlaceHolder.x)) &amp;&amp; (sign(obj_playerPl
 }
 
 //Keeping Pride knelt
-while ((sprite_index = spr_pride_lower) &amp;&amp; (image_index &gt;= 23 &amp;&amp; image_index &lt;= 24))
+if ((sprite_index = spr_pride_lower) &amp;&amp; (image_index &gt;= 23 &amp;&amp; image_index &lt;= 24))
     {
         image_index = 23;   
     }
@@ -237,37 +246,52 @@ while ((sprite_index = spr_pride_lower) &amp;&amp; (image_index &gt;= 23 &amp;&a
 
 if (hit == 1)
 {
+    audio_play_sound(snd_gluttonyDmg,0,false);
     if (sprite_index = spr_pride_upper)
     {
         hp -= 1;
+        sprite_index = spr_upper_DMG;
+        image_xscale = dir;
     }
     if (sprite_index = spr_pride_lower)
     {
         hp -= 5;
+        sprite_index = spr_pride_lower_DMG;
+        image_xscale = dir;
     }
 }
 
 if (hit == 2)
 {
+    audio_play_sound(snd_gluttonyDmg,0,false);
      if (sprite_index = spr_pride_upper)
     {
         hp -= 5;
+        sprite_index = spr_upper_DMG;
+        image_xscale = dir;
     }
     if (sprite_index = spr_pride_lower)
     {
         hp -= 25;
+        sprite_index = spr_pride_lower_DMG;
+        image_xscale = dir;
     }
 }
 
 if (hit == 3)
 {
+    audio_play_sound(snd_gluttonyDmg,0,false);
      if (sprite_index = spr_pride_upper)
     {
         hp -= 3;
+        sprite_index = spr_upper_DMG;
+        image_xscale = dir;
     }
     if (sprite_index = spr_pride_lower)
     {
         hp -= 15;
+        sprite_index = spr_pride_lower_DMG;
+        image_xscale = dir;
     }
 }
 

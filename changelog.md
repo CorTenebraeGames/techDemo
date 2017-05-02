@@ -1,4 +1,15 @@
 # Changelog
+5/2/2017 (15:18) - v22
+- ADDED Damage sprites for Pride and minions
+
+- CHANGED cont_checkGameWon to accurately check the game state
+	- Changed Death event in player to set global.gameWon to false
+	- Same with lust, just true
+
+- CHANGED Wrath sprite when in range of player from sloth to Wrath_ThrowingFire
+
+- ADDED Sound to Pride when hit
+
 5/2/2017 (06:27) - v21
 - ADDED Music
 	- Envy Main Music

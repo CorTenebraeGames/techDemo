@@ -179,6 +179,7 @@ if (hit == 0)
 if (hp &lt;= 0)
 {
     instance_destroy();
+    global.gameWon = true;
     global.points = global.points + 1000;
 }
 </string>

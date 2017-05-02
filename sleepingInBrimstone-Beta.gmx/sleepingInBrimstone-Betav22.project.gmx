@@ -154,6 +154,9 @@
           <sprite>sprites\spr_pride_org</sprite>
           <sprite>sprites\spr_pride_pur</sprite>
           <sprite>sprites\spr_pride_red</sprite>
+          <sprite>sprites\blue_DMG</sprite>
+          <sprite>sprites\pur_DMG</sprite>
+          <sprite>sprites\red_DMG</sprite>
         </sprites>
         <sprites name="Wrath">
           <sprite>sprites\MinionHard</sprite>
@@ -173,6 +176,8 @@
           <sprite>sprites\spr_pride_idle</sprite>
           <sprite>sprites\spr_pride_upper</sprite>
           <sprite>sprites\spr_pride_lower</sprite>
+          <sprite>sprites\spr_upper_DMG</sprite>
+          <sprite>sprites\spr_pride_lower_DMG</sprite>
         </sprites>
         <sprites name="Wrath">
           <sprite>sprites\Wrath_boss</sprite>
