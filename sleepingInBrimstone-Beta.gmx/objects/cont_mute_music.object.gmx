@@ -47,6 +47,7 @@ with(obj_level06_music)
 }
 
 audio_stop_all();
+
 </string>
           </argument>
         </arguments>

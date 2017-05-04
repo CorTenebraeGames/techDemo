@@ -590,6 +590,22 @@ if (place_meeting(x,y,par_enemy))
         }
     }
 }
+// Fire damage
+if (place_meeting(x,y,FirePits))
+{
+        {
+            global.playerHp -= 1;
+            recently_hit = true;
+            alarm[0] = 1 * room_speed;
+            hsp =-5;
+            vsp =-5;
+            audio_play_sound(Fire_collision, 1, false);
+        }
+    }
+
+
+
+
 // Enemy Damage (Medium)
 if (place_meeting(x,y,par_enemy2))
 {

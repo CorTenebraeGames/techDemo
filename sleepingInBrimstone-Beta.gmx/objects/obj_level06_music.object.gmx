@@ -119,10 +119,14 @@ if alpha &lt; 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !audio_is_playing(wrath_level)
-{
-    audio_play_sound(wrath_level, 0, true);
-}
+            <string>//sound would Interfere with other sounds in other rooms after dying
+
+//if !audio_is_playing(wrath_level)
+//{
+    //audio_play_sound(wrath_level, 0, true);
+////
+
+///////This is fixed in the creation code of the start wrath rooms/////////
 </string>
           </argument>
         </arguments>

@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="cont_endToCredits" x="192" y="160" name="inst_7055AFF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="End_game_only" x="64" y="96" name="inst_ACDC6225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
